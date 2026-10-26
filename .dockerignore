@@ -1,0 +1,12 @@
+venv/
+.env
+.git/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+*.log
+.pytest_cache/
+.gemini/
+scratch/

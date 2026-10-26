@@ -1,0 +1,2001 @@
+transaction_id,date,merchant,description,amount,category,is_anomaly
+TXN01654,2024-01-01,Practo,health checkup,6555.35,Health,0
+TXN01404,2024-01-01,MakeMyTrip,intercity travel,20031.32,Travel,0
+TXN01377,2024-01-01,Meesho,home decor,9679.67,Shopping,0
+TXN00060,2024-01-01,Barbeque Nation,takeaway order,1167.07,Dining,0
+TXN00645,2024-01-01,Nilgiris,household items,2356.59,Groceries,0
+TXN00173,2024-01-01,Burger King,breakfast order,5714.42,Dining,1
+TXN01276,2024-01-02,Amazon,online shopping,13387.8,Shopping,0
+TXN00896,2024-01-02,Netflix Bill,gas bill,5249.86,Bills,0
+TXN00324,2024-01-02,Pizza Hut,lunch payment,1500.0,Dining,0
+TXN00101,2024-01-02,Pizza Hut,dine-in payment,448.49,Dining,0
+TXN01663,2024-01-02,Healthians,pharmacy,3231.04,Health,0
+TXN01796,2024-01-03,Healthians,doctor consultation,5588.77,Health,0
+TXN01777,2024-01-03,Apollo Hospital,medical report,5911.15,Health,0
+TXN00835,2024-01-03,LIC Premium,internet bill,3994.2,Bills,0
+TXN01561,2024-01-03,MakeMyTrip,outstation trip,14897.13,Travel,0
+TXN01881,2024-01-03,Steam,OTT subscription,3714.27,Entertainment,0
+TXN01724,2024-01-03,Healthians,fitness subscription,9657.11,Health,0
+TXN00226,2024-01-04,Subway,dine-in payment,1221.23,Dining,0
+TXN00862,2024-01-04,MSEDCL,water bill,2208.73,Bills,0
+TXN00078,2024-01-04,Swiggy,food order,700.95,Dining,0
+TXN00992,2024-01-04,LIC Premium,DTH recharge,1789.66,Bills,0
+TXN00123,2024-01-05,KFC,restaurant bill,1384.58,Dining,0
+TXN00987,2024-01-05,BESCOM,DTH recharge,7389.62,Bills,0
+TXN01011,2024-01-05,Netflix Bill,internet bill,6859.77,Bills,0
+TXN01976,2024-01-05,Paytm,family transfer,21615.68,Transfer,0
+TXN01148,2024-01-05,Lifestyle,electronics order,7110.96,Shopping,0
+TXN01613,2024-01-05,Meru Cabs,flight booking,21390.77,Travel,0
+TXN00130,2024-01-05,Haldiram's,breakfast order,645.9,Dining,0
+TXN01212,2024-01-05,Amazon,gadget buy,9587.84,Shopping,0
+TXN01775,2024-01-06,Fortis Hospital,health insurance claim,5610.05,Health,0
+TXN00049,2024-01-06,Haldiram's,restaurant bill,906.4,Dining,0
+TXN01632,2024-01-07,OYO Rooms,outstation trip,10709.95,Travel,0
+TXN01698,2024-01-07,Fortis Hospital,health checkup,5757.19,Health,0
+TXN00264,2024-01-07,Faasos,dinner bill,524.41,Dining,0
+TXN01962,2024-01-07,NEFT Transfer,family transfer,28305.26,Transfer,0
+TXN01054,2024-01-07,MSEDCL,water bill,4495.09,Bills,0
+TXN01602,2024-01-07,GoIbibo,train ticket,26040.84,Travel,0
+TXN00097,2024-01-08,Swiggy,online food delivery,889.34,Dining,0
+TXN00301,2024-01-08,Starbucks,breakfast order,567.04,Dining,0
+TXN00854,2024-01-08,Netflix Bill,society maintenance,6516.41,Bills,0
+TXN01563,2024-01-08,BlaBlacar,airport transfer,5697.45,Travel,0
+TXN00397,2024-01-08,Starbucks,delivery charge,398.13,Dining,0
+TXN01245,2024-01-08,Nykaa,home decor,9756.62,Shopping,0
+TXN00480,2024-01-09,Reliance Fresh,dairy products,4068.77,Groceries,0
+TXN01244,2024-01-09,H&M,apparel purchase,8429.64,Shopping,0
+TXN01021,2024-01-09,BESCOM,utility payment,4992.07,Bills,0
+TXN01198,2024-01-09,Flipkart,electronics order,15778.58,Shopping,0
+TXN01576,2024-01-10,Ola,bus ticket,14812.31,Travel,0
+TXN01807,2024-01-10,Xbox Live,app subscription,2809.74,Entertainment,0
+TXN01355,2024-01-10,Snapdeal,gadget buy,10044.78,Shopping,0
+TXN00798,2024-01-10,Mahanagar Gas,society maintenance,5319.17,Bills,0
+TXN00635,2024-01-10,Blinkit,vegetables and fruits,11797.69,Groceries,1
+TXN00552,2024-01-11,Grofers,weekly groceries,2443.03,Groceries,0
+TXN01376,2024-01-11,Westside,accessories,11633.95,Shopping,0
+TXN01506,2024-01-11,Meru Cabs,cab ride,12533.74,Travel,0
+TXN00248,2024-01-11,Barbeque Nation,delivery charge,608.32,Dining,0
+TXN00076,2024-01-11,Barbeque Nation,breakfast order,1097.5,Dining,0
+TXN00895,2024-01-12,Indane Gas,insurance premium,7039.81,Bills,0
+TXN01848,2024-01-12,Sony LIV,OTT subscription,1785.63,Entertainment,0
+TXN00911,2024-01-12,MSEDCL,broadband payment,3580.87,Bills,0
+TXN00427,2024-01-12,Hypercity,monthly grocery,1767.46,Groceries,0
+TXN01699,2024-01-13,Lybrate,gym membership,9273.03,Health,0
+TXN00155,2024-01-13,McDonald's,takeaway order,888.26,Dining,0
+TXN00235,2024-01-14,Box8,dinner bill,1500.0,Dining,0
+TXN00342,2024-01-14,Swiggy,online food delivery,7961.7,Dining,1
+TXN00626,2024-01-14,More Supermarket,grocery purchase,2119.17,Groceries,0
+TXN01080,2024-01-14,Decathlon,accessories,17774.16,Shopping,0
+TXN00790,2024-01-14,HDFC Insurance,broadband payment,2084.09,Bills,0
+TXN00518,2024-01-14,Nilgiris,dairy products,1758.55,Groceries,0
+TXN01501,2024-01-15,IndiGo Airlines,cab ride,20513.02,Travel,0
+TXN00519,2024-01-15,Reliance Fresh,dairy products,2705.39,Groceries,0
+TXN00409,2024-01-15,BigBasket,household items,2728.17,Groceries,0
+TXN00247,2024-01-16,Domino's Pizza,online food delivery,653.31,Dining,0
+TXN01267,2024-01-16,Meesho,clothing,12099.53,Shopping,0
+TXN01033,2024-01-16,Amazon Prime,insurance premium,4751.24,Bills,0
+TXN01330,2024-01-16,Snapdeal,accessories,16080.84,Shopping,0
+TXN00686,2024-01-16,Reliance Fresh,online grocery order,3458.07,Groceries,0
+TXN01020,2024-01-17,BSNL,society maintenance,4798.88,Bills,0
+TXN00006,2024-01-17,Zomato,restaurant bill,719.37,Dining,0
+TXN01008,2024-01-17,Jio,water bill,5221.5,Bills,0
+TXN00917,2024-01-17,Vodafone,subscription renewal,5164.85,Bills,0
+TXN01706,2024-01-17,Healthians,fitness subscription,6855.45,Health,0
+TXN00687,2024-01-18,Reliance Fresh,supermarket shopping,2361.7,Groceries,0
+TXN01412,2024-01-18,RedBus,cab ride,18769.02,Travel,0
+TXN01348,2024-01-18,H&M,home decor,18382.24,Shopping,0
+TXN00843,2024-01-19,Society Maintenance,water bill,2584.75,Bills,0
+TXN00662,2024-01-19,Blinkit,vegetables and fruits,2089.17,Groceries,0
+TXN01653,2024-01-19,Fortis Hospital,health insurance claim,8160.47,Health,0
+TXN01472,2024-01-20,IndiGo Airlines,airport transfer,11772.92,Travel,0
+TXN00168,2024-01-20,Swiggy,dinner bill,1500.0,Dining,0
+TXN00845,2024-01-20,Airtel,insurance premium,4328.83,Bills,0
+TXN00455,2024-01-20,Blinkit,online grocery order,2103.09,Groceries,0
+TXN00574,2024-01-20,BigBasket,household items,2381.84,Groceries,0
+TXN01470,2024-01-20,Uber,hotel booking,17949.4,Travel,0
+TXN01757,2024-01-20,MedPlus,health checkup,7146.11,Health,0
+TXN01246,2024-01-21,Apple Store,online shopping,7753.01,Shopping,0
+TXN01741,2024-01-21,Max Hospital,pharmacy,7241.06,Health,0
+TXN01851,2024-01-21,YouTube Premium,streaming service,1949.85,Entertainment,0
+TXN00578,2024-01-22,Spencers,vegetables and fruits,3539.05,Groceries,0
+TXN01304,2024-01-23,Apple Store,home decor,9349.84,Shopping,0
+TXN00663,2024-01-23,Nature's Basket,grocery purchase,2566.16,Groceries,0
+TXN01874,2024-01-23,Steam,app subscription,3449.07,Entertainment,0
+TXN00022,2024-01-24,Haldiram's,online food delivery,721.78,Dining,0
+TXN00969,2024-01-24,HDFC Insurance,gas bill,3985.46,Bills,0
+TXN01673,2024-01-24,Max Hospital,health checkup,6454.93,Health,0
+TXN00538,2024-01-24,Nature's Basket,monthly grocery,16221.98,Groceries,1
+TXN01197,2024-01-24,Flipkart,accessories,12551.02,Shopping,0
+TXN00196,2024-01-24,Domino's Pizza,lunch payment,7489.81,Dining,1
+TXN00776,2024-01-24,Airtel,internet bill,2161.12,Bills,0
+TXN01287,2024-01-24,Snapdeal,apparel purchase,6068.89,Shopping,0
+TXN01584,2024-01-25,OYO Rooms,train ticket,15400.31,Travel,0
+TXN00639,2024-01-25,Nature's Basket,monthly grocery,1551.97,Groceries,0
+TXN00936,2024-01-25,Tata Power,subscription renewal,20018.77,Bills,1
+TXN00470,2024-01-26,Grofers,vegetables and fruits,13238.54,Groceries,1
+TXN00759,2024-01-26,Blinkit,online grocery order,1844.43,Groceries,0
+TXN01425,2024-01-26,IndiGo Airlines,outstation trip,9892.65,Travel,0
+TXN00750,2024-01-26,Blinkit,monthly grocery,1481.19,Groceries,0
+TXN01342,2024-01-26,Myntra,clothing,83632.54,Shopping,1
+TXN01328,2024-01-26,Zara,fashion purchase,11941.53,Shopping,0
+TXN00832,2024-01-27,Jio,water bill,2804.59,Bills,0
+TXN00245,2024-01-27,Subway,online food delivery,488.78,Dining,0
+TXN00511,2024-01-27,Blinkit,dairy products,2897.05,Groceries,0
+TXN00481,2024-01-27,Reliance Fresh,monthly grocery,19725.47,Groceries,1
+TXN00529,2024-01-27,Reliance Fresh,weekly groceries,2884.64,Groceries,0
+TXN00138,2024-01-27,Swiggy,dinner bill,694.51,Dining,0
+TXN01205,2024-01-27,Snapdeal,fashion purchase,12899.66,Shopping,0
+TXN01758,2024-01-28,Netmeds,lab test,11052.95,Health,0
+TXN00303,2024-01-28,Burger King,dine-in payment,1065.23,Dining,0
+TXN01700,2024-01-28,Max Hospital,medicine purchase,8112.29,Health,0
+TXN01029,2024-01-28,Jio,water bill,5176.47,Bills,0
+TXN01548,2024-01-28,Meru Cabs,flight booking,16952.79,Travel,0
+TXN01713,2024-01-28,Apollo Pharmacy,lab test,3166.03,Health,0
+TXN01375,2024-01-29,Ajio,home decor,22785.52,Shopping,0
+TXN00721,2024-01-29,DMart,fresh produce,2940.65,Groceries,0
+TXN01852,2024-01-29,Hotstar,gaming purchase,5000.0,Entertainment,0
+TXN01485,2024-01-29,SpiceJet,flight booking,16437.9,Travel,0
+TXN00410,2024-01-29,Blinkit,household items,3194.04,Groceries,0
+TXN00034,2024-01-29,Domino's Pizza,food order,517.47,Dining,0
+TXN00108,2024-01-30,Zomato,lunch payment,847.14,Dining,0
+TXN00893,2024-01-30,LIC Premium,broadband payment,6205.19,Bills,0
+TXN01490,2024-01-30,Ola,cab ride,24897.05,Travel,0
+TXN00508,2024-01-31,Nilgiris,fresh produce,1840.28,Groceries,0
+TXN01178,2024-01-31,Nykaa,electronics order,12162.06,Shopping,0
+TXN01172,2024-01-31,H&M,gadget buy,14155.93,Shopping,0
+TXN00100,2024-01-31,McDonald's,dinner bill,719.24,Dining,0
+TXN00933,2024-02-01,LIC Premium,utility payment,2269.39,Bills,0
+TXN00488,2024-02-01,Spencers,monthly grocery,1686.9,Groceries,0
+TXN00090,2024-02-01,Pizza Hut,takeaway order,970.04,Dining,0
+TXN00107,2024-02-01,Starbucks,takeaway order,1500.0,Dining,0
+TXN00867,2024-02-01,Amazon Prime,electricity bill payment,4540.62,Bills,0
+TXN00661,2024-02-02,Zepto,online grocery order,2066.89,Groceries,0
+TXN00641,2024-02-02,DMart,online grocery order,2273.22,Groceries,0
+TXN00221,2024-02-02,Pizza Hut,dinner bill,1500.0,Dining,0
+TXN01061,2024-02-02,Myntra,clothing,17224.57,Shopping,0
+TXN01190,2024-02-02,Croma,sports equipment,8587.6,Shopping,0
+TXN00036,2024-02-03,Domino's Pizza,takeaway order,484.78,Dining,0
+TXN01486,2024-02-03,RedBus,outstation trip,21818.36,Travel,0
+TXN00590,2024-02-03,Grofers,supermarket shopping,1846.1,Groceries,0
+TXN01935,2024-02-04,INOX,music subscription,5000.0,Entertainment,0
+TXN01112,2024-02-04,Nykaa,online shopping,13799.47,Shopping,0
+TXN00505,2024-02-04,DMart,supermarket shopping,2004.22,Groceries,0
+TXN01458,2024-02-04,IRCTC,intercity travel,17499.61,Travel,0
+TXN01220,2024-02-05,Westside,online shopping,25000.0,Shopping,0
+TXN00523,2024-02-05,Reliance Fresh,grocery purchase,1994.64,Groceries,0
+TXN00112,2024-02-05,Barbeque Nation,restaurant bill,781.67,Dining,0
+TXN00472,2024-02-05,Star Bazaar,vegetables and fruits,1035.35,Groceries,0
+TXN01215,2024-02-06,Ajio,clothing,11242.23,Shopping,0
+TXN00329,2024-02-06,Haldiram's,online food delivery,1014.02,Dining,0
+TXN00334,2024-02-06,Zomato,delivery charge,602.55,Dining,0
+TXN01997,2024-02-06,Google Pay,bank transfer,156157.11,Transfer,1
+TXN00547,2024-02-06,More Supermarket,grocery purchase,3275.07,Groceries,0
+TXN00491,2024-02-07,DMart,household items,2591.72,Groceries,0
+TXN00124,2024-02-07,Burger King,online food delivery,450.92,Dining,0
+TXN01414,2024-02-07,Rapido,flight booking,30000.0,Travel,0
+TXN01927,2024-02-07,Spotify,gaming purchase,5453.82,Entertainment,1
+TXN01087,2024-02-07,Lifestyle,accessories,19101.57,Shopping,0
+TXN01786,2024-02-07,Cult.fit,health checkup,4214.48,Health,0
+TXN00257,2024-02-08,Barbeque Nation,online food delivery,11578.19,Dining,1
+TXN01018,2024-02-08,Amazon Prime,insurance premium,3337.3,Bills,0
+TXN01309,2024-02-08,H&M,online shopping,19531.24,Shopping,0
+TXN00095,2024-02-08,KFC,breakfast order,675.32,Dining,0
+TXN00684,2024-02-08,Hypercity,monthly grocery,3162.18,Groceries,0
+TXN01643,2024-02-08,Dr. Lal PathLabs,fitness subscription,7313.27,Health,0
+TXN01338,2024-02-08,Amazon,apparel purchase,11208.47,Shopping,0
+TXN00144,2024-02-08,Box8,delivery charge,850.55,Dining,0
+TXN00399,2024-02-08,KFC,dine-in payment,754.62,Dining,0
+TXN01605,2024-02-08,OYO Rooms,train ticket,12386.64,Travel,0
+TXN01398,2024-02-09,Ajio,gadget buy,8576.38,Shopping,0
+TXN00559,2024-02-09,Star Bazaar,supermarket shopping,3044.36,Groceries,0
+TXN00882,2024-02-09,Water Tax Office,utility payment,3275.17,Bills,0
+TXN01023,2024-02-09,MSEDCL,internet bill,4010.74,Bills,0
+TXN00549,2024-02-09,Grofers,monthly grocery,3016.12,Groceries,0
+TXN00692,2024-02-09,Nilgiris,weekly groceries,4133.99,Groceries,0
+TXN01950,2024-02-10,Bank Transfer,money transfer,24736.22,Transfer,0
+TXN00675,2024-02-10,More Supermarket,weekly groceries,1480.69,Groceries,0
+TXN00948,2024-02-10,Water Tax Office,broadband payment,3070.85,Bills,0
+TXN01648,2024-02-10,PharmEasy,fitness subscription,11199.17,Health,0
+TXN01253,2024-02-10,Westside,home decor,5698.27,Shopping,0
+TXN00725,2024-02-10,Blinkit,vegetables and fruits,2783.91,Groceries,0
+TXN01003,2024-02-10,Tata Power,water bill,4147.76,Bills,0
+TXN00733,2024-02-11,BigBasket,dairy products,3061.22,Groceries,0
+TXN01431,2024-02-11,Air India,train ticket,16990.9,Travel,0
+TXN00111,2024-02-11,Faasos,delivery charge,3022.36,Dining,1
+TXN01552,2024-02-11,Air India,airport transfer,13849.46,Travel,0
+TXN00880,2024-02-11,LIC Premium,broadband payment,6514.78,Bills,0
+TXN01012,2024-02-12,Mahanagar Gas,water bill,4383.1,Bills,0
+TXN00237,2024-02-12,Haldiram's,dinner bill,351.42,Dining,0
+TXN00674,2024-02-12,Zepto,monthly grocery,2241.03,Groceries,0
+TXN01879,2024-02-12,Zee5,app subscription,1287.71,Entertainment,0
+TXN01250,2024-02-12,Zara,sports equipment,6788.97,Shopping,0
+TXN00313,2024-02-13,Domino's Pizza,restaurant bill,1099.05,Dining,0
+TXN01038,2024-02-13,Vodafone,utility payment,2254.59,Bills,0
+TXN01442,2024-02-13,GoIbibo,airport transfer,24025.24,Travel,0
+TXN01856,2024-02-13,Sony LIV,digital content,1930.91,Entertainment,0
+TXN00859,2024-02-14,Indane Gas,subscription renewal,3247.31,Bills,0
+TXN00703,2024-02-14,Hypercity,household items,1961.63,Groceries,0
+TXN01258,2024-02-14,Apple Store,clothing,14958.28,Shopping,0
+TXN01428,2024-02-14,RedBus,auto rickshaw,9664.24,Travel,0
+TXN00005,2024-02-14,Barbeque Nation,dinner bill,719.37,Dining,0
+TXN01167,2024-02-14,Lifestyle,apparel purchase,22007.13,Shopping,0
+TXN01216,2024-02-15,Decathlon,apparel purchase,20837.5,Shopping,0
+TXN00355,2024-02-15,Subway,dine-in payment,784.01,Dining,0
+TXN00554,2024-02-15,More Supermarket,supermarket shopping,2878.53,Groceries,0
+TXN01903,2024-02-15,Amazon Prime Video,gaming purchase,4036.96,Entertainment,0
+TXN01051,2024-02-15,Tata Power,DTH recharge,3153.43,Bills,0
+TXN00524,2024-02-16,Zepto,fresh produce,3266.6,Groceries,0
+TXN00436,2024-02-16,Blinkit,household items,2678.21,Groceries,0
+TXN00349,2024-02-16,KFC,takeaway order,592.68,Dining,0
+TXN01323,2024-02-16,Myntra,fashion purchase,12298.26,Shopping,0
+TXN01901,2024-02-16,Xbox Live,streaming service,3336.84,Entertainment,0
+TXN01434,2024-02-16,GoIbibo,outstation trip,11899.36,Travel,0
+TXN00756,2024-02-16,More Supermarket,fresh produce,5000.0,Groceries,0
+TXN01920,2024-02-16,Spotify,gaming purchase,2090.5,Entertainment,0
+TXN01045,2024-02-16,Airtel,insurance premium,3779.78,Bills,0
+TXN00506,2024-02-17,More Supermarket,supermarket shopping,2139.69,Groceries,0
+TXN00193,2024-02-17,Faasos,online food delivery,860.63,Dining,0
+TXN00599,2024-02-17,Hypercity,monthly grocery,2176.67,Groceries,0
+TXN01870,2024-02-17,BookMyShow,streaming service,2142.38,Entertainment,0
+TXN00286,2024-02-17,Cafe Coffee Day,online food delivery,361.84,Dining,0
+TXN01052,2024-02-17,HDFC Insurance,utility payment,4744.75,Bills,0
+TXN01612,2024-02-18,Meru Cabs,cab ride,8040.08,Travel,0
+TXN00860,2024-02-18,BSNL,internet bill,5216.83,Bills,0
+TXN00502,2024-02-18,Grofers,monthly grocery,5000.0,Groceries,0
+TXN00086,2024-02-19,Haldiram's,dinner bill,646.34,Dining,0
+TXN00016,2024-02-19,Subway,takeaway order,630.88,Dining,0
+TXN01749,2024-02-19,Netmeds,health insurance claim,8144.8,Health,0
+TXN00497,2024-02-20,Zepto,supermarket shopping,1717.06,Groceries,0
+TXN00096,2024-02-20,Zomato,breakfast order,439.93,Dining,0
+TXN01981,2024-02-20,Paytm,money transfer,17118.56,Transfer,0
+TXN00605,2024-02-21,Star Bazaar,fresh produce,3067.57,Groceries,0
+TXN00396,2024-02-21,Burger King,lunch payment,654.82,Dining,0
+TXN00834,2024-02-21,Amazon Prime,internet bill,2979.03,Bills,0
+TXN01897,2024-02-21,Sony LIV,app subscription,2276.69,Entertainment,0
+TXN00920,2024-02-21,HDFC Insurance,mobile recharge,4376.95,Bills,0
+TXN01409,2024-02-21,Meru Cabs,auto rickshaw,13205.63,Travel,0
+TXN00024,2024-02-21,Pizza Hut,dine-in payment,446.81,Dining,0
+TXN00395,2024-02-21,Faasos,lunch payment,1266.24,Dining,0
+TXN01790,2024-02-21,Cult.fit,health checkup,12906.46,Health,0
+TXN01333,2024-02-22,Croma,electronics order,11614.8,Shopping,0
+TXN00015,2024-02-22,Swiggy,dinner bill,396.26,Dining,0
+TXN00305,2024-02-22,Faasos,food order,783.42,Dining,0
+TXN01217,2024-02-22,Meesho,gadget buy,9662.58,Shopping,0
+TXN01652,2024-02-22,Lybrate,medical report,8600.89,Health,0
+TXN01707,2024-02-22,Apollo Hospital,health insurance claim,9880.64,Health,0
+TXN01047,2024-02-22,BSNL,electricity bill payment,5257.45,Bills,0
+TXN00677,2024-02-22,DMart,household items,1667.43,Groceries,0
+TXN00258,2024-02-22,Starbucks,dine-in payment,595.24,Dining,0
+TXN00202,2024-02-24,Chai Point,dinner bill,988.66,Dining,0
+TXN01465,2024-02-24,Yatra,train ticket,11911.52,Travel,0
+TXN00998,2024-02-24,Water Tax Office,electricity bill payment,5233.36,Bills,0
+TXN00133,2024-02-24,Starbucks,breakfast order,516.52,Dining,0
+TXN01098,2024-02-24,Amazon,apparel purchase,5688.1,Shopping,0
+TXN00091,2024-02-25,Domino's Pizza,online food delivery,821.28,Dining,0
+TXN00449,2024-02-25,Hypercity,vegetables and fruits,2116.93,Groceries,0
+TXN01093,2024-02-25,Croma,home decor,16923.6,Shopping,0
+TXN00828,2024-02-25,HDFC Insurance,utility payment,3285.68,Bills,0
+TXN00762,2024-02-25,Indane Gas,internet bill,4252.56,Bills,0
+TXN00477,2024-02-26,Hypercity,grocery purchase,3274.4,Groceries,0
+TXN00788,2024-02-26,Indane Gas,utility payment,4866.57,Bills,0
+TXN01603,2024-02-26,Meru Cabs,auto rickshaw,11603.77,Travel,0
+TXN01381,2024-02-26,Reliance Digital,sports equipment,16590.46,Shopping,0
+TXN00045,2024-02-26,McDonald's,delivery charge,437.3,Dining,0
+TXN01629,2024-02-27,BlaBlacar,intercity travel,15438.4,Travel,0
+TXN01237,2024-02-27,Ajio,accessories,24747.82,Shopping,0
+TXN00883,2024-02-27,Airtel,DTH recharge,3329.9,Bills,0
+TXN00052,2024-02-27,Cafe Coffee Day,dinner bill,677.22,Dining,0
+TXN01622,2024-02-27,Uber,cab ride,8452.01,Travel,0
+TXN01739,2024-02-28,Max Hospital,pharmacy,11041.61,Health,0
+TXN00442,2024-02-28,Spencers,supermarket shopping,2566.22,Groceries,0
+TXN00370,2024-02-28,KFC,restaurant bill,579.88,Dining,0
+TXN01662,2024-02-28,MedPlus,doctor consultation,7201.72,Health,0
+TXN01138,2024-02-29,Myntra,gadget buy,7741.64,Shopping,0
+TXN00171,2024-02-29,Pizza Hut,online food delivery,3145.49,Dining,1
+TXN00456,2024-02-29,DMart,vegetables and fruits,1893.38,Groceries,0
+TXN00454,2024-02-29,Reliance Fresh,grocery purchase,3180.79,Groceries,0
+TXN01106,2024-02-29,Reliance Digital,electronics order,8345.27,Shopping,0
+TXN01259,2024-02-29,Lifestyle,online shopping,9541.52,Shopping,0
+TXN01137,2024-03-01,Ajio,fashion purchase,20357.42,Shopping,0
+TXN01651,2024-03-01,PharmEasy,medicine purchase,9520.06,Health,0
+TXN00908,2024-03-01,BSNL,DTH recharge,29755.51,Bills,1
+TXN00958,2024-03-01,Netflix Bill,broadband payment,4861.85,Bills,0
+TXN01261,2024-03-02,Amazon,electronics order,15815.46,Shopping,0
+TXN01452,2024-03-02,Zostel,auto rickshaw,29683.8,Travel,0
+TXN01213,2024-03-02,Reliance Digital,clothing,9490.53,Shopping,0
+TXN01720,2024-03-02,Lybrate,medicine purchase,6343.01,Health,0
+TXN01670,2024-03-02,Practo,medical report,9395.6,Health,0
+TXN00748,2024-03-03,Blinkit,online grocery order,1921.98,Groceries,0
+TXN00468,2024-03-03,Spencers,supermarket shopping,3520.19,Groceries,0
+TXN00366,2024-03-03,Zomato,online food delivery,672.87,Dining,0
+TXN01334,2024-03-03,Amazon,online shopping,22964.46,Shopping,0
+TXN00708,2024-03-03,Nature's Basket,weekly groceries,5000.0,Groceries,0
+TXN01341,2024-03-03,Amazon,accessories,13489.17,Shopping,0
+TXN00701,2024-03-03,Reliance Fresh,supermarket shopping,2109.44,Groceries,0
+TXN01579,2024-03-04,Rapido,cab ride,71051.56,Travel,1
+TXN01586,2024-03-04,SpiceJet,hotel booking,19825.28,Travel,0
+TXN00669,2024-03-04,Grofers,monthly grocery,900.44,Groceries,0
+TXN00302,2024-03-05,Cafe Coffee Day,food order,631.41,Dining,0
+TXN00727,2024-03-05,Hypercity,dairy products,2619.24,Groceries,0
+TXN00493,2024-03-05,Blinkit,fresh produce,2681.72,Groceries,0
+TXN00471,2024-03-05,Nilgiris,vegetables and fruits,2329.12,Groceries,0
+TXN01340,2024-03-06,Flipkart,gadget buy,13542.38,Shopping,0
+TXN00234,2024-03-06,Barbeque Nation,breakfast order,608.74,Dining,0
+TXN01392,2024-03-06,Myntra,online shopping,9646.27,Shopping,0
+TXN00771,2024-03-06,Jio,water bill,5375.32,Bills,0
+TXN00067,2024-03-06,Haldiram's,lunch payment,767.57,Dining,0
+TXN01849,2024-03-06,YouTube Premium,streaming service,3721.12,Entertainment,0
+TXN01680,2024-03-06,MedPlus,medical report,6352.82,Health,0
+TXN00595,2024-03-07,Nilgiris,supermarket shopping,3937.43,Groceries,0
+TXN00720,2024-03-07,More Supermarket,fresh produce,2541.45,Groceries,0
+TXN01378,2024-03-07,Meesho,electronics order,19175.23,Shopping,0
+TXN01558,2024-03-07,Yatra,intercity travel,10896.52,Travel,0
+TXN01864,2024-03-08,Amazon Prime Video,OTT subscription,1254.61,Entertainment,0
+TXN00438,2024-03-08,Star Bazaar,household items,1497.01,Groceries,0
+TXN00121,2024-03-08,Haldiram's,dine-in payment,1084.04,Dining,0
+TXN01241,2024-03-08,Snapdeal,clothing,10869.99,Shopping,0
+TXN01210,2024-03-08,H&M,home decor,25000.0,Shopping,0
+TXN00364,2024-03-08,Box8,dine-in payment,927.71,Dining,0
+TXN01577,2024-03-08,Ola,cab ride,7874.76,Travel,0
+TXN00478,2024-03-08,BigBasket,household items,2944.71,Groceries,0
+TXN00132,2024-03-09,Cafe Coffee Day,restaurant bill,811.97,Dining,0
+TXN01308,2024-03-09,Zara,clothing,12603.94,Shopping,0
+TXN00657,2024-03-09,BigBasket,household items,2614.53,Groceries,0
+TXN01850,2024-03-09,Apple Music,app subscription,2995.52,Entertainment,0
+TXN01219,2024-03-09,Zara,electronics order,9056.82,Shopping,0
+TXN01814,2024-03-09,BookMyShow,app subscription,35598.48,Entertainment,1
+TXN01675,2024-03-09,PharmEasy,medicine purchase,14406.76,Health,0
+TXN00907,2024-03-09,Amazon Prime,society maintenance,2350.84,Bills,0
+TXN01799,2024-03-09,Max Hospital,pharmacy,11610.97,Health,0
+TXN00378,2024-03-10,Faasos,restaurant bill,850.11,Dining,0
+TXN00238,2024-03-10,Faasos,lunch payment,851.17,Dining,0
+TXN01177,2024-03-10,Croma,clothing,6426.79,Shopping,0
+TXN01772,2024-03-10,Thyrocare,medical report,14873.3,Health,0
+TXN01316,2024-03-10,Croma,apparel purchase,7485.16,Shopping,0
+TXN01549,2024-03-11,Ola,airport transfer,20412.5,Travel,0
+TXN01895,2024-03-11,Xbox Live,movie ticket,2437.31,Entertainment,0
+TXN01686,2024-03-11,Lybrate,health insurance claim,12141.38,Health,0
+TXN00541,2024-03-11,Blinkit,dairy products,3632.02,Groceries,0
+TXN01059,2024-03-12,MSEDCL,insurance premium,5033.71,Bills,0
+TXN00926,2024-03-12,LIC Premium,insurance premium,2202.17,Bills,0
+TXN01838,2024-03-12,BookMyShow,streaming service,2637.06,Entertainment,0
+TXN00003,2024-03-12,Starbucks,restaurant bill,1023.63,Dining,0
+TXN00780,2024-03-12,Tata Power,utility payment,5191.31,Bills,0
+TXN01226,2024-03-12,Croma,apparel purchase,12009.87,Shopping,0
+TXN00093,2024-03-12,Pizza Hut,delivery charge,596.58,Dining,0
+TXN01084,2024-03-12,Zara,fashion purchase,25000.0,Shopping,0
+TXN01229,2024-03-12,Ajio,fashion purchase,18600.88,Shopping,0
+TXN00443,2024-03-13,Nature's Basket,monthly grocery,1137.16,Groceries,0
+TXN01776,2024-03-13,MedPlus,medicine purchase,4452.82,Health,0
+TXN01781,2024-03-13,Netmeds,gym membership,4301.74,Health,0
+TXN00644,2024-03-14,Blinkit,monthly grocery,1425.12,Groceries,0
+TXN00522,2024-03-14,Nilgiris,monthly grocery,3231.21,Groceries,0
+TXN01551,2024-03-14,Rapido,flight booking,14434.97,Travel,0
+TXN01022,2024-03-14,Vodafone,water bill,3219.53,Bills,0
+TXN00039,2024-03-14,Cafe Coffee Day,delivery charge,464.41,Dining,0
+TXN01975,2024-03-15,Paytm,credit card payment,25061.75,Transfer,0
+TXN00631,2024-03-15,Reliance Fresh,grocery purchase,1321.18,Groceries,0
+TXN00970,2024-03-15,Airtel,insurance premium,19353.85,Bills,1
+TXN00821,2024-03-15,MSEDCL,mobile recharge,3293.01,Bills,0
+TXN01703,2024-03-15,Practo,medicine purchase,9732.16,Health,0
+TXN01326,2024-03-16,Flipkart,home decor,5740.07,Shopping,0
+TXN00624,2024-03-16,More Supermarket,supermarket shopping,4453.45,Groceries,0
+TXN01380,2024-03-16,H&M,electronics order,25000.0,Shopping,0
+TXN00384,2024-03-17,KFC,breakfast order,640.17,Dining,0
+TXN00636,2024-03-17,Star Bazaar,fresh produce,1341.21,Groceries,0
+TXN01464,2024-03-17,Uber,train ticket,10692.12,Travel,0
+TXN01638,2024-03-17,Meru Cabs,outstation trip,17799.23,Travel,0
+TXN01604,2024-03-17,IRCTC,outstation trip,10913.92,Travel,0
+TXN01841,2024-03-17,Hotstar,streaming service,2398.46,Entertainment,0
+TXN00312,2024-03-18,McDonald's,dine-in payment,1226.04,Dining,0
+TXN01103,2024-03-18,Meesho,online shopping,25000.0,Shopping,0
+TXN00219,2024-03-18,Domino's Pizza,dinner bill,650.6,Dining,0
+TXN01043,2024-03-19,Netflix Bill,water bill,6235.07,Bills,0
+TXN00722,2024-03-19,Blinkit,weekly groceries,1311.86,Groceries,0
+TXN01726,2024-03-19,Healthians,medicine purchase,11657.39,Health,0
+TXN00608,2024-03-19,Reliance Fresh,weekly groceries,1580.36,Groceries,0
+TXN01886,2024-03-20,INOX,gaming purchase,2824.43,Entertainment,0
+TXN00604,2024-03-20,DMart,dairy products,4471.69,Groceries,0
+TXN01949,2024-03-20,Google Pay,UPI payment,39616.52,Transfer,0
+TXN01317,2024-03-20,Flipkart,electronics order,8261.55,Shopping,0
+TXN00134,2024-03-20,Cafe Coffee Day,dine-in payment,954.77,Dining,0
+TXN01254,2024-03-20,Westside,gadget buy,14691.66,Shopping,0
+TXN00105,2024-03-20,Domino's Pizza,dine-in payment,740.64,Dining,0
+TXN01273,2024-03-21,Nykaa,apparel purchase,8172.15,Shopping,0
+TXN01420,2024-03-21,MakeMyTrip,train ticket,18409.19,Travel,0
+TXN00322,2024-03-21,Domino's Pizza,delivery charge,1002.34,Dining,0
+TXN00128,2024-03-21,KFC,breakfast order,629.87,Dining,0
+TXN00053,2024-03-21,KFC,food order,602.61,Dining,0
+TXN01916,2024-03-21,Amazon Prime Video,gaming purchase,2032.31,Entertainment,0
+TXN00110,2024-03-21,Zomato,breakfast order,766.82,Dining,0
+TXN00420,2024-03-21,DMart,online grocery order,2671.18,Groceries,0
+TXN01386,2024-03-21,Decathlon,clothing,14258.8,Shopping,0
+TXN01771,2024-03-21,Fortis Hospital,doctor consultation,7682.83,Health,0
+TXN00012,2024-03-22,Starbucks,dinner bill,655.72,Dining,0
+TXN00752,2024-03-22,Grofers,household items,1514.12,Groceries,0
+TXN01732,2024-03-22,Lybrate,health insurance claim,6565.45,Health,0
+TXN01363,2024-03-22,Flipkart,home decor,13269.78,Shopping,0
+TXN01623,2024-03-22,IRCTC,intercity travel,21702.06,Travel,0
+TXN01819,2024-03-22,Hotstar,streaming service,2320.51,Entertainment,0
+TXN01900,2024-03-23,INOX,OTT subscription,2243.53,Entertainment,0
+TXN00618,2024-03-23,Nature's Basket,weekly groceries,3475.78,Groceries,0
+TXN00723,2024-03-23,Grofers,vegetables and fruits,1516.25,Groceries,0
+TXN01502,2024-03-24,Meru Cabs,bus ticket,12052.13,Travel,0
+TXN00026,2024-03-24,Subway,takeaway order,825.84,Dining,0
+TXN01411,2024-03-24,Air India,train ticket,25559.09,Travel,0
+TXN00031,2024-03-24,KFC,dinner bill,621.01,Dining,0
+TXN00253,2024-03-24,Cafe Coffee Day,restaurant bill,1500.0,Dining,0
+TXN01170,2024-03-25,H&M,electronics order,17796.88,Shopping,0
+TXN01667,2024-03-25,PharmEasy,gym membership,5062.33,Health,0
+TXN00233,2024-03-25,Faasos,lunch payment,804.53,Dining,0
+TXN00440,2024-03-25,Blinkit,online grocery order,2542.87,Groceries,0
+TXN01575,2024-03-25,BlaBlacar,intercity travel,18106.8,Travel,0
+TXN01095,2024-03-26,Zara,online shopping,16957.55,Shopping,0
+TXN01406,2024-03-26,BlaBlacar,intercity travel,11100.58,Travel,0
+TXN00680,2024-03-26,Zepto,online grocery order,4323.79,Groceries,0
+TXN01265,2024-03-26,Meesho,electronics order,13536.66,Shopping,0
+TXN01569,2024-03-26,IRCTC,cab ride,8042.16,Travel,0
+TXN00098,2024-03-26,Pizza Hut,lunch payment,876.95,Dining,0
+TXN01556,2024-03-27,Yatra,flight booking,17403.33,Travel,0
+TXN01157,2024-03-27,Croma,accessories,9606.09,Shopping,0
+TXN01174,2024-03-27,Meesho,fashion purchase,12337.21,Shopping,0
+TXN01858,2024-03-28,Sony LIV,concert booking,2284.67,Entertainment,0
+TXN00731,2024-03-28,Hypercity,household items,24611.87,Groceries,1
+TXN00414,2024-03-28,Reliance Fresh,supermarket shopping,4334.4,Groceries,0
+TXN01345,2024-03-29,Meesho,home decor,18494.6,Shopping,0
+TXN01453,2024-03-29,Uber,bus ticket,16543.89,Travel,0
+TXN01803,2024-03-30,Apple Music,movie ticket,1901.95,Entertainment,0
+TXN01388,2024-03-30,Decathlon,sports equipment,23623.97,Shopping,0
+TXN01609,2024-03-30,Meru Cabs,cab ride,17097.76,Travel,0
+TXN01908,2024-03-30,Apple Music,digital content,9268.29,Entertainment,1
+TXN00842,2024-03-30,Indane Gas,internet bill,5304.97,Bills,0
+TXN00934,2024-03-30,Amazon Prime,subscription renewal,1680.67,Bills,0
+TXN00544,2024-03-30,Reliance Fresh,monthly grocery,4628.07,Groceries,0
+TXN01990,2024-03-30,IMPS Payment,rent payment,30011.94,Transfer,0
+TXN00268,2024-03-31,Starbucks,breakfast order,445.85,Dining,0
+TXN01497,2024-03-31,Meru Cabs,auto rickshaw,30000.0,Travel,0
+TXN01368,2024-03-31,Ajio,gadget buy,8708.94,Shopping,0
+TXN00565,2024-03-31,Hypercity,online grocery order,4203.83,Groceries,0
+TXN00154,2024-03-31,Box8,dinner bill,866.91,Dining,0
+TXN01718,2024-03-31,Max Hospital,health checkup,61043.14,Health,1
+TXN01286,2024-04-01,Ajio,sports equipment,7427.31,Shopping,0
+TXN01279,2024-04-01,Apple Store,online shopping,13660.07,Shopping,0
+TXN01359,2024-04-02,Amazon,gadget buy,37814.72,Shopping,1
+TXN01535,2024-04-02,RedBus,train ticket,12469.69,Travel,0
+TXN01625,2024-04-02,Yatra,intercity travel,30000.0,Travel,0
+TXN01853,2024-04-02,Spotify,concert booking,1566.41,Entertainment,0
+TXN01079,2024-04-02,Zara,sports equipment,205865.65,Shopping,1
+TXN01618,2024-04-03,IRCTC,intercity travel,11122.82,Travel,0
+TXN00239,2024-04-03,Zomato,dine-in payment,606.27,Dining,0
+TXN00308,2024-04-04,Zomato,dine-in payment,623.53,Dining,0
+TXN01968,2024-04-04,Bank Transfer,family transfer,23767.45,Transfer,0
+TXN01048,2024-04-05,Indane Gas,broadband payment,2155.8,Bills,0
+TXN01142,2024-04-05,Lifestyle,sports equipment,21931.85,Shopping,0
+TXN01719,2024-04-05,Netmeds,health insurance claim,10027.47,Health,0
+TXN01965,2024-04-05,Self Transfer,self transfer,31534.05,Transfer,0
+TXN01346,2024-04-05,Nykaa,fashion purchase,6984.53,Shopping,0
+TXN01127,2024-04-05,Meesho,gadget buy,14277.88,Shopping,0
+TXN00647,2024-04-05,Hypercity,supermarket shopping,884.05,Groceries,0
+TXN00696,2024-04-05,Spencers,fresh produce,2297.2,Groceries,0
+TXN00953,2024-04-06,Vodafone,utility payment,2454.94,Bills,0
+TXN00388,2024-04-06,Starbucks,online food delivery,1500.0,Dining,0
+TXN00360,2024-04-06,Burger King,takeaway order,567.44,Dining,0
+TXN01234,2024-04-06,Decathlon,clothing,25000.0,Shopping,0
+TXN00916,2024-04-06,Water Tax Office,electricity bill payment,4528.2,Bills,0
+TXN01522,2024-04-06,Uber,outstation trip,18964.23,Travel,0
+TXN01482,2024-04-06,Air India,bus ticket,12943.35,Travel,0
+TXN00950,2024-04-07,Airtel,insurance premium,4464.03,Bills,0
+TXN00377,2024-04-07,Box8,breakfast order,8353.77,Dining,1
+TXN00753,2024-04-07,Reliance Fresh,online grocery order,1759.73,Groceries,0
+TXN00281,2024-04-07,Swiggy,online food delivery,826.7,Dining,0
+TXN00092,2024-04-07,Burger King,lunch payment,1163.85,Dining,0
+TXN01454,2024-04-08,Uber,cab ride,30000.0,Travel,0
+TXN00856,2024-04-08,BSNL,utility payment,3223.34,Bills,0
+TXN00851,2024-04-08,Vodafone,electricity bill payment,3156.49,Bills,0
+TXN01489,2024-04-08,BlaBlacar,bus ticket,8161.7,Travel,0
+TXN00603,2024-04-08,Nature's Basket,weekly groceries,3681.62,Groceries,0
+TXN01000,2024-04-08,HDFC Insurance,DTH recharge,5092.4,Bills,0
+TXN01717,2024-04-09,Cult.fit,fitness subscription,8622.2,Health,0
+TXN01149,2024-04-09,Reliance Digital,clothing,23937.81,Shopping,0
+TXN00299,2024-04-09,Cafe Coffee Day,online food delivery,1093.54,Dining,0
+TXN01783,2024-04-09,MedPlus,gym membership,4135.71,Health,0
+TXN00615,2024-04-09,Grofers,online grocery order,5000.0,Groceries,0
+TXN01791,2024-04-09,Healthians,fitness subscription,3566.12,Health,0
+TXN01128,2024-04-10,Lifestyle,apparel purchase,9355.34,Shopping,0
+TXN01295,2024-04-10,Decathlon,sports equipment,13070.91,Shopping,0
+TXN01339,2024-04-11,Apple Store,accessories,10830.72,Shopping,0
+TXN00195,2024-04-11,McDonald's,food order,846.67,Dining,0
+TXN00774,2024-04-11,HDFC Insurance,DTH recharge,5975.92,Bills,0
+TXN00009,2024-04-11,Starbucks,breakfast order,654.74,Dining,0
+TXN01562,2024-04-12,OYO Rooms,airport transfer,11143.22,Travel,0
+TXN01701,2024-04-12,Cult.fit,gym membership,8686.76,Health,0
+TXN01946,2024-04-12,NEFT Transfer,wallet top-up,21779.78,Transfer,0
+TXN01429,2024-04-12,IRCTC,cab ride,137148.34,Travel,1
+TXN01948,2024-04-13,NEFT Transfer,rent payment,24956.17,Transfer,0
+TXN01597,2024-04-13,Rapido,intercity travel,19247.42,Travel,0
+TXN01456,2024-04-13,Meru Cabs,flight booking,7429.14,Travel,0
+TXN01714,2024-04-13,Apollo Hospital,fitness subscription,10596.42,Health,0
+TXN01865,2024-04-13,Spotify,app subscription,4254.5,Entertainment,0
+TXN00947,2024-04-14,Tata Power,subscription renewal,2200.11,Bills,0
+TXN00363,2024-04-14,Cafe Coffee Day,breakfast order,6562.73,Dining,1
+TXN01890,2024-04-14,INOX,app subscription,2510.45,Entertainment,0
+TXN00540,2024-04-14,Blinkit,vegetables and fruits,2064.22,Groceries,0
+TXN00119,2024-04-14,Haldiram's,takeaway order,1247.83,Dining,0
+TXN01705,2024-04-14,Dr. Lal PathLabs,health insurance claim,8894.87,Health,0
+TXN00136,2024-04-14,Haldiram's,dine-in payment,1468.51,Dining,0
+TXN01171,2024-04-15,Reliance Digital,home decor,17136.81,Shopping,0
+TXN01430,2024-04-15,Uber,hotel booking,13450.15,Travel,0
+TXN01233,2024-04-15,Westside,sports equipment,12211.09,Shopping,0
+TXN00888,2024-04-15,Netflix Bill,utility payment,3507.84,Bills,0
+TXN01588,2024-04-15,OYO Rooms,cab ride,12973.44,Travel,0
+TXN01125,2024-04-15,Nykaa,apparel purchase,24313.45,Shopping,0
+TXN01753,2024-04-15,Fortis Hospital,medical report,5811.96,Health,0
+TXN00804,2024-04-16,LIC Premium,society maintenance,3366.27,Bills,0
+TXN00320,2024-04-16,Haldiram's,online food delivery,749.93,Dining,0
+TXN01690,2024-04-17,Apollo Hospital,lab test,6807.23,Health,0
+TXN01751,2024-04-17,Max Hospital,doctor consultation,2560.63,Health,0
+TXN00027,2024-04-17,Haldiram's,dine-in payment,498.52,Dining,0
+TXN01969,2024-04-17,UPI Payment,rent payment,23356.21,Transfer,0
+TXN01402,2024-04-17,Ola,train ticket,18622.61,Travel,0
+TXN00513,2024-04-18,Reliance Fresh,online grocery order,2363.0,Groceries,0
+TXN00957,2024-04-18,Water Tax Office,gas bill,44028.27,Bills,1
+TXN00070,2024-04-18,Box8,breakfast order,610.32,Dining,0
+TXN00037,2024-04-18,Haldiram's,lunch payment,858.84,Dining,0
+TXN01780,2024-04-18,Lybrate,health insurance claim,5723.49,Health,0
+TXN00278,2024-04-18,Subway,dine-in payment,621.38,Dining,0
+TXN01192,2024-04-18,Lifestyle,fashion purchase,7419.02,Shopping,0
+TXN00825,2024-04-19,BESCOM,DTH recharge,3388.94,Bills,0
+TXN00602,2024-04-19,Grofers,online grocery order,1797.95,Groceries,0
+TXN00699,2024-04-19,Nilgiris,dairy products,3762.65,Groceries,0
+TXN01209,2024-04-19,Lifestyle,apparel purchase,7218.27,Shopping,0
+TXN00082,2024-04-19,Burger King,delivery charge,911.31,Dining,0
+TXN01982,2024-04-20,IMPS Payment,credit card payment,14541.1,Transfer,0
+TXN01325,2024-04-20,Reliance Digital,gadget buy,12980.48,Shopping,0
+TXN01671,2024-04-20,PharmEasy,doctor consultation,6861.83,Health,0
+TXN00525,2024-04-20,More Supermarket,monthly grocery,1915.94,Groceries,0
+TXN00499,2024-04-20,More Supermarket,online grocery order,1831.74,Groceries,0
+TXN00014,2024-04-20,Chai Point,takeaway order,367.5,Dining,0
+TXN00296,2024-04-20,Starbucks,lunch payment,598.76,Dining,0
+TXN00106,2024-04-21,Zomato,breakfast order,928.58,Dining,0
+TXN00463,2024-04-21,Spencers,online grocery order,1965.25,Groceries,0
+TXN00007,2024-04-21,Domino's Pizza,breakfast order,1485.81,Dining,0
+TXN00878,2024-04-21,Vodafone,gas bill,4429.26,Bills,0
+TXN01225,2024-04-21,Flipkart,apparel purchase,11746.35,Shopping,0
+TXN01513,2024-04-21,Air India,hotel booking,11279.5,Travel,0
+TXN00043,2024-04-22,McDonald's,breakfast order,754.29,Dining,0
+TXN01821,2024-04-22,PlayStation Store,digital content,2395.85,Entertainment,0
+TXN01366,2024-04-22,H&M,clothing,11872.74,Shopping,0
+TXN00033,2024-04-22,Haldiram's,takeaway order,785.75,Dining,0
+TXN00431,2024-04-22,Hypercity,vegetables and fruits,1619.65,Groceries,0
+TXN00203,2024-04-22,McDonald's,breakfast order,1218.35,Dining,0
+TXN01797,2024-04-23,Thyrocare,medical report,38497.24,Health,1
+TXN01335,2024-04-23,Myntra,home decor,13425.07,Shopping,0
+TXN01904,2024-04-23,PVR Cinemas,movie ticket,2927.35,Entertainment,0
+TXN01503,2024-04-23,GoIbibo,bus ticket,10831.25,Travel,0
+TXN00558,2024-04-23,Grofers,weekly groceries,18749.28,Groceries,1
+TXN00873,2024-04-23,BESCOM,internet bill,2332.61,Bills,0
+TXN01782,2024-04-23,Apollo Hospital,lab test,7303.15,Health,0
+TXN00625,2024-04-23,Spencers,household items,4917.43,Groceries,0
+TXN01659,2024-04-24,Practo,fitness subscription,5047.69,Health,0
+TXN01708,2024-04-24,Thyrocare,health insurance claim,15000.0,Health,0
+TXN01390,2024-04-24,Zara,electronics order,9358.55,Shopping,0
+TXN01281,2024-04-24,Meesho,home decor,13344.09,Shopping,0
+TXN00910,2024-04-24,Society Maintenance,mobile recharge,8000.0,Bills,0
+TXN01509,2024-04-24,RedBus,hotel booking,15565.83,Travel,0
+TXN01646,2024-04-24,Fortis Hospital,medical report,8960.9,Health,0
+TXN00514,2024-04-24,DMart,household items,1808.48,Groceries,0
+TXN01834,2024-04-24,Spotify,concert booking,2832.3,Entertainment,0
+TXN00831,2024-04-25,Amazon Prime,gas bill,2365.38,Bills,0
+TXN01156,2024-04-25,Westside,fashion purchase,163714.43,Shopping,1
+TXN00332,2024-04-25,Haldiram's,delivery charge,551.77,Dining,0
+TXN01715,2024-04-25,Max Hospital,pharmacy,6094.68,Health,0
+TXN01439,2024-04-25,Meru Cabs,hotel booking,18285.45,Travel,0
+TXN01566,2024-04-25,OYO Rooms,airport transfer,13425.88,Travel,0
+TXN00075,2024-04-25,Swiggy,takeaway order,277.03,Dining,0
+TXN01923,2024-04-25,YouTube Premium,music subscription,11608.46,Entertainment,1
+TXN01478,2024-04-26,Uber,hotel booking,17770.3,Travel,0
+TXN00406,2024-04-26,Zepto,supermarket shopping,3335.6,Groceries,0
+TXN00500,2024-04-26,More Supermarket,household items,1495.4,Groceries,0
+TXN00161,2024-04-26,Domino's Pizza,food order,534.94,Dining,0
+TXN01275,2024-04-26,Decathlon,sports equipment,20550.73,Shopping,0
+TXN00914,2024-04-27,BESCOM,broadband payment,7611.79,Bills,0
+TXN01839,2024-04-27,Amazon Prime Video,app subscription,2491.66,Entertainment,0
+TXN00077,2024-04-27,Barbeque Nation,online food delivery,817.99,Dining,0
+TXN01016,2024-04-27,BESCOM,utility payment,4383.65,Bills,0
+TXN00079,2024-04-27,Swiggy,food order,819.54,Dining,0
+TXN01896,2024-04-27,BookMyShow,streaming service,2177.63,Entertainment,0
+TXN01863,2024-04-27,INOX,concert booking,3468.2,Entertainment,0
+TXN00293,2024-04-28,Swiggy,online food delivery,624.09,Dining,0
+TXN00986,2024-04-28,Jio,internet bill,2548.16,Bills,0
+TXN01119,2024-04-28,Croma,clothing,13709.61,Shopping,0
+TXN01030,2024-04-28,Society Maintenance,electricity bill payment,2690.16,Bills,0
+TXN01822,2024-04-28,Amazon Prime Video,gaming purchase,2603.83,Entertainment,0
+TXN00417,2024-04-28,Spencers,dairy products,4835.44,Groceries,0
+TXN01315,2024-04-29,Flipkart,home decor,12702.49,Shopping,0
+TXN00927,2024-04-29,Society Maintenance,utility payment,3238.62,Bills,0
+TXN00562,2024-04-30,DMart,weekly groceries,5000.0,Groceries,0
+TXN00863,2024-04-30,Mahanagar Gas,insurance premium,7521.15,Bills,0
+TXN00464,2024-04-30,Grofers,supermarket shopping,2832.34,Groceries,0
+TXN00688,2024-04-30,Hypercity,household items,2238.0,Groceries,0
+TXN00628,2024-04-30,More Supermarket,supermarket shopping,2472.42,Groceries,0
+TXN00405,2024-04-30,Hypercity,dairy products,2171.65,Groceries,0
+TXN01311,2024-05-01,Nykaa,fashion purchase,70268.5,Shopping,1
+TXN00479,2024-05-01,Nilgiris,household items,5000.0,Groceries,0
+TXN00425,2024-05-01,More Supermarket,household items,3365.79,Groceries,0
+TXN00930,2024-05-01,MSEDCL,internet bill,3944.87,Bills,0
+TXN01966,2024-05-01,IMPS Payment,credit card payment,26171.17,Transfer,0
+TXN00081,2024-05-01,Cafe Coffee Day,lunch payment,723.55,Dining,0
+TXN00638,2024-05-01,Blinkit,supermarket shopping,2677.38,Groceries,0
+TXN00153,2024-05-01,Faasos,delivery charge,601.86,Dining,0
+TXN01168,2024-05-01,Ajio,gadget buy,15850.81,Shopping,0
+TXN00709,2024-05-01,Spencers,grocery purchase,1130.59,Groceries,0
+TXN00961,2024-05-02,LIC Premium,society maintenance,5237.3,Bills,0
+TXN00249,2024-05-02,McDonald's,lunch payment,1500.0,Dining,0
+TXN01236,2024-05-02,Lifestyle,clothing,24368.81,Shopping,0
+TXN01257,2024-05-02,Amazon,home decor,24697.11,Shopping,0
+TXN00614,2024-05-02,Blinkit,online grocery order,1657.51,Groceries,0
+TXN01915,2024-05-02,Apple Music,OTT subscription,12129.27,Entertainment,1
+TXN00120,2024-05-02,Cafe Coffee Day,dinner bill,1067.21,Dining,0
+TXN00063,2024-05-02,Zomato,online food delivery,507.5,Dining,0
+TXN00829,2024-05-02,BESCOM,mobile recharge,3423.43,Bills,0
+TXN00919,2024-05-03,BESCOM,electricity bill payment,3387.67,Bills,0
+TXN00646,2024-05-03,Nilgiris,monthly grocery,2331.29,Groceries,0
+TXN00655,2024-05-03,Zepto,supermarket shopping,5000.0,Groceries,0
+TXN01085,2024-05-03,Nykaa,electronics order,14738.03,Shopping,0
+TXN01523,2024-05-03,BlaBlacar,cab ride,13723.67,Travel,0
+TXN00283,2024-05-03,Starbucks,lunch payment,1489.86,Dining,0
+TXN00274,2024-05-04,Chai Point,lunch payment,793.24,Dining,0
+TXN00796,2024-05-04,Airtel,utility payment,6171.72,Bills,0
+TXN00084,2024-05-04,Chai Point,lunch payment,642.09,Dining,0
+TXN01116,2024-05-04,Westside,electronics order,14638.3,Shopping,0
+TXN00555,2024-05-04,More Supermarket,monthly grocery,2975.92,Groceries,0
+TXN00959,2024-05-04,Netflix Bill,utility payment,5086.67,Bills,0
+TXN00923,2024-05-05,Netflix Bill,mobile recharge,27480.35,Bills,1
+TXN01277,2024-05-05,Amazon,accessories,25000.0,Shopping,0
+TXN01296,2024-05-05,Myntra,online shopping,12159.39,Shopping,0
+TXN00127,2024-05-05,Subway,dine-in payment,531.56,Dining,0
+TXN00272,2024-05-05,Faasos,restaurant bill,444.83,Dining,0
+TXN00412,2024-05-05,Star Bazaar,monthly grocery,1658.07,Groceries,0
+TXN00749,2024-05-06,Reliance Fresh,supermarket shopping,2035.83,Groceries,0
+TXN00213,2024-05-06,Faasos,dine-in payment,6423.74,Dining,1
+TXN01181,2024-05-06,Croma,clothing,13593.81,Shopping,0
+TXN00812,2024-05-06,MSEDCL,DTH recharge,3396.77,Bills,0
+TXN00584,2024-05-06,Zepto,online grocery order,5000.0,Groceries,0
+TXN00040,2024-05-06,Starbucks,breakfast order,854.72,Dining,0
+TXN01354,2024-05-07,Zara,sports equipment,17138.36,Shopping,0
+TXN01940,2024-05-07,Zee5,movie ticket,2625.93,Entertainment,0
+TXN00205,2024-05-07,Box8,restaurant bill,455.3,Dining,0
+TXN00695,2024-05-07,DMart,grocery purchase,3296.14,Groceries,0
+TXN01332,2024-05-07,Flipkart,accessories,20597.34,Shopping,0
+TXN01180,2024-05-07,Myntra,gadget buy,8135.37,Shopping,0
+TXN01203,2024-05-08,Flipkart,gadget buy,101180.26,Shopping,1
+TXN01787,2024-05-08,MedPlus,doctor consultation,6671.63,Health,0
+TXN00619,2024-05-08,BigBasket,online grocery order,3151.62,Groceries,0
+TXN01001,2024-05-09,Society Maintenance,society maintenance,7088.4,Bills,0
+TXN00653,2024-05-09,Zepto,grocery purchase,2334.87,Groceries,0
+TXN00243,2024-05-09,Faasos,restaurant bill,966.84,Dining,0
+TXN00666,2024-05-09,BigBasket,vegetables and fruits,2713.08,Groceries,0
+TXN00172,2024-05-10,Zomato,dinner bill,570.04,Dining,0
+TXN01986,2024-05-11,RTGS Transfer,money transfer,306143.11,Transfer,1
+TXN01606,2024-05-11,GoIbibo,bus ticket,10261.35,Travel,0
+TXN01929,2024-05-11,Spotify,gaming purchase,3922.09,Entertainment,0
+TXN00563,2024-05-11,Nature's Basket,weekly groceries,3683.86,Groceries,0
+TXN01099,2024-05-12,Ajio,sports equipment,18250.42,Shopping,0
+TXN01760,2024-05-12,Lybrate,medical report,12775.3,Health,0
+TXN01527,2024-05-12,BlaBlacar,intercity travel,30000.0,Travel,0
+TXN01631,2024-05-13,GoIbibo,airport transfer,18239.85,Travel,0
+TXN00167,2024-05-13,McDonald's,dine-in payment,1097.57,Dining,0
+TXN01925,2024-05-13,Hotstar,concert booking,5000.0,Entertainment,0
+TXN01329,2024-05-13,Reliance Digital,electronics order,7797.31,Shopping,0
+TXN01887,2024-05-13,Xbox Live,app subscription,1826.5,Entertainment,0
+TXN00054,2024-05-14,Burger King,delivery charge,7728.58,Dining,1
+TXN01829,2024-05-14,YouTube Premium,app subscription,2427.36,Entertainment,0
+TXN01596,2024-05-14,Meru Cabs,outstation trip,10032.43,Travel,0
+TXN01269,2024-05-14,Decathlon,apparel purchase,9425.75,Shopping,0
+TXN00698,2024-05-14,Blinkit,online grocery order,1576.28,Groceries,0
+TXN01129,2024-05-14,Zara,accessories,12329.59,Shopping,0
+TXN01468,2024-05-15,IndiGo Airlines,auto rickshaw,17594.46,Travel,0
+TXN01722,2024-05-15,Netmeds,gym membership,6805.48,Health,0
+TXN00791,2024-05-15,Amazon Prime,utility payment,4809.36,Bills,0
+TXN00763,2024-05-15,Netflix Bill,society maintenance,8000.0,Bills,0
+TXN01322,2024-05-15,Reliance Digital,apparel purchase,15635.35,Shopping,0
+TXN00330,2024-05-15,Chai Point,online food delivery,1015.74,Dining,0
+TXN00321,2024-05-15,Haldiram's,restaurant bill,821.25,Dining,0
+TXN01947,2024-05-15,NEFT Transfer,wallet top-up,29360.97,Transfer,0
+TXN01861,2024-05-15,Hotstar,event ticket,2392.93,Entertainment,0
+TXN00157,2024-05-16,McDonald's,restaurant bill,1500.0,Dining,0
+TXN01002,2024-05-16,Vodafone,water bill,5862.47,Bills,0
+TXN00381,2024-05-16,Faasos,food order,564.62,Dining,0
+TXN00333,2024-05-16,Faasos,delivery charge,814.32,Dining,0
+TXN00051,2024-05-16,Chai Point,takeaway order,899.34,Dining,0
+TXN01480,2024-05-17,OYO Rooms,intercity travel,12613.05,Travel,0
+TXN01060,2024-05-17,Mahanagar Gas,internet bill,3491.99,Bills,0
+TXN01266,2024-05-17,Decathlon,apparel purchase,52199.82,Shopping,1
+TXN01041,2024-05-17,BSNL,water bill,7942.98,Bills,0
+TXN00292,2024-05-18,Cafe Coffee Day,dine-in payment,648.61,Dining,0
+TXN01973,2024-05-18,NEFT Transfer,loan repayment,32824.87,Transfer,0
+TXN00032,2024-05-18,Box8,breakfast order,1500.0,Dining,0
+TXN01283,2024-05-18,Reliance Digital,apparel purchase,16791.97,Shopping,0
+TXN00826,2024-05-18,Water Tax Office,DTH recharge,7243.25,Bills,0
+TXN00338,2024-05-19,Burger King,breakfast order,694.7,Dining,0
+TXN01268,2024-05-19,Westside,apparel purchase,8811.82,Shopping,0
+TXN00217,2024-05-19,Subway,takeaway order,579.93,Dining,0
+TXN00623,2024-05-19,Spencers,fresh produce,5000.0,Groceries,0
+TXN00531,2024-05-19,Spencers,monthly grocery,3356.67,Groceries,0
+TXN01202,2024-05-20,Flipkart,gadget buy,10653.57,Shopping,0
+TXN00428,2024-05-20,BigBasket,grocery purchase,3421.0,Groceries,0
+TXN00571,2024-05-20,Nilgiris,grocery purchase,2619.23,Groceries,0
+TXN01684,2024-05-20,Lybrate,pharmacy,8595.95,Health,0
+TXN00215,2024-05-20,KFC,restaurant bill,696.4,Dining,0
+TXN00683,2024-05-20,Hypercity,grocery purchase,2107.92,Groceries,0
+TXN00002,2024-05-20,Domino's Pizza,online food delivery,747.49,Dining,0
+TXN01521,2024-05-21,RedBus,hotel booking,24486.67,Travel,0
+TXN01798,2024-05-21,Practo,pharmacy,5491.15,Health,0
+TXN00139,2024-05-21,Zomato,food order,1093.83,Dining,0
+TXN01062,2024-05-21,Snapdeal,fashion purchase,4048.07,Shopping,0
+TXN00475,2024-05-21,Reliance Fresh,weekly groceries,5000.0,Groceries,0
+TXN00379,2024-05-21,Chai Point,dinner bill,1500.0,Dining,0
+TXN00297,2024-05-21,Starbucks,breakfast order,1132.15,Dining,0
+TXN01520,2024-05-21,GoIbibo,airport transfer,30000.0,Travel,0
+TXN00273,2024-05-22,Box8,lunch payment,1258.03,Dining,0
+TXN01252,2024-05-22,Flipkart,fashion purchase,17655.88,Shopping,0
+TXN00347,2024-05-22,McDonald's,dinner bill,442.66,Dining,0
+TXN00094,2024-05-22,KFC,online food delivery,692.96,Dining,0
+TXN00164,2024-05-22,Subway,breakfast order,4878.4,Dining,1
+TXN01645,2024-05-22,Apollo Pharmacy,health insurance claim,4936.17,Health,0
+TXN00516,2024-05-22,Nilgiris,vegetables and fruits,27226.94,Groceries,1
+TXN01361,2024-05-23,Amazon,accessories,12572.77,Shopping,0
+TXN01804,2024-05-23,Xbox Live,streaming service,1378.17,Entertainment,0
+TXN01352,2024-05-23,Snapdeal,electronics order,6152.54,Shopping,0
+TXN01955,2024-05-23,UPI Payment,wallet top-up,19896.85,Transfer,0
+TXN00462,2024-05-23,BigBasket,household items,2636.93,Groceries,0
+TXN00382,2024-05-24,Starbucks,dine-in payment,621.59,Dining,0
+TXN01594,2024-05-24,IRCTC,train ticket,21569.7,Travel,0
+TXN00962,2024-05-24,Indane Gas,broadband payment,6892.11,Bills,0
+TXN01744,2024-05-24,Apollo Pharmacy,health insurance claim,12016.72,Health,0
+TXN00622,2024-05-25,DMart,weekly groceries,3139.61,Groceries,0
+TXN00592,2024-05-25,Blinkit,weekly groceries,2147.81,Groceries,0
+TXN01702,2024-05-26,Max Hospital,lab test,9181.79,Health,0
+TXN00761,2024-05-26,LIC Premium,mobile recharge,3217.04,Bills,0
+TXN01907,2024-05-26,Steam,OTT subscription,1347.01,Entertainment,0
+TXN00575,2024-05-26,DMart,supermarket shopping,3622.9,Groceries,0
+TXN00430,2024-05-26,Nature's Basket,household items,1286.62,Groceries,0
+TXN01911,2024-05-26,Sony LIV,OTT subscription,5000.0,Entertainment,0
+TXN00667,2024-05-26,Grofers,grocery purchase,16346.34,Groceries,1
+TXN01697,2024-05-26,Practo,medical report,5060.25,Health,0
+TXN00632,2024-05-26,Spencers,weekly groceries,4793.84,Groceries,0
+TXN01466,2024-05-26,Meru Cabs,outstation trip,19013.45,Travel,0
+TXN00814,2024-05-27,Netflix Bill,gas bill,26738.72,Bills,1
+TXN00818,2024-05-27,Jio,utility payment,5780.96,Bills,0
+TXN00327,2024-05-27,Starbucks,dine-in payment,1255.49,Dining,0
+TXN00822,2024-05-27,Netflix Bill,electricity bill payment,7116.78,Bills,0
+TXN01145,2024-05-27,Myntra,electronics order,11803.88,Shopping,0
+TXN00838,2024-05-27,Tata Power,insurance premium,2716.58,Bills,0
+TXN00353,2024-05-27,Haldiram's,dinner bill,1113.31,Dining,0
+TXN00023,2024-05-28,Swiggy,online food delivery,811.63,Dining,0
+TXN01175,2024-05-28,H&M,fashion purchase,9356.5,Shopping,0
+TXN01610,2024-05-28,Rapido,airport transfer,13582.39,Travel,0
+TXN00551,2024-05-28,DMart,monthly grocery,2691.63,Groceries,0
+TXN00737,2024-05-28,Hypercity,dairy products,2880.38,Groceries,0
+TXN01767,2024-05-28,Dr. Lal PathLabs,lab test,15000.0,Health,0
+TXN01082,2024-05-29,Reliance Digital,apparel purchase,11000.65,Shopping,0
+TXN00326,2024-05-29,Zomato,online food delivery,486.07,Dining,0
+TXN01155,2024-05-29,Amazon,fashion purchase,24397.08,Shopping,0
+TXN00020,2024-05-30,Faasos,takeaway order,449.04,Dining,0
+TXN01685,2024-05-30,PharmEasy,gym membership,4711.15,Health,0
+TXN00973,2024-05-31,BSNL,gas bill,5668.78,Bills,0
+TXN00872,2024-05-31,Tata Power,utility payment,2942.91,Bills,0
+TXN01598,2024-05-31,Uber,cab ride,30000.0,Travel,0
+TXN01235,2024-05-31,Zara,online shopping,9172.29,Shopping,0
+TXN00441,2024-05-31,Zepto,household items,3031.74,Groceries,0
+TXN01039,2024-05-31,Vodafone,gas bill,4430.43,Bills,0
+TXN00855,2024-05-31,HDFC Insurance,subscription renewal,7148.61,Bills,0
+TXN01747,2024-05-31,Max Hospital,doctor consultation,11152.09,Health,0
+TXN01570,2024-06-01,RedBus,auto rickshaw,12159.3,Travel,0
+TXN00739,2024-06-01,Spencers,supermarket shopping,5000.0,Groceries,0
+TXN01165,2024-06-01,Reliance Digital,online shopping,19042.73,Shopping,0
+TXN00813,2024-06-01,BESCOM,insurance premium,7224.72,Bills,0
+TXN01774,2024-06-01,Max Hospital,pharmacy,8161.19,Health,0
+TXN01518,2024-06-01,GoIbibo,train ticket,19337.38,Travel,0
+TXN01424,2024-06-01,Ola,train ticket,10740.61,Travel,0
+TXN00131,2024-06-02,Box8,restaurant bill,3221.73,Dining,1
+TXN01687,2024-06-02,Practo,health insurance claim,6269.53,Health,0
+TXN00706,2024-06-02,Reliance Fresh,weekly groceries,3313.2,Groceries,0
+TXN01979,2024-06-02,IMPS Payment,loan repayment,18535.26,Transfer,0
+TXN01533,2024-06-02,Meru Cabs,flight booking,17098.36,Travel,0
+TXN00942,2024-06-02,Society Maintenance,internet bill,5741.38,Bills,0
+TXN00178,2024-06-02,Burger King,dine-in payment,1412.97,Dining,0
+TXN01218,2024-06-02,Myntra,clothing,14143.5,Shopping,0
+TXN01071,2024-06-02,Meesho,home decor,12414.8,Shopping,0
+TXN01589,2024-06-03,IndiGo Airlines,train ticket,10790.64,Travel,0
+TXN00487,2024-06-03,Spencers,grocery purchase,2007.48,Groceries,0
+TXN01385,2024-06-03,Meesho,electronics order,17021.81,Shopping,0
+TXN00956,2024-06-04,Water Tax Office,mobile recharge,6332.12,Bills,0
+TXN01067,2024-06-04,Amazon,clothing,66258.65,Shopping,1
+TXN01476,2024-06-04,RedBus,hotel booking,19472.98,Travel,0
+TXN00186,2024-06-04,Cafe Coffee Day,online food delivery,1051.14,Dining,0
+TXN00288,2024-06-05,Haldiram's,takeaway order,999.6,Dining,0
+TXN01779,2024-06-05,1mg,pharmacy,6358.72,Health,0
+TXN00318,2024-06-05,Barbeque Nation,food order,697.8,Dining,0
+TXN00755,2024-06-06,Spencers,grocery purchase,1778.47,Groceries,0
+TXN00335,2024-06-06,Barbeque Nation,dine-in payment,1166.87,Dining,0
+TXN00789,2024-06-06,Vodafone,subscription renewal,3937.91,Bills,0
+TXN01432,2024-06-06,Zostel,intercity travel,20822.01,Travel,0
+TXN01300,2024-06-06,Flipkart,home decor,14387.16,Shopping,0
+TXN00964,2024-06-06,MSEDCL,society maintenance,5378.01,Bills,0
+TXN00148,2024-06-06,Subway,food order,465.84,Dining,0
+TXN01256,2024-06-07,Decathlon,clothing,7797.48,Shopping,0
+TXN00713,2024-06-07,More Supermarket,online grocery order,2090.79,Groceries,0
+TXN00434,2024-06-07,Spencers,grocery purchase,3464.36,Groceries,0
+TXN00596,2024-06-07,Star Bazaar,monthly grocery,2120.19,Groceries,0
+TXN01260,2024-06-07,Zara,electronics order,12370.93,Shopping,0
+TXN00573,2024-06-07,Spencers,online grocery order,2963.24,Groceries,0
+TXN00557,2024-06-07,Zepto,household items,2139.28,Groceries,0
+TXN01567,2024-06-08,Uber,train ticket,82448.34,Travel,1
+TXN01289,2024-06-08,Meesho,apparel purchase,8136.1,Shopping,0
+TXN01943,2024-06-09,RTGS Transfer,wallet top-up,175350.26,Transfer,1
+TXN00694,2024-06-09,Hypercity,dairy products,3326.38,Groceries,0
+TXN01688,2024-06-09,Thyrocare,health insurance claim,8182.61,Health,0
+TXN00503,2024-06-09,Hypercity,dairy products,1485.99,Groceries,0
+TXN00664,2024-06-10,Blinkit,fresh produce,2092.04,Groceries,0
+TXN01795,2024-06-10,Lybrate,gym membership,8222.1,Health,0
+TXN01146,2024-06-10,Reliance Digital,accessories,12729.08,Shopping,0
+TXN00118,2024-06-10,Box8,dine-in payment,495.0,Dining,0
+TXN01937,2024-06-10,INOX,event ticket,2794.73,Entertainment,0
+TXN00294,2024-06-10,Swiggy,breakfast order,1109.73,Dining,0
+TXN00035,2024-06-10,Pizza Hut,dine-in payment,1097.79,Dining,0
+TXN01312,2024-06-10,Apple Store,clothing,17544.91,Shopping,0
+TXN00403,2024-06-11,Hypercity,online grocery order,2605.46,Groceries,0
+TXN01044,2024-06-11,Tata Power,electricity bill payment,3988.09,Bills,0
+TXN00816,2024-06-11,Mahanagar Gas,society maintenance,2235.56,Bills,0
+TXN00716,2024-06-11,Hypercity,supermarket shopping,4042.37,Groceries,0
+TXN01999,2024-06-11,IMPS Payment,self transfer,23655.59,Transfer,0
+TXN01314,2024-06-11,Lifestyle,fashion purchase,15812.19,Shopping,0
+TXN00630,2024-06-12,DMart,household items,4027.67,Groceries,0
+TXN00781,2024-06-12,BSNL,water bill,4348.35,Bills,0
+TXN01399,2024-06-12,Myntra,apparel purchase,20446.73,Shopping,0
+TXN01413,2024-06-12,RedBus,train ticket,18030.6,Travel,0
+TXN00938,2024-06-12,Netflix Bill,water bill,5376.62,Bills,0
+TXN00747,2024-06-12,Nature's Basket,online grocery order,2801.68,Groceries,0
+TXN00744,2024-06-12,Zepto,household items,15181.97,Groceries,1
+TXN00967,2024-06-12,Water Tax Office,gas bill,3089.97,Bills,0
+TXN00928,2024-06-12,HDFC Insurance,utility payment,4709.59,Bills,0
+TXN01644,2024-06-13,1mg,pharmacy,9047.57,Health,0
+TXN00579,2024-06-13,Nilgiris,online grocery order,1439.18,Groceries,0
+TXN01748,2024-06-13,Fortis Hospital,health checkup,9225.63,Health,0
+TXN01358,2024-06-13,Snapdeal,fashion purchase,14796.32,Shopping,0
+TXN01379,2024-06-14,Amazon,online shopping,9928.52,Shopping,0
+TXN01193,2024-06-14,Reliance Digital,fashion purchase,9945.4,Shopping,0
+TXN00356,2024-06-14,Swiggy,dinner bill,529.02,Dining,0
+TXN00341,2024-06-14,Barbeque Nation,dine-in payment,568.58,Dining,0
+TXN01460,2024-06-15,Meru Cabs,hotel booking,19667.9,Travel,0
+TXN01053,2024-06-15,Society Maintenance,water bill,4934.88,Bills,0
+TXN01991,2024-06-15,Self Transfer,credit card payment,34778.17,Transfer,0
+TXN01076,2024-06-15,Snapdeal,fashion purchase,10382.84,Shopping,0
+TXN00277,2024-06-15,McDonald's,lunch payment,5923.27,Dining,1
+TXN00886,2024-06-16,Society Maintenance,DTH recharge,8000.0,Bills,0
+TXN00542,2024-06-16,DMart,grocery purchase,1654.71,Groceries,0
+TXN00451,2024-06-16,Nilgiris,vegetables and fruits,2535.62,Groceries,0
+TXN00163,2024-06-17,Cafe Coffee Day,restaurant bill,1255.73,Dining,0
+TXN00864,2024-06-17,MSEDCL,utility payment,8000.0,Bills,0
+TXN01069,2024-06-17,Lifestyle,gadget buy,10491.62,Shopping,0
+TXN01615,2024-06-17,Rapido,auto rickshaw,13978.54,Travel,0
+TXN00474,2024-06-17,Reliance Fresh,grocery purchase,4491.83,Groceries,0
+TXN00974,2024-06-17,BESCOM,water bill,3119.48,Bills,0
+TXN00352,2024-06-17,Pizza Hut,lunch payment,1425.35,Dining,0
+TXN00852,2024-06-18,BSNL,broadband payment,3243.09,Bills,0
+TXN01660,2024-06-18,Fortis Hospital,fitness subscription,11911.44,Health,0
+TXN00833,2024-06-18,Netflix Bill,broadband payment,2710.3,Bills,0
+TXN01421,2024-06-18,Ola,bus ticket,18634.86,Travel,0
+TXN01844,2024-06-18,Steam,movie ticket,2620.54,Entertainment,0
+TXN01601,2024-06-18,Ola,cab ride,13965.04,Travel,0
+TXN00222,2024-06-18,Burger King,lunch payment,374.33,Dining,0
+TXN01097,2024-06-18,Croma,clothing,13054.22,Shopping,0
+TXN01026,2024-06-18,Indane Gas,internet bill,4822.28,Bills,0
+TXN00291,2024-06-18,Subway,lunch payment,726.9,Dining,0
+TXN00080,2024-06-18,Swiggy,breakfast order,356.74,Dining,0
+TXN00166,2024-06-18,Zomato,restaurant bill,931.83,Dining,0
+TXN00140,2024-06-19,Chai Point,delivery charge,482.84,Dining,0
+TXN00593,2024-06-19,DMart,weekly groceries,3149.06,Groceries,0
+TXN01068,2024-06-19,Reliance Digital,clothing,20125.51,Shopping,0
+TXN01984,2024-06-20,IMPS Payment,rent payment,35651.23,Transfer,0
+TXN01299,2024-06-20,Amazon,clothing,14078.01,Shopping,0
+TXN00847,2024-06-20,MSEDCL,broadband payment,4546.62,Bills,0
+TXN00276,2024-06-21,Zomato,lunch payment,950.39,Dining,0
+TXN01194,2024-06-21,Westside,electronics order,14376.14,Shopping,0
+TXN01572,2024-06-21,IndiGo Airlines,flight booking,9097.5,Travel,0
+TXN01672,2024-06-22,MedPlus,medical report,6519.63,Health,0
+TXN01417,2024-06-22,Yatra,auto rickshaw,15371.59,Travel,0
+TXN01932,2024-06-22,PlayStation Store,digital content,3079.97,Entertainment,0
+TXN00400,2024-06-22,Barbeque Nation,dinner bill,1296.16,Dining,0
+TXN00279,2024-06-23,Cafe Coffee Day,dine-in payment,812.37,Dining,0
+TXN00013,2024-06-23,Cafe Coffee Day,delivery charge,870.28,Dining,0
+TXN01658,2024-06-23,Healthians,medicine purchase,12789.01,Health,0
+TXN01928,2024-06-23,Amazon Prime Video,app subscription,2252.05,Entertainment,0
+TXN00380,2024-06-23,Box8,breakfast order,571.76,Dining,0
+TXN01031,2024-06-23,HDFC Insurance,utility payment,3653.79,Bills,0
+TXN01998,2024-06-24,NEFT Transfer,rent payment,17744.51,Transfer,0
+TXN01530,2024-06-24,OYO Rooms,bus ticket,9601.01,Travel,0
+TXN01196,2024-06-24,Apple Store,online shopping,15087.21,Shopping,0
+TXN01573,2024-06-24,BlaBlacar,auto rickshaw,16897.04,Travel,0
+TXN01114,2024-06-24,Zara,apparel purchase,15424.08,Shopping,0
+TXN00808,2024-06-24,LIC Premium,society maintenance,3344.17,Bills,0
+TXN01467,2024-06-25,BlaBlacar,intercity travel,29302.63,Travel,0
+TXN00169,2024-06-25,Starbucks,takeaway order,716.14,Dining,0
+TXN00421,2024-06-25,Nilgiris,dairy products,5000.0,Groceries,0
+TXN01499,2024-06-25,Uber,hotel booking,22631.45,Travel,0
+TXN00290,2024-06-25,Pizza Hut,breakfast order,615.82,Dining,0
+TXN00718,2024-06-25,Reliance Fresh,fresh produce,2761.11,Groceries,0
+TXN01357,2024-06-25,Apple Store,sports equipment,10167.12,Shopping,0
+TXN00915,2024-06-26,BSNL,insurance premium,3898.53,Bills,0
+TXN01922,2024-06-26,Xbox Live,gaming purchase,3405.55,Entertainment,0
+TXN00823,2024-06-26,Water Tax Office,broadband payment,8000.0,Bills,0
+TXN01959,2024-06-26,UPI Payment,bank transfer,38522.75,Transfer,0
+TXN00724,2024-06-26,Star Bazaar,dairy products,3500.19,Groceries,0
+TXN00261,2024-06-26,Burger King,dinner bill,545.26,Dining,0
+TXN00126,2024-06-27,Box8,restaurant bill,1500.0,Dining,0
+TXN01107,2024-06-27,Nykaa,gadget buy,16163.68,Shopping,0
+TXN01734,2024-06-27,1mg,doctor consultation,6687.74,Health,0
+TXN01512,2024-06-27,Air India,hotel booking,13905.04,Travel,0
+TXN00561,2024-06-27,Grofers,weekly groceries,2919.53,Groceries,0
+TXN00681,2024-06-28,Spencers,grocery purchase,3470.09,Groceries,0
+TXN00521,2024-06-28,BigBasket,weekly groceries,1333.42,Groceries,0
+TXN01408,2024-06-28,SpiceJet,intercity travel,27391.94,Travel,0
+TXN00594,2024-06-28,Blinkit,monthly grocery,2971.23,Groceries,0
+TXN01403,2024-06-28,RedBus,train ticket,24143.06,Travel,0
+TXN01228,2024-06-28,Snapdeal,gadget buy,11927.62,Shopping,0
+TXN00682,2024-06-29,Nilgiris,monthly grocery,1655.15,Groceries,0
+TXN01133,2024-06-29,Reliance Digital,accessories,24122.42,Shopping,0
+TXN00980,2024-06-29,BSNL,internet bill,5489.75,Bills,0
+TXN00572,2024-06-29,Star Bazaar,supermarket shopping,5000.0,Groceries,0
+TXN00512,2024-06-29,DMart,fresh produce,2548.27,Groceries,0
+TXN01835,2024-06-29,Xbox Live,event ticket,1976.38,Entertainment,0
+TXN01367,2024-06-30,Apple Store,electronics order,12512.59,Shopping,0
+TXN00087,2024-06-30,Pizza Hut,dinner bill,1139.33,Dining,0
+TXN01540,2024-06-30,Ola,hotel booking,4762.68,Travel,0
+TXN01789,2024-07-01,Netmeds,doctor consultation,8578.14,Health,0
+TXN01327,2024-07-01,Snapdeal,sports equipment,8687.83,Shopping,0
+TXN00654,2024-07-01,DMart,household items,1670.13,Groceries,0
+TXN01035,2024-07-01,LIC Premium,water bill,3338.24,Bills,0
+TXN01320,2024-07-02,Croma,home decor,11738.44,Shopping,0
+TXN01801,2024-07-02,PlayStation Store,gaming purchase,5000.0,Entertainment,0
+TXN00149,2024-07-02,Domino's Pizza,online food delivery,973.41,Dining,0
+TXN01766,2024-07-02,Fortis Hospital,health checkup,5388.4,Health,0
+TXN01626,2024-07-02,Yatra,cab ride,23143.98,Travel,0
+TXN01729,2024-07-02,MedPlus,pharmacy,8744.83,Health,0
+TXN01574,2024-07-02,Zostel,bus ticket,8732.77,Travel,0
+TXN00710,2024-07-03,Star Bazaar,household items,5000.0,Groceries,0
+TXN01427,2024-07-03,MakeMyTrip,intercity travel,30000.0,Travel,0
+TXN01064,2024-07-03,Nykaa,home decor,6307.7,Shopping,0
+TXN01985,2024-07-03,Self Transfer,loan repayment,36968.87,Transfer,0
+TXN01825,2024-07-03,INOX,digital content,2701.22,Entertainment,0
+TXN01271,2024-07-03,Amazon,accessories,19573.59,Shopping,0
+TXN01736,2024-07-03,Cult.fit,doctor consultation,3955.17,Health,0
+TXN00300,2024-07-03,McDonald's,dine-in payment,1016.26,Dining,0
+TXN01240,2024-07-03,Apple Store,gadget buy,24264.54,Shopping,0
+TXN00601,2024-07-04,Blinkit,weekly groceries,3519.46,Groceries,0
+TXN01964,2024-07-04,CRED Payment,self transfer,32684.87,Transfer,0
+TXN01842,2024-07-04,YouTube Premium,movie ticket,1189.46,Entertainment,0
+TXN00689,2024-07-04,More Supermarket,grocery purchase,3455.25,Groceries,0
+TXN00707,2024-07-04,Star Bazaar,vegetables and fruits,1557.9,Groceries,0
+TXN00266,2024-07-04,Haldiram's,lunch payment,479.58,Dining,0
+TXN00062,2024-07-04,Box8,dine-in payment,733.46,Dining,0
+TXN01970,2024-07-05,UPI Payment,self transfer,39739.04,Transfer,0
+TXN01382,2024-07-05,Flipkart,gadget buy,10407.15,Shopping,0
+TXN00175,2024-07-05,Pizza Hut,restaurant bill,882.46,Dining,0
+TXN00611,2024-07-05,Hypercity,vegetables and fruits,3377.91,Groceries,0
+TXN01278,2024-07-05,Snapdeal,electronics order,14805.29,Shopping,0
+TXN01816,2024-07-05,Spotify,OTT subscription,1767.85,Entertainment,0
+TXN00685,2024-07-05,Star Bazaar,weekly groceries,1594.66,Groceries,0
+TXN01812,2024-07-06,INOX,music subscription,2677.7,Entertainment,0
+TXN01242,2024-07-06,Westside,electronics order,11660.71,Shopping,0
+TXN00252,2024-07-07,McDonald's,restaurant bill,1140.45,Dining,0
+TXN00673,2024-07-07,Star Bazaar,dairy products,2266.95,Groceries,0
+TXN01291,2024-07-07,Ajio,fashion purchase,14777.25,Shopping,0
+TXN00447,2024-07-07,Hypercity,dairy products,3010.63,Groceries,0
+TXN01294,2024-07-07,H&M,accessories,17690.96,Shopping,0
+TXN00787,2024-07-07,Tata Power,subscription renewal,5653.56,Bills,0
+TXN01493,2024-07-07,Meru Cabs,auto rickshaw,11989.32,Travel,0
+TXN01892,2024-07-08,Spotify,app subscription,2531.49,Entertainment,0
+TXN00527,2024-07-08,Blinkit,household items,1355.94,Groceries,0
+TXN00968,2024-07-08,Tata Power,water bill,8000.0,Bills,0
+TXN00691,2024-07-08,Grofers,online grocery order,2250.44,Groceries,0
+TXN01823,2024-07-08,Sony LIV,OTT subscription,2307.81,Entertainment,0
+TXN00949,2024-07-08,Jio,DTH recharge,3976.82,Bills,0
+TXN00507,2024-07-09,Reliance Fresh,fresh produce,11539.86,Groceries,1
+TXN01475,2024-07-09,MakeMyTrip,airport transfer,10976.49,Travel,0
+TXN01542,2024-07-09,RedBus,hotel booking,30000.0,Travel,0
+TXN00620,2024-07-09,Star Bazaar,supermarket shopping,2843.58,Groceries,0
+TXN01496,2024-07-09,Air India,auto rickshaw,30000.0,Travel,0
+TXN01617,2024-07-09,Meru Cabs,airport transfer,16932.19,Travel,0
+TXN00587,2024-07-09,Blinkit,monthly grocery,2163.59,Groceries,0
+TXN01952,2024-07-09,CRED Payment,rent payment,41829.2,Transfer,0
+TXN00629,2024-07-10,Nature's Basket,grocery purchase,2658.6,Groceries,0
+TXN00504,2024-07-10,Reliance Fresh,online grocery order,3256.65,Groceries,0
+TXN00058,2024-07-10,Chai Point,delivery charge,698.09,Dining,0
+TXN00411,2024-07-10,More Supermarket,weekly groceries,3456.16,Groceries,0
+TXN00772,2024-07-10,Vodafone,society maintenance,3234.03,Bills,0
+TXN01745,2024-07-10,Fortis Hospital,health insurance claim,5210.14,Health,0
+TXN00940,2024-07-11,BSNL,DTH recharge,3231.95,Bills,0
+TXN01415,2024-07-11,Uber,train ticket,11615.13,Travel,0
+TXN01580,2024-07-11,BlaBlacar,hotel booking,10865.74,Travel,0
+TXN00806,2024-07-11,Tata Power,internet bill,3578.87,Bills,0
+TXN00905,2024-07-11,Jio,subscription renewal,4371.72,Bills,0
+TXN00019,2024-07-12,Swiggy,breakfast order,549.4,Dining,0
+TXN01391,2024-07-12,Nykaa,fashion purchase,15205.33,Shopping,0
+TXN00387,2024-07-12,KFC,takeaway order,905.72,Dining,0
+TXN00951,2024-07-12,Amazon Prime,utility payment,3677.46,Bills,0
+TXN01009,2024-07-13,Indane Gas,DTH recharge,6162.84,Bills,0
+TXN00240,2024-07-13,Subway,online food delivery,1110.99,Dining,0
+TXN00242,2024-07-13,Cafe Coffee Day,dinner bill,754.56,Dining,0
+TXN00795,2024-07-13,BSNL,subscription renewal,2628.19,Bills,0
+TXN01876,2024-07-14,PVR Cinemas,movie ticket,4412.82,Entertainment,0
+TXN01436,2024-07-14,Rapido,flight booking,120882.27,Travel,1
+TXN01344,2024-07-14,Zara,clothing,20367.0,Shopping,0
+TXN00158,2024-07-14,Faasos,food order,954.86,Dining,0
+TXN01742,2024-07-14,Dr. Lal PathLabs,health checkup,7056.99,Health,0
+TXN01711,2024-07-14,Lybrate,medical report,11756.19,Health,0
+TXN00424,2024-07-15,Spencers,supermarket shopping,3834.89,Groceries,0
+TXN00577,2024-07-15,Spencers,fresh produce,2856.96,Groceries,0
+TXN01568,2024-07-15,SpiceJet,hotel booking,18468.95,Travel,0
+TXN01620,2024-07-16,OYO Rooms,auto rickshaw,23785.92,Travel,0
+TXN00392,2024-07-16,Haldiram's,delivery charge,961.79,Dining,0
+TXN00671,2024-07-16,Grofers,weekly groceries,4279.97,Groceries,0
+TXN00047,2024-07-16,Pizza Hut,lunch payment,657.06,Dining,0
+TXN00768,2024-07-16,LIC Premium,broadband payment,8000.0,Bills,0
+TXN01743,2024-07-16,Cult.fit,health insurance claim,7764.55,Health,0
+TXN01140,2024-07-17,Snapdeal,electronics order,16745.45,Shopping,0
+TXN00697,2024-07-17,Star Bazaar,supermarket shopping,2962.3,Groceries,0
+TXN01435,2024-07-17,Uber,airport transfer,14053.43,Travel,0
+TXN01055,2024-07-17,Vodafone,electricity bill payment,3249.8,Bills,0
+TXN00946,2024-07-17,BESCOM,insurance premium,2639.75,Bills,0
+TXN01763,2024-07-18,Max Hospital,health checkup,44590.15,Health,1
+TXN01124,2024-07-18,Amazon,home decor,50926.18,Shopping,1
+TXN01025,2024-07-18,Amazon Prime,DTH recharge,8000.0,Bills,0
+TXN00651,2024-07-18,Spencers,grocery purchase,5000.0,Groceries,0
+TXN01709,2024-07-18,1mg,health insurance claim,7159.89,Health,0
+TXN00227,2024-07-18,Faasos,dinner bill,810.58,Dining,0
+TXN00232,2024-07-18,Subway,dinner bill,861.45,Dining,0
+TXN01255,2024-07-19,H&M,apparel purchase,20670.86,Shopping,0
+TXN00909,2024-07-20,LIC Premium,internet bill,5243.09,Bills,0
+TXN01077,2024-07-20,Meesho,apparel purchase,6787.1,Shopping,0
+TXN01122,2024-07-21,Amazon,home decor,20337.56,Shopping,0
+TXN00445,2024-07-21,BigBasket,dairy products,1542.99,Groceries,0
+TXN00038,2024-07-21,Box8,lunch payment,360.74,Dining,0
+TXN00627,2024-07-21,Star Bazaar,household items,1750.09,Groceries,0
+TXN01449,2024-07-21,BlaBlacar,cab ride,24656.21,Travel,0
+TXN01343,2024-07-21,Lifestyle,online shopping,15065.88,Shopping,0
+TXN00820,2024-07-21,Society Maintenance,society maintenance,6202.23,Bills,0
+TXN01073,2024-07-22,Meesho,fashion purchase,101069.41,Shopping,1
+TXN00467,2024-07-22,Blinkit,vegetables and fruits,3324.03,Groceries,0
+TXN01247,2024-07-22,Westside,fashion purchase,12823.64,Shopping,0
+TXN01191,2024-07-22,Ajio,clothing,13194.6,Shopping,0
+TXN00665,2024-07-22,Star Bazaar,online grocery order,1954.97,Groceries,0
+TXN00256,2024-07-22,Starbucks,online food delivery,650.89,Dining,0
+TXN00072,2024-07-23,Haldiram's,takeaway order,7539.63,Dining,1
+TXN00670,2024-07-23,Zepto,online grocery order,4023.35,Groceries,0
+TXN00165,2024-07-23,Haldiram's,breakfast order,1161.4,Dining,0
+TXN00745,2024-07-23,Reliance Fresh,household items,3198.16,Groceries,0
+TXN01619,2024-07-23,Air India,hotel booking,12669.18,Travel,0
+TXN01917,2024-07-23,PVR Cinemas,concert booking,1842.51,Entertainment,0
+TXN01941,2024-07-23,RTGS Transfer,UPI payment,28561.12,Transfer,0
+TXN00200,2024-07-23,Domino's Pizza,delivery charge,500.12,Dining,0
+TXN01336,2024-07-24,Meesho,apparel purchase,11054.34,Shopping,0
+TXN01898,2024-07-24,PlayStation Store,event ticket,4786.02,Entertainment,0
+TXN00310,2024-07-24,KFC,restaurant bill,728.62,Dining,0
+TXN00924,2024-07-24,Mahanagar Gas,gas bill,3060.78,Bills,0
+TXN01906,2024-07-24,YouTube Premium,app subscription,3020.21,Entertainment,0
+TXN00765,2024-07-24,Airtel,utility payment,6413.64,Bills,0
+TXN00775,2024-07-24,LIC Premium,mobile recharge,5193.67,Bills,0
+TXN01647,2024-07-25,Practo,doctor consultation,7005.46,Health,0
+TXN00764,2024-07-25,Tata Power,mobile recharge,3897.33,Bills,0
+TXN01471,2024-07-25,Uber,intercity travel,24248.82,Travel,0
+TXN01487,2024-07-25,Uber,outstation trip,8519.6,Travel,0
+TXN00114,2024-07-25,Swiggy,online food delivery,1500.0,Dining,0
+TXN00180,2024-07-25,Starbucks,dine-in payment,1500.0,Dining,0
+TXN01185,2024-07-25,Westside,fashion purchase,8514.8,Shopping,0
+TXN00185,2024-07-26,Burger King,food order,722.45,Dining,0
+TXN01528,2024-07-26,IndiGo Airlines,cab ride,27855.01,Travel,0
+TXN00869,2024-07-26,Amazon Prime,DTH recharge,5270.55,Bills,0
+TXN01918,2024-07-26,YouTube Premium,music subscription,1969.74,Entertainment,0
+TXN00287,2024-07-26,Starbucks,online food delivery,743.46,Dining,0
+TXN00282,2024-07-27,KFC,breakfast order,1029.56,Dining,0
+TXN01050,2024-07-27,Jio,mobile recharge,7033.99,Bills,0
+TXN01483,2024-07-27,OYO Rooms,auto rickshaw,29979.12,Travel,0
+TXN01319,2024-07-27,Flipkart,sports equipment,9913.05,Shopping,0
+TXN00085,2024-07-27,Domino's Pizza,restaurant bill,571.71,Dining,0
+TXN00836,2024-07-27,Amazon Prime,broadband payment,4447.77,Bills,0
+TXN00369,2024-07-27,Swiggy,online food delivery,821.48,Dining,0
+TXN01550,2024-07-28,Yatra,auto rickshaw,24544.52,Travel,0
+TXN01422,2024-07-28,OYO Rooms,outstation trip,23074.28,Travel,0
+TXN00350,2024-07-28,Subway,takeaway order,4973.71,Dining,1
+TXN01885,2024-07-28,PVR Cinemas,movie ticket,2498.47,Entertainment,0
+TXN00939,2024-07-28,BSNL,insurance premium,4464.86,Bills,0
+TXN00588,2024-07-28,Grofers,grocery purchase,1850.72,Groceries,0
+TXN01297,2024-07-28,Amazon,home decor,18270.5,Shopping,0
+TXN01083,2024-07-28,Zara,accessories,11122.87,Shopping,0
+TXN01880,2024-07-28,Zee5,music subscription,1829.23,Entertainment,0
+TXN01668,2024-07-28,MedPlus,lab test,6169.62,Health,0
+TXN01151,2024-07-28,Zara,accessories,8508.79,Shopping,0
+TXN00398,2024-07-28,Faasos,delivery charge,1357.75,Dining,0
+TXN00901,2024-07-28,BSNL,internet bill,4693.54,Bills,0
+TXN00156,2024-07-29,Chai Point,online food delivery,593.65,Dining,0
+TXN00390,2024-07-29,Zomato,takeaway order,627.2,Dining,0
+TXN01350,2024-07-29,Apple Store,sports equipment,11562.31,Shopping,0
+TXN00993,2024-07-29,Airtel,mobile recharge,3668.73,Bills,0
+TXN00510,2024-07-29,Grofers,monthly grocery,1864.76,Groceries,0
+TXN01224,2024-07-29,H&M,accessories,124343.16,Shopping,1
+TXN01987,2024-07-29,Google Pay,rent payment,33746.09,Transfer,0
+TXN00932,2024-07-30,MSEDCL,insurance premium,8000.0,Bills,0
+TXN00985,2024-07-30,BSNL,subscription renewal,4044.17,Bills,0
+TXN00437,2024-07-31,Reliance Fresh,vegetables and fruits,4987.61,Groceries,0
+TXN00223,2024-07-31,Zomato,online food delivery,1039.54,Dining,0
+TXN00374,2024-07-31,Faasos,lunch payment,1159.5,Dining,0
+TXN00892,2024-07-31,Mahanagar Gas,utility payment,4961.1,Bills,0
+TXN01249,2024-07-31,Snapdeal,clothing,13890.03,Shopping,0
+TXN01105,2024-07-31,Apple Store,apparel purchase,118156.03,Shopping,1
+TXN00533,2024-07-31,Blinkit,vegetables and fruits,2532.18,Groceries,0
+TXN01152,2024-07-31,Decathlon,accessories,5345.75,Shopping,0
+TXN00460,2024-07-31,Hypercity,supermarket shopping,1610.2,Groceries,0
+TXN01282,2024-08-01,Apple Store,gadget buy,11901.56,Shopping,0
+TXN01585,2024-08-01,Air India,intercity travel,17836.41,Travel,0
+TXN01353,2024-08-02,Ajio,sports equipment,15709.13,Shopping,0
+TXN00918,2024-08-02,HDFC Insurance,mobile recharge,4363.88,Bills,0
+TXN00459,2024-08-02,Nilgiris,weekly groceries,2083.51,Groceries,0
+TXN01463,2024-08-02,IRCTC,intercity travel,13819.85,Travel,0
+TXN00799,2024-08-02,BSNL,water bill,20933.96,Bills,1
+TXN01592,2024-08-02,Meru Cabs,train ticket,4670.08,Travel,0
+TXN00010,2024-08-02,Domino's Pizza,lunch payment,981.48,Dining,0
+TXN01621,2024-08-03,GoIbibo,flight booking,15721.41,Travel,0
+TXN00182,2024-08-03,Haldiram's,dinner bill,560.69,Dining,0
+TXN00903,2024-08-03,Tata Power,water bill,4096.84,Bills,0
+TXN00224,2024-08-03,Pizza Hut,food order,414.45,Dining,0
+TXN01541,2024-08-03,Zostel,airport transfer,14860.54,Travel,0
+TXN00898,2024-08-04,Tata Power,electricity bill payment,4294.79,Bills,0
+TXN01086,2024-08-04,Croma,clothing,15024.37,Shopping,0
+TXN01511,2024-08-04,BlaBlacar,intercity travel,68444.32,Travel,1
+TXN01455,2024-08-04,IRCTC,intercity travel,18838.81,Travel,0
+TXN00637,2024-08-04,DMart,dairy products,3613.87,Groceries,0
+TXN01888,2024-08-04,YouTube Premium,event ticket,2991.77,Entertainment,0
+TXN01877,2024-08-05,Hotstar,gaming purchase,2016.52,Entertainment,0
+TXN00913,2024-08-05,LIC Premium,water bill,4474.84,Bills,0
+TXN01164,2024-08-05,Flipkart,home decor,6550.21,Shopping,0
+TXN00331,2024-08-05,Swiggy,breakfast order,786.14,Dining,0
+TXN00858,2024-08-06,LIC Premium,society maintenance,4890.44,Bills,0
+TXN01611,2024-08-06,OYO Rooms,train ticket,13369.7,Travel,0
+TXN00489,2024-08-06,Hypercity,supermarket shopping,5000.0,Groceries,0
+TXN00210,2024-08-06,Faasos,breakfast order,1500.0,Dining,0
+TXN00935,2024-08-06,LIC Premium,broadband payment,4829.4,Bills,0
+TXN01560,2024-08-07,Air India,intercity travel,13480.79,Travel,0
+TXN01721,2024-08-07,Cult.fit,health insurance claim,9270.06,Health,0
+TXN00517,2024-08-07,Star Bazaar,fresh produce,3176.81,Groceries,0
+TXN01875,2024-08-07,Sony LIV,digital content,27006.1,Entertainment,1
+TXN01207,2024-08-07,Zara,apparel purchase,9553.05,Shopping,0
+TXN01200,2024-08-07,Ajio,electronics order,21830.62,Shopping,0
+TXN01070,2024-08-08,Reliance Digital,electronics order,14530.63,Shopping,0
+TXN00187,2024-08-08,Chai Point,takeaway order,954.63,Dining,0
+TXN00997,2024-08-08,Vodafone,internet bill,8000.0,Bills,0
+TXN00535,2024-08-08,DMart,dairy products,2003.26,Groceries,0
+TXN00147,2024-08-08,McDonald's,food order,481.67,Dining,0
+TXN01636,2024-08-09,GoIbibo,bus ticket,12784.79,Travel,0
+TXN01974,2024-08-09,UPI Payment,wallet top-up,27295.47,Transfer,0
+TXN01036,2024-08-09,BSNL,subscription renewal,7601.24,Bills,0
+TXN01762,2024-08-09,Healthians,medicine purchase,10159.39,Health,0
+TXN00407,2024-08-10,DMart,supermarket shopping,1696.32,Groceries,0
+TXN01310,2024-08-10,Zara,electronics order,113278.22,Shopping,1
+TXN00170,2024-08-11,Barbeque Nation,breakfast order,584.37,Dining,0
+TXN00548,2024-08-11,BigBasket,online grocery order,2397.18,Groceries,0
+TXN00231,2024-08-11,KFC,food order,589.86,Dining,0
+TXN00585,2024-08-12,Star Bazaar,fresh produce,2796.19,Groceries,0
+TXN00610,2024-08-12,BigBasket,monthly grocery,4730.02,Groceries,0
+TXN01769,2024-08-12,Lybrate,medical report,7931.4,Health,0
+TXN01405,2024-08-12,OYO Rooms,intercity travel,22379.26,Travel,0
+TXN00365,2024-08-12,Box8,lunch payment,1041.16,Dining,0
+TXN00336,2024-08-12,Swiggy,lunch payment,744.87,Dining,0
+TXN01909,2024-08-12,Netflix,music subscription,1566.23,Entertainment,0
+TXN00073,2024-08-12,Box8,breakfast order,778.76,Dining,0
+TXN01163,2024-08-13,Westside,home decor,7256.0,Shopping,0
+TXN01630,2024-08-13,MakeMyTrip,train ticket,21132.77,Travel,0
+TXN01199,2024-08-13,Lifestyle,online shopping,13835.29,Shopping,0
+TXN00741,2024-08-13,More Supermarket,online grocery order,1245.03,Groceries,0
+TXN00569,2024-08-13,DMart,online grocery order,1230.22,Groceries,0
+TXN01222,2024-08-13,Meesho,home decor,14318.97,Shopping,0
+TXN01438,2024-08-13,Air India,hotel booking,28578.47,Travel,0
+TXN00317,2024-08-14,Cafe Coffee Day,dinner bill,1037.75,Dining,0
+TXN01479,2024-08-14,Zostel,airport transfer,10535.16,Travel,0
+TXN00887,2024-08-14,Jio,subscription renewal,5115.57,Bills,0
+TXN00142,2024-08-14,Burger King,dinner bill,1332.6,Dining,0
+TXN00570,2024-08-14,Hypercity,dairy products,2258.96,Groceries,0
+TXN00408,2024-08-15,Reliance Fresh,dairy products,2456.06,Groceries,0
+TXN01046,2024-08-15,Tata Power,insurance premium,5767.17,Bills,0
+TXN00612,2024-08-15,Nilgiris,dairy products,2542.83,Groceries,0
+TXN00679,2024-08-16,Nilgiris,monthly grocery,3780.22,Groceries,0
+TXN01740,2024-08-16,1mg,doctor consultation,14966.18,Health,0
+TXN01101,2024-08-16,Meesho,clothing,18856.57,Shopping,0
+TXN01401,2024-08-16,MakeMyTrip,hotel booking,9884.33,Travel,0
+TXN00921,2024-08-16,HDFC Insurance,subscription renewal,6222.49,Bills,0
+TXN01347,2024-08-16,Apple Store,electronics order,4554.38,Shopping,0
+TXN01746,2024-08-16,PharmEasy,medicine purchase,8305.31,Health,0
+TXN00890,2024-08-16,Vodafone,mobile recharge,6310.4,Bills,0
+TXN01437,2024-08-16,MakeMyTrip,hotel booking,13602.3,Travel,0
+TXN00211,2024-08-16,Box8,delivery charge,5356.44,Dining,1
+TXN01992,2024-08-16,Google Pay,family transfer,34142.49,Transfer,0
+TXN00285,2024-08-17,Chai Point,food order,1500.0,Dining,0
+TXN00613,2024-08-17,Nature's Basket,fresh produce,2908.1,Groceries,0
+TXN00904,2024-08-17,Society Maintenance,water bill,6753.75,Bills,0
+TXN00717,2024-08-18,Spencers,fresh produce,2721.55,Groceries,0
+TXN01166,2024-08-18,Nykaa,gadget buy,25000.0,Shopping,0
+TXN01034,2024-08-18,Mahanagar Gas,gas bill,5246.68,Bills,0
+TXN00581,2024-08-18,DMart,household items,2976.98,Groceries,0
+TXN01792,2024-08-18,Healthians,lab test,7905.49,Health,0
+TXN01971,2024-08-18,Paytm,bank transfer,32016.42,Transfer,0
+TXN01761,2024-08-18,Max Hospital,medical report,14549.16,Health,0
+TXN01318,2024-08-18,Lifestyle,gadget buy,11196.12,Shopping,0
+TXN01674,2024-08-18,PharmEasy,health insurance claim,5220.45,Health,0
+TXN01123,2024-08-18,H&M,clothing,16332.37,Shopping,0
+TXN01555,2024-08-19,RedBus,bus ticket,13723.7,Travel,0
+TXN00485,2024-08-19,Star Bazaar,vegetables and fruits,1921.24,Groceries,0
+TXN00074,2024-08-19,Swiggy,online food delivery,1477.18,Dining,0
+TXN01321,2024-08-19,Nykaa,accessories,12939.92,Shopping,0
+TXN00702,2024-08-19,Reliance Fresh,online grocery order,3955.53,Groceries,0
+TXN01184,2024-08-19,Flipkart,apparel purchase,6749.42,Shopping,0
+TXN00458,2024-08-20,Grofers,fresh produce,1718.44,Groceries,0
+TXN00526,2024-08-20,Grofers,weekly groceries,1263.09,Groceries,0
+TXN00501,2024-08-20,More Supermarket,monthly grocery,3765.88,Groceries,0
+TXN00102,2024-08-20,Cafe Coffee Day,dinner bill,667.66,Dining,0
+TXN01187,2024-08-20,Lifestyle,gadget buy,8539.16,Shopping,0
+TXN00496,2024-08-20,Star Bazaar,monthly grocery,3225.46,Groceries,0
+TXN01924,2024-08-20,INOX,OTT subscription,2778.58,Entertainment,0
+TXN00025,2024-08-20,Haldiram's,takeaway order,635.42,Dining,0
+TXN00241,2024-08-20,Subway,takeaway order,575.38,Dining,0
+TXN01862,2024-08-20,YouTube Premium,movie ticket,18371.08,Entertainment,1
+TXN00891,2024-08-20,BSNL,DTH recharge,49055.11,Bills,1
+TXN01826,2024-08-20,Netflix,OTT subscription,3013.24,Entertainment,0
+TXN00988,2024-08-21,Tata Power,mobile recharge,5752.66,Bills,0
+TXN01607,2024-08-21,RedBus,hotel booking,15780.64,Travel,0
+TXN01108,2024-08-21,Croma,home decor,42025.01,Shopping,1
+TXN01491,2024-08-21,MakeMyTrip,airport transfer,108317.4,Travel,1
+TXN00206,2024-08-21,McDonald's,lunch payment,542.89,Dining,0
+TXN00198,2024-08-21,Pizza Hut,online food delivery,840.1,Dining,0
+TXN00423,2024-08-21,Blinkit,vegetables and fruits,2353.55,Groceries,0
+TXN01066,2024-08-22,Flipkart,electronics order,8083.21,Shopping,0
+TXN00757,2024-08-22,Nature's Basket,vegetables and fruits,3167.17,Groceries,0
+TXN01189,2024-08-22,Zara,gadget buy,15763.2,Shopping,0
+TXN00122,2024-08-22,Subway,restaurant bill,549.1,Dining,0
+TXN01306,2024-08-22,Decathlon,apparel purchase,8831.02,Shopping,0
+TXN01960,2024-08-22,Google Pay,loan repayment,27608.45,Transfer,0
+TXN00018,2024-08-23,Burger King,restaurant bill,895.81,Dining,0
+TXN01004,2024-08-23,HDFC Insurance,gas bill,3126.59,Bills,0
+TXN00418,2024-08-23,Blinkit,grocery purchase,2723.13,Groceries,0
+TXN00160,2024-08-23,Subway,dine-in payment,1027.26,Dining,0
+TXN00807,2024-08-23,Water Tax Office,DTH recharge,4426.33,Bills,0
+TXN01756,2024-08-23,Thyrocare,pharmacy,13079.04,Health,0
+TXN01961,2024-08-23,RTGS Transfer,money transfer,24701.61,Transfer,0
+TXN00359,2024-08-24,Pizza Hut,food order,898.85,Dining,0
+TXN00616,2024-08-24,Blinkit,monthly grocery,2737.92,Groceries,0
+TXN01608,2024-08-25,MakeMyTrip,train ticket,28777.3,Travel,0
+TXN01543,2024-08-25,Meru Cabs,train ticket,29201.47,Travel,0
+TXN00943,2024-08-25,Water Tax Office,mobile recharge,5252.99,Bills,0
+TXN00566,2024-08-25,Nilgiris,online grocery order,2208.43,Groceries,0
+TXN00742,2024-08-25,Nature's Basket,household items,1558.43,Groceries,0
+TXN01102,2024-08-25,Croma,sports equipment,3971.54,Shopping,0
+TXN00204,2024-08-25,Zomato,breakfast order,1204.18,Dining,0
+TXN01288,2024-08-26,Reliance Digital,fashion purchase,15500.21,Shopping,0
+TXN00966,2024-08-26,Jio,broadband payment,7204.92,Bills,0
+TXN00868,2024-08-26,MSEDCL,internet bill,4629.73,Bills,0
+TXN00251,2024-08-26,Starbucks,dine-in payment,477.08,Dining,0
+TXN00188,2024-08-26,KFC,lunch payment,767.32,Dining,0
+TXN00419,2024-08-26,Blinkit,fresh produce,4167.14,Groceries,0
+TXN00711,2024-08-27,Star Bazaar,weekly groceries,2828.99,Groceries,0
+TXN00088,2024-08-27,Faasos,food order,901.03,Dining,0
+TXN00346,2024-08-28,Burger King,lunch payment,866.84,Dining,0
+TXN01544,2024-08-28,MakeMyTrip,train ticket,12514.36,Travel,0
+TXN00159,2024-08-28,Domino's Pizza,online food delivery,490.54,Dining,0
+TXN00244,2024-08-28,Zomato,breakfast order,1116.93,Dining,0
+TXN00450,2024-08-29,BigBasket,fresh produce,1702.04,Groceries,0
+TXN01243,2024-08-29,Croma,apparel purchase,10024.03,Shopping,0
+TXN01902,2024-08-29,YouTube Premium,concert booking,2209.38,Entertainment,0
+TXN01433,2024-08-29,Air India,hotel booking,21197.96,Travel,0
+TXN00900,2024-08-29,Airtel,insurance premium,2921.05,Bills,0
+TXN00375,2024-08-29,Domino's Pizza,lunch payment,1500.0,Dining,0
+TXN01545,2024-08-29,BlaBlacar,bus ticket,11808.63,Travel,0
+TXN00802,2024-08-29,Society Maintenance,mobile recharge,3294.65,Bills,0
+TXN01536,2024-08-29,Uber,hotel booking,49616.94,Travel,1
+TXN00190,2024-08-30,Chai Point,delivery charge,430.99,Dining,0
+TXN00289,2024-08-30,Burger King,breakfast order,883.98,Dining,0
+TXN00941,2024-08-30,BESCOM,gas bill,2426.85,Bills,0
+TXN01507,2024-08-30,BlaBlacar,flight booking,19851.32,Travel,0
+TXN01587,2024-08-30,OYO Rooms,flight booking,16123.73,Travel,0
+TXN00391,2024-08-30,Starbucks,dinner bill,551.51,Dining,0
+TXN01010,2024-08-31,Airtel,subscription renewal,3269.45,Bills,0
+TXN00786,2024-08-31,Society Maintenance,mobile recharge,6240.31,Bills,0
+TXN01474,2024-08-31,BlaBlacar,hotel booking,15113.54,Travel,0
+TXN01868,2024-08-31,YouTube Premium,OTT subscription,3962.69,Entertainment,0
+TXN00483,2024-08-31,Spencers,household items,1367.43,Groceries,0
+TXN00212,2024-08-31,KFC,dine-in payment,1244.21,Dining,0
+TXN01110,2024-08-31,Flipkart,accessories,25000.0,Shopping,0
+TXN01017,2024-08-31,MSEDCL,mobile recharge,3120.99,Bills,0
+TXN01448,2024-08-31,RedBus,train ticket,18996.62,Travel,0
+TXN00837,2024-09-01,Amazon Prime,gas bill,7530.17,Bills,0
+TXN01878,2024-09-01,PlayStation Store,music subscription,2322.29,Entertainment,0
+TXN00861,2024-09-01,Tata Power,gas bill,4392.45,Bills,0
+TXN00874,2024-09-01,BSNL,broadband payment,3023.29,Bills,0
+TXN00309,2024-09-01,Swiggy,restaurant bill,983.26,Dining,0
+TXN00307,2024-09-02,KFC,takeaway order,1316.98,Dining,0
+TXN01356,2024-09-02,Westside,accessories,40312.72,Shopping,1
+TXN01800,2024-09-02,PharmEasy,fitness subscription,61420.3,Health,1
+TXN01072,2024-09-02,Meesho,electronics order,15309.5,Shopping,0
+TXN01351,2024-09-02,Amazon,apparel purchase,7921.75,Shopping,0
+TXN00955,2024-09-02,BESCOM,society maintenance,3919.08,Bills,0
+TXN01846,2024-09-02,Sony LIV,streaming service,1673.92,Entertainment,0
+TXN01934,2024-09-03,Amazon Prime Video,gaming purchase,2420.23,Entertainment,0
+TXN01519,2024-09-03,IRCTC,airport transfer,9974.59,Travel,0
+TXN00099,2024-09-03,Domino's Pizza,dinner bill,791.62,Dining,0
+TXN01845,2024-09-03,Apple Music,digital content,2691.73,Entertainment,0
+TXN01637,2024-09-03,Rapido,intercity travel,10253.99,Travel,0
+TXN01063,2024-09-04,Croma,apparel purchase,20028.64,Shopping,0
+TXN00270,2024-09-04,KFC,dinner bill,832.41,Dining,0
+TXN00738,2024-09-04,Nature's Basket,monthly grocery,3851.98,Groceries,0
+TXN01628,2024-09-04,BlaBlacar,auto rickshaw,25081.29,Travel,0
+TXN01893,2024-09-04,Zee5,gaming purchase,2120.57,Entertainment,0
+TXN01820,2024-09-04,PVR Cinemas,OTT subscription,1701.26,Entertainment,0
+TXN00385,2024-09-04,Subway,takeaway order,583.11,Dining,0
+TXN01104,2024-09-04,Flipkart,fashion purchase,11963.03,Shopping,0
+TXN00532,2024-09-05,Nilgiris,online grocery order,1337.64,Groceries,0
+TXN00065,2024-09-05,Faasos,restaurant bill,1093.4,Dining,0
+TXN01836,2024-09-06,PlayStation Store,digital content,2917.84,Entertainment,0
+TXN01802,2024-09-06,Spotify,movie ticket,2464.47,Entertainment,0
+TXN00230,2024-09-06,Domino's Pizza,dine-in payment,1036.78,Dining,0
+TXN00265,2024-09-07,Swiggy,dinner bill,714.09,Dining,0
+TXN00889,2024-09-07,Jio,DTH recharge,5129.35,Bills,0
+TXN00061,2024-09-07,Zomato,restaurant bill,652.21,Dining,0
+TXN01557,2024-09-07,Zostel,train ticket,21653.12,Travel,0
+TXN00461,2024-09-07,Nilgiris,monthly grocery,5000.0,Groceries,0
+TXN01182,2024-09-07,Myntra,fashion purchase,22075.27,Shopping,0
+TXN00978,2024-09-07,Netflix Bill,subscription renewal,1535.97,Bills,0
+TXN01153,2024-09-07,Myntra,apparel purchase,9796.96,Shopping,0
+TXN01374,2024-09-08,Amazon,apparel purchase,6634.16,Shopping,0
+TXN00490,2024-09-08,Zepto,online grocery order,3699.39,Groceries,0
+TXN01954,2024-09-08,Paytm,loan repayment,19439.74,Transfer,0
+TXN00979,2024-09-08,Mahanagar Gas,internet bill,2149.33,Bills,0
+TXN01477,2024-09-08,Meru Cabs,train ticket,14315.4,Travel,0
+TXN01728,2024-09-08,Dr. Lal PathLabs,health insurance claim,10430.88,Health,0
+TXN01426,2024-09-08,Uber,cab ride,6842.63,Travel,0
+TXN01302,2024-09-08,Amazon,electronics order,18811.61,Shopping,0
+TXN00044,2024-09-09,Swiggy,food order,700.36,Dining,0
+TXN01407,2024-09-09,BlaBlacar,intercity travel,8507.87,Travel,0
+TXN01953,2024-09-09,CRED Payment,self transfer,17575.98,Transfer,0
+TXN00339,2024-09-09,KFC,restaurant bill,931.88,Dining,0
+TXN00849,2024-09-09,Water Tax Office,internet bill,3138.11,Bills,0
+TXN01642,2024-09-10,Practo,gym membership,13282.35,Health,0
+TXN00393,2024-09-10,Zomato,delivery charge,465.89,Dining,0
+TXN00844,2024-09-10,BSNL,insurance premium,4719.4,Bills,0
+TXN01397,2024-09-11,Myntra,gadget buy,7380.24,Shopping,0
+TXN01263,2024-09-11,Meesho,sports equipment,15692.13,Shopping,0
+TXN01270,2024-09-11,Lifestyle,sports equipment,20740.63,Shopping,0
+TXN00543,2024-09-11,Zepto,monthly grocery,3213.73,Groceries,0
+TXN00736,2024-09-11,Hypercity,fresh produce,3141.03,Groceries,0
+TXN00672,2024-09-11,Zepto,online grocery order,1134.46,Groceries,0
+TXN01595,2024-09-11,Ola,bus ticket,5838.9,Travel,0
+TXN00416,2024-09-11,Nilgiris,weekly groceries,1927.29,Groceries,0
+TXN00976,2024-09-12,LIC Premium,subscription renewal,11236.99,Bills,1
+TXN01977,2024-09-12,Paytm,loan repayment,39585.83,Transfer,0
+TXN00372,2024-09-12,Box8,dine-in payment,964.14,Dining,0
+TXN01650,2024-09-12,PharmEasy,pharmacy,15000.0,Health,0
+TXN01028,2024-09-13,Netflix Bill,society maintenance,4249.19,Bills,0
+TXN00580,2024-09-13,Reliance Fresh,grocery purchase,4108.32,Groceries,0
+TXN01546,2024-09-13,IRCTC,intercity travel,18123.79,Travel,0
+TXN00546,2024-09-13,Star Bazaar,household items,1890.33,Groceries,0
+TXN00801,2024-09-13,Vodafone,utility payment,5894.56,Bills,0
+TXN01693,2024-09-14,Fortis Hospital,pharmacy,10698.1,Health,0
+TXN01450,2024-09-14,Yatra,outstation trip,15153.39,Travel,0
+TXN01285,2024-09-14,Zara,online shopping,9237.41,Shopping,0
+TXN00617,2024-09-14,Star Bazaar,monthly grocery,2716.3,Groceries,0
+TXN00394,2024-09-14,Barbeque Nation,takeaway order,1500.0,Dining,0
+TXN00109,2024-09-14,Box8,breakfast order,875.73,Dining,0
+TXN00996,2024-09-14,Society Maintenance,subscription renewal,3619.29,Bills,0
+TXN00729,2024-09-14,Hypercity,weekly groceries,2095.11,Groceries,0
+TXN01682,2024-09-15,Lybrate,medical report,7477.28,Health,0
+TXN01641,2024-09-15,Practo,fitness subscription,7623.5,Health,0
+TXN00850,2024-09-15,Mahanagar Gas,insurance premium,3275.0,Bills,0
+TXN00884,2024-09-15,BESCOM,utility payment,6149.56,Bills,0
+TXN00137,2024-09-15,KFC,dine-in payment,577.51,Dining,0
+TXN01494,2024-09-15,IndiGo Airlines,train ticket,16176.12,Travel,0
+TXN00125,2024-09-16,Cafe Coffee Day,delivery charge,999.02,Dining,0
+TXN00650,2024-09-16,Star Bazaar,grocery purchase,3434.92,Groceries,0
+TXN00263,2024-09-16,Haldiram's,takeaway order,216.05,Dining,0
+TXN01089,2024-09-16,Apple Store,clothing,11404.87,Shopping,0
+TXN01926,2024-09-16,Amazon Prime Video,app subscription,1748.03,Entertainment,0
+TXN00055,2024-09-16,Box8,restaurant bill,1193.25,Dining,0
+TXN01678,2024-09-17,Dr. Lal PathLabs,gym membership,13874.8,Health,0
+TXN01656,2024-09-17,Fortis Hospital,doctor consultation,6708.58,Health,0
+TXN00373,2024-09-17,Starbucks,dine-in payment,1411.62,Dining,0
+TXN00600,2024-09-17,Grofers,grocery purchase,3023.55,Groceries,0
+TXN00784,2024-09-17,LIC Premium,broadband payment,5170.41,Bills,0
+TXN01815,2024-09-18,Amazon Prime Video,concert booking,2267.84,Entertainment,0
+TXN01593,2024-09-18,OYO Rooms,train ticket,17891.74,Travel,0
+TXN01516,2024-09-18,GoIbibo,airport transfer,14310.83,Travel,0
+TXN00484,2024-09-19,Nilgiris,supermarket shopping,2820.45,Groceries,0
+TXN00965,2024-09-19,Water Tax Office,broadband payment,3907.21,Bills,0
+TXN00534,2024-09-19,DMart,household items,1601.76,Groceries,0
+TXN01176,2024-09-20,Apple Store,apparel purchase,11306.61,Shopping,0
+TXN01818,2024-09-20,Hotstar,digital content,14029.69,Entertainment,1
+TXN00754,2024-09-20,Spencers,online grocery order,3962.87,Groceries,0
+TXN00192,2024-09-20,Haldiram's,takeaway order,1112.75,Dining,0
+TXN00357,2024-09-20,Faasos,food order,784.17,Dining,0
+TXN00746,2024-09-20,Star Bazaar,supermarket shopping,1944.91,Groceries,0
+TXN01938,2024-09-21,Spotify,OTT subscription,3044.44,Entertainment,0
+TXN01264,2024-09-21,Croma,fashion purchase,8752.92,Shopping,0
+TXN01484,2024-09-21,Meru Cabs,airport transfer,12805.32,Travel,0
+TXN01833,2024-09-21,Zee5,concert booking,3696.9,Entertainment,0
+TXN01635,2024-09-22,SpiceJet,train ticket,13141.9,Travel,0
+TXN01100,2024-09-22,Westside,home decor,14530.54,Shopping,0
+TXN01919,2024-09-22,Netflix,movie ticket,21246.36,Entertainment,1
+TXN00778,2024-09-22,Mahanagar Gas,internet bill,3668.23,Bills,0
+TXN01211,2024-09-22,Zara,accessories,42070.81,Shopping,1
+TXN01461,2024-09-23,Air India,cab ride,14215.5,Travel,0
+TXN01109,2024-09-23,Lifestyle,gadget buy,9856.68,Shopping,0
+TXN01305,2024-09-23,Snapdeal,gadget buy,15678.04,Shopping,0
+TXN01571,2024-09-23,Yatra,outstation trip,20643.93,Travel,0
+TXN01731,2024-09-23,MedPlus,health insurance claim,6904.42,Health,0
+TXN01883,2024-09-23,Netflix,concert booking,1541.11,Entertainment,0
+TXN00214,2024-09-23,KFC,online food delivery,1025.15,Dining,0
+TXN00316,2024-09-24,Pizza Hut,lunch payment,796.67,Dining,0
+TXN01873,2024-09-24,INOX,event ticket,2232.29,Entertainment,0
+TXN01445,2024-09-24,IndiGo Airlines,outstation trip,17629.8,Travel,0
+TXN00794,2024-09-25,Amazon Prime,utility payment,2430.31,Bills,0
+TXN00999,2024-09-25,BSNL,gas bill,3222.78,Bills,0
+TXN00648,2024-09-25,Grofers,supermarket shopping,2544.14,Groceries,0
+TXN00556,2024-09-25,DMart,monthly grocery,2205.07,Groceries,0
+TXN00983,2024-09-25,Airtel,electricity bill payment,2750.9,Bills,0
+TXN00649,2024-09-26,Star Bazaar,fresh produce,2370.59,Groceries,0
+TXN01730,2024-09-26,1mg,gym membership,15000.0,Health,0
+TXN01957,2024-09-26,UPI Payment,credit card payment,10746.25,Transfer,0
+TXN00606,2024-09-26,BigBasket,household items,5000.0,Groceries,0
+TXN00714,2024-09-26,More Supermarket,monthly grocery,3050.07,Groceries,0
+TXN00482,2024-09-26,DMart,supermarket shopping,1774.1,Groceries,0
+TXN00537,2024-09-26,Hypercity,dairy products,1842.91,Groceries,0
+TXN00881,2024-09-27,Netflix Bill,society maintenance,8000.0,Bills,0
+TXN01015,2024-09-27,Water Tax Office,mobile recharge,8000.0,Bills,0
+TXN00069,2024-09-27,Faasos,dinner bill,912.96,Dining,0
+TXN01130,2024-09-27,Zara,gadget buy,14427.88,Shopping,0
+TXN00048,2024-09-27,Cafe Coffee Day,breakfast order,7835.22,Dining,1
+TXN01239,2024-09-27,Apple Store,online shopping,15883.02,Shopping,0
+TXN01362,2024-09-28,Meesho,home decor,15948.64,Shopping,0
+TXN01564,2024-09-28,Ola,cab ride,21398.77,Travel,0
+TXN00693,2024-09-28,Grofers,monthly grocery,1687.23,Groceries,0
+TXN01676,2024-09-28,Thyrocare,medicine purchase,6636.73,Health,0
+TXN00439,2024-09-28,Star Bazaar,dairy products,1315.42,Groceries,0
+TXN00994,2024-09-28,Netflix Bill,insurance premium,3083.06,Bills,0
+TXN01547,2024-09-28,RedBus,intercity travel,10078.07,Travel,0
+TXN01301,2024-09-28,Ajio,clothing,9683.48,Shopping,0
+TXN00560,2024-09-28,Star Bazaar,vegetables and fruits,2197.05,Groceries,0
+TXN01869,2024-09-29,Spotify,movie ticket,1632.08,Entertainment,0
+TXN00545,2024-09-29,Zepto,vegetables and fruits,967.4,Groceries,0
+TXN00066,2024-09-29,Chai Point,delivery charge,1359.03,Dining,0
+TXN01173,2024-09-29,Nykaa,sports equipment,13188.4,Shopping,0
+TXN01764,2024-09-30,Apollo Pharmacy,health checkup,3977.93,Health,0
+TXN00841,2024-09-30,Netflix Bill,mobile recharge,3970.66,Bills,0
+TXN01365,2024-09-30,Reliance Digital,online shopping,20415.32,Shopping,0
+TXN01750,2024-09-30,Apollo Pharmacy,health checkup,98903.24,Health,1
+TXN00963,2024-09-30,Amazon Prime,society maintenance,4381.21,Bills,0
+TXN00030,2024-09-30,Starbucks,online food delivery,703.0,Dining,0
+TXN01581,2024-09-30,Yatra,cab ride,16280.09,Travel,0
+TXN01978,2024-09-30,RTGS Transfer,credit card payment,209568.86,Transfer,1
+TXN01733,2024-10-01,Lybrate,health checkup,7491.58,Health,0
+TXN00885,2024-10-01,BSNL,internet bill,5320.0,Bills,0
+TXN00995,2024-10-01,MSEDCL,mobile recharge,2713.04,Bills,0
+TXN00446,2024-10-01,DMart,online grocery order,3398.66,Groceries,0
+TXN00041,2024-10-02,Cafe Coffee Day,dinner bill,1061.48,Dining,0
+TXN00228,2024-10-02,Starbucks,breakfast order,513.34,Dining,0
+TXN01805,2024-10-02,Sony LIV,gaming purchase,1227.51,Entertainment,0
+TXN00457,2024-10-02,Reliance Fresh,monthly grocery,2491.04,Groceries,0
+TXN01778,2024-10-02,Fortis Hospital,health checkup,7438.97,Health,0
+TXN01251,2024-10-02,H&M,electronics order,14440.1,Shopping,0
+TXN00877,2024-10-02,Vodafone,subscription renewal,3292.58,Bills,0
+TXN01423,2024-10-03,RedBus,hotel booking,12984.21,Travel,0
+TXN00218,2024-10-03,Swiggy,delivery charge,718.6,Dining,0
+TXN01958,2024-10-03,PhonePe,loan repayment,50000.0,Transfer,0
+TXN00059,2024-10-03,Chai Point,breakfast order,7652.58,Dining,1
+TXN00476,2024-10-03,Blinkit,weekly groceries,2353.48,Groceries,0
+TXN01811,2024-10-03,BookMyShow,streaming service,2081.35,Entertainment,0
+TXN00925,2024-10-03,BESCOM,mobile recharge,6532.15,Bills,0
+TXN00982,2024-10-04,Amazon Prime,mobile recharge,4801.36,Bills,0
+TXN01162,2024-10-04,Reliance Digital,online shopping,25000.0,Shopping,0
+TXN01951,2024-10-04,PhonePe,credit card payment,12423.79,Transfer,0
+TXN00899,2024-10-04,Airtel,electricity bill payment,6562.16,Bills,0
+TXN01373,2024-10-04,Nykaa,electronics order,7307.47,Shopping,0
+TXN01298,2024-10-04,Meesho,online shopping,11263.27,Shopping,0
+TXN00404,2024-10-04,BigBasket,supermarket shopping,2649.32,Groceries,0
+TXN01443,2024-10-04,IndiGo Airlines,bus ticket,16153.3,Travel,0
+TXN01019,2024-10-05,HDFC Insurance,subscription renewal,3562.91,Bills,0
+TXN01161,2024-10-05,Reliance Digital,gadget buy,4654.78,Shopping,0
+TXN01090,2024-10-05,Amazon,gadget buy,11694.48,Shopping,0
+TXN01773,2024-10-06,Cult.fit,gym membership,5885.48,Health,0
+TXN00658,2024-10-06,Grofers,weekly groceries,2575.03,Groceries,0
+TXN00981,2024-10-06,Mahanagar Gas,internet bill,5545.78,Bills,0
+TXN00676,2024-10-06,Blinkit,household items,1904.81,Groceries,0
+TXN00145,2024-10-06,Zomato,takeaway order,876.54,Dining,0
+TXN01599,2024-10-07,Air India,bus ticket,15150.49,Travel,0
+TXN01665,2024-10-07,Fortis Hospital,pharmacy,12684.05,Health,0
+TXN01416,2024-10-07,BlaBlacar,train ticket,21776.94,Travel,0
+TXN01785,2024-10-08,PharmEasy,health insurance claim,7803.12,Health,0
+TXN00769,2024-10-08,MSEDCL,utility payment,3151.66,Bills,0
+TXN00354,2024-10-08,Zomato,lunch payment,741.04,Dining,0
+TXN01899,2024-10-08,YouTube Premium,OTT subscription,3160.12,Entertainment,0
+TXN00705,2024-10-08,Star Bazaar,dairy products,1394.95,Groceries,0
+TXN01159,2024-10-08,Westside,apparel purchase,18734.44,Shopping,0
+TXN00068,2024-10-08,McDonald's,dine-in payment,1180.21,Dining,0
+TXN00323,2024-10-09,Swiggy,delivery charge,569.49,Dining,0
+TXN00368,2024-10-09,Zomato,breakfast order,793.99,Dining,0
+TXN01810,2024-10-09,Zee5,app subscription,3611.98,Entertainment,0
+TXN01117,2024-10-09,Myntra,gadget buy,25000.0,Shopping,0
+TXN00386,2024-10-09,Chai Point,breakfast order,838.98,Dining,0
+TXN00376,2024-10-09,McDonald's,dinner bill,581.2,Dining,0
+TXN00181,2024-10-10,McDonald's,online food delivery,1014.65,Dining,0
+TXN01231,2024-10-10,H&M,fashion purchase,10121.49,Shopping,0
+TXN01290,2024-10-10,Lifestyle,online shopping,5346.81,Shopping,0
+TXN01677,2024-10-10,Lybrate,fitness subscription,12285.39,Health,0
+TXN00971,2024-10-10,Water Tax Office,utility payment,4262.94,Bills,0
+TXN00767,2024-10-10,MSEDCL,electricity bill payment,3993.71,Bills,0
+TXN01280,2024-10-10,Croma,clothing,11178.71,Shopping,0
+TXN01942,2024-10-10,Paytm,credit card payment,21588.63,Transfer,0
+TXN01444,2024-10-10,MakeMyTrip,intercity travel,8944.0,Travel,0
+TXN01459,2024-10-11,IndiGo Airlines,outstation trip,25169.09,Travel,0
+TXN01331,2024-10-11,Decathlon,sports equipment,23335.07,Shopping,0
+TXN00515,2024-10-11,Grofers,supermarket shopping,2064.32,Groceries,0
+TXN00280,2024-10-11,Zomato,breakfast order,677.16,Dining,0
+TXN01144,2024-10-11,Myntra,accessories,13301.65,Shopping,0
+TXN01049,2024-10-12,LIC Premium,DTH recharge,7310.66,Bills,0
+TXN01891,2024-10-12,BookMyShow,streaming service,3141.67,Entertainment,0
+TXN00591,2024-10-12,Hypercity,monthly grocery,2675.5,Groceries,0
+TXN01759,2024-10-12,MedPlus,doctor consultation,14388.93,Health,0
+TXN00314,2024-10-12,Chai Point,dinner bill,1093.83,Dining,0
+TXN00444,2024-10-12,Grofers,supermarket shopping,2508.95,Groceries,0
+TXN00773,2024-10-12,Tata Power,internet bill,5215.73,Bills,0
+TXN00945,2024-10-12,LIC Premium,internet bill,8000.0,Bills,0
+TXN01118,2024-10-13,Snapdeal,accessories,12361.78,Shopping,0
+TXN01537,2024-10-13,Zostel,flight booking,18451.68,Travel,0
+TXN00817,2024-10-13,Water Tax Office,insurance premium,4506.57,Bills,0
+TXN00151,2024-10-13,Box8,dinner bill,873.26,Dining,0
+TXN01921,2024-10-13,YouTube Premium,event ticket,1143.99,Entertainment,0
+TXN01056,2024-10-13,Water Tax Office,gas bill,3095.87,Bills,0
+TXN00509,2024-10-14,Grofers,supermarket shopping,2650.96,Groceries,0
+TXN00766,2024-10-14,BESCOM,society maintenance,3057.04,Bills,0
+TXN00143,2024-10-14,Zomato,restaurant bill,415.32,Dining,0
+TXN01517,2024-10-14,GoIbibo,hotel booking,27525.02,Travel,0
+TXN01738,2024-10-14,Practo,medicine purchase,4925.5,Health,0
+TXN01150,2024-10-14,Westside,accessories,9014.85,Shopping,0
+TXN01695,2024-10-14,PharmEasy,medical report,7941.48,Health,0
+TXN00944,2024-10-14,Indane Gas,water bill,3892.48,Bills,0
+TXN01078,2024-10-15,Ajio,sports equipment,10659.07,Shopping,0
+TXN01024,2024-10-15,BESCOM,utility payment,8000.0,Bills,0
+TXN01096,2024-10-15,Zara,clothing,12248.1,Shopping,0
+TXN01372,2024-10-15,Ajio,accessories,25000.0,Shopping,0
+TXN01931,2024-10-15,BookMyShow,music subscription,1544.07,Entertainment,0
+TXN01292,2024-10-15,Croma,fashion purchase,25000.0,Shopping,0
+TXN00732,2024-10-15,BigBasket,grocery purchase,1757.97,Groceries,0
+TXN01440,2024-10-15,MakeMyTrip,flight booking,20159.32,Travel,0
+TXN01154,2024-10-16,Amazon,home decor,7451.54,Shopping,0
+TXN01195,2024-10-16,Reliance Digital,accessories,6688.97,Shopping,0
+TXN01794,2024-10-16,Apollo Hospital,pharmacy,9875.76,Health,0
+TXN00260,2024-10-16,Chai Point,food order,1076.95,Dining,0
+TXN01158,2024-10-16,Decathlon,accessories,25000.0,Shopping,0
+TXN01014,2024-10-16,Society Maintenance,electricity bill payment,3074.19,Bills,0
+TXN00413,2024-10-16,Hypercity,weekly groceries,1407.57,Groceries,0
+TXN01980,2024-10-17,PhonePe,family transfer,29714.85,Transfer,0
+TXN01272,2024-10-17,Myntra,gadget buy,16140.19,Shopping,0
+TXN00064,2024-10-17,Swiggy,restaurant bill,489.58,Dining,0
+TXN00846,2024-10-17,HDFC Insurance,electricity bill payment,4931.77,Bills,0
+TXN00528,2024-10-17,Nilgiris,supermarket shopping,2650.49,Groceries,0
+TXN01394,2024-10-17,Amazon,electronics order,13360.08,Shopping,0
+TXN01371,2024-10-17,H&M,electronics order,11804.48,Shopping,0
+TXN01830,2024-10-18,Hotstar,concert booking,2544.11,Entertainment,0
+TXN01488,2024-10-18,MakeMyTrip,flight booking,7429.01,Travel,0
+TXN00975,2024-10-18,Society Maintenance,gas bill,3388.01,Bills,0
+TXN00275,2024-10-18,Barbeque Nation,dinner bill,533.48,Dining,0
+TXN00389,2024-10-19,Pizza Hut,online food delivery,1155.4,Dining,0
+TXN01057,2024-10-19,LIC Premium,internet bill,4008.81,Bills,0
+TXN01469,2024-10-19,Yatra,auto rickshaw,9312.54,Travel,0
+TXN00083,2024-10-19,Barbeque Nation,lunch payment,1426.8,Dining,0
+TXN01284,2024-10-19,Meesho,apparel purchase,94103.35,Shopping,1
+TXN01451,2024-10-19,GoIbibo,flight booking,17000.6,Travel,0
+TXN01649,2024-10-20,PharmEasy,health checkup,12139.95,Health,0
+TXN00550,2024-10-20,More Supermarket,monthly grocery,2041.97,Groceries,0
+TXN01944,2024-10-20,IMPS Payment,bank transfer,22011.15,Transfer,0
+TXN01447,2024-10-20,BlaBlacar,bus ticket,12161.42,Travel,0
+TXN00865,2024-10-20,Airtel,insurance premium,3169.59,Bills,0
+TXN00306,2024-10-20,Cafe Coffee Day,lunch payment,827.96,Dining,0
+TXN01160,2024-10-20,Flipkart,fashion purchase,11108.66,Shopping,0
+TXN01274,2024-10-20,Zara,apparel purchase,11146.15,Shopping,0
+TXN01141,2024-10-21,Snapdeal,clothing,11230.48,Shopping,0
+TXN00225,2024-10-21,Pizza Hut,lunch payment,654.1,Dining,0
+TXN01972,2024-10-21,NEFT Transfer,UPI payment,7788.67,Transfer,0
+TXN00255,2024-10-21,Haldiram's,dinner bill,430.21,Dining,0
+TXN00426,2024-10-21,Blinkit,dairy products,4494.99,Groceries,0
+TXN01075,2024-10-21,Croma,home decor,18843.42,Shopping,0
+TXN00715,2024-10-21,DMart,weekly groceries,2561.15,Groceries,0
+TXN01882,2024-10-22,Spotify,movie ticket,4818.56,Entertainment,0
+TXN01633,2024-10-22,OYO Rooms,bus ticket,11614.98,Travel,0
+TXN01126,2024-10-22,Flipkart,sports equipment,7997.42,Shopping,0
+TXN01956,2024-10-22,Paytm,money transfer,43754.8,Transfer,0
+TXN01894,2024-10-22,PVR Cinemas,concert booking,2416.69,Entertainment,0
+TXN01410,2024-10-22,GoIbibo,bus ticket,13590.65,Travel,0
+TXN00021,2024-10-22,Domino's Pizza,restaurant bill,1419.83,Dining,0
+TXN00792,2024-10-22,BESCOM,mobile recharge,4400.82,Bills,0
+TXN00311,2024-10-22,Haldiram's,food order,724.12,Dining,0
+TXN00345,2024-10-22,Zomato,delivery charge,654.33,Dining,0
+TXN01989,2024-10-22,CRED Payment,loan repayment,19535.5,Transfer,0
+TXN00897,2024-10-23,Jio,mobile recharge,3788.12,Bills,0
+TXN00972,2024-10-23,Netflix Bill,water bill,3084.21,Bills,0
+TXN00254,2024-10-23,Zomato,dine-in payment,1193.95,Dining,0
+TXN00435,2024-10-23,Grofers,weekly groceries,4741.98,Groceries,0
+TXN00115,2024-10-23,Barbeque Nation,food order,731.49,Dining,0
+TXN01788,2024-10-24,PharmEasy,pharmacy,5588.36,Health,0
+TXN00656,2024-10-24,Zepto,household items,2662.32,Groceries,0
+TXN01307,2024-10-24,Flipkart,sports equipment,12793.4,Shopping,0
+TXN01188,2024-10-24,Amazon,apparel purchase,11562.93,Shopping,0
+TXN01963,2024-10-24,Google Pay,rent payment,31102.09,Transfer,0
+TXN01529,2024-10-25,OYO Rooms,bus ticket,12356.42,Travel,0
+TXN01088,2024-10-25,Snapdeal,sports equipment,13917.86,Shopping,0
+TXN01337,2024-10-25,H&M,fashion purchase,9897.64,Shopping,0
+TXN00793,2024-10-25,Mahanagar Gas,internet bill,4514.74,Bills,0
+TXN00146,2024-10-25,Burger King,delivery charge,1080.05,Dining,0
+TXN00758,2024-10-25,Grofers,grocery purchase,2799.51,Groceries,0
+TXN00042,2024-10-25,Pizza Hut,takeaway order,846.05,Dining,0
+TXN01515,2024-10-26,IRCTC,cab ride,14536.22,Travel,0
+TXN00448,2024-10-26,More Supermarket,household items,1785.25,Groceries,0
+TXN01723,2024-10-26,Practo,lab test,10145.92,Health,0
+TXN01037,2024-10-26,Amazon Prime,water bill,2480.38,Bills,0
+TXN01765,2024-10-26,Apollo Pharmacy,health checkup,6842.29,Health,0
+TXN01498,2024-10-27,SpiceJet,airport transfer,24362.91,Travel,0
+TXN01384,2024-10-27,Flipkart,gadget buy,9928.12,Shopping,0
+TXN00473,2024-10-27,Nature's Basket,vegetables and fruits,1418.27,Groceries,0
+TXN00383,2024-10-27,Barbeque Nation,lunch payment,337.81,Dining,0
+TXN01832,2024-10-27,Apple Music,movie ticket,2771.88,Entertainment,0
+TXN01132,2024-10-27,Flipkart,gadget buy,14975.65,Shopping,0
+TXN01227,2024-10-28,Decathlon,clothing,12873.64,Shopping,0
+TXN01578,2024-10-28,SpiceJet,flight booking,23941.45,Travel,0
+TXN01716,2024-10-28,Fortis Hospital,doctor consultation,7281.48,Health,0
+TXN00011,2024-10-28,Cafe Coffee Day,food order,656.33,Dining,0
+TXN01813,2024-10-28,Steam,gaming purchase,4812.08,Entertainment,0
+TXN01624,2024-10-29,Air India,auto rickshaw,11501.27,Travel,0
+TXN01809,2024-10-29,Sony LIV,OTT subscription,1341.47,Entertainment,0
+TXN00783,2024-10-30,Tata Power,DTH recharge,4715.22,Bills,0
+TXN00236,2024-10-30,Barbeque Nation,food order,1018.01,Dining,0
+TXN00730,2024-10-30,Nilgiris,weekly groceries,1904.44,Groceries,0
+TXN00271,2024-10-30,Cafe Coffee Day,takeaway order,1406.05,Dining,0
+TXN01457,2024-10-31,RedBus,airport transfer,20308.76,Travel,0
+TXN00208,2024-10-31,Subway,lunch payment,970.24,Dining,0
+TXN01092,2024-10-31,Zara,apparel purchase,12463.05,Shopping,0
+TXN01032,2024-10-31,Indane Gas,society maintenance,2077.75,Bills,0
+TXN01582,2024-10-31,MakeMyTrip,train ticket,23787.74,Travel,0
+TXN00642,2024-11-01,Star Bazaar,grocery purchase,5000.0,Groceries,0
+TXN01131,2024-11-01,Snapdeal,clothing,14385.2,Shopping,0
+TXN00495,2024-11-01,Star Bazaar,dairy products,4781.53,Groceries,0
+TXN00760,2024-11-01,Hypercity,online grocery order,3440.56,Groceries,0
+TXN01360,2024-11-01,Ajio,online shopping,13612.67,Shopping,0
+TXN00298,2024-11-01,Cafe Coffee Day,restaurant bill,893.33,Dining,0
+TXN01854,2024-11-02,YouTube Premium,OTT subscription,3646.99,Entertainment,0
+TXN00340,2024-11-02,Zomato,dinner bill,630.52,Dining,0
+TXN00539,2024-11-02,BigBasket,grocery purchase,3888.52,Groceries,0
+TXN01912,2024-11-02,Spotify,app subscription,5000.0,Entertainment,0
+TXN01524,2024-11-03,IndiGo Airlines,airport transfer,96331.88,Travel,1
+TXN01859,2024-11-03,Hotstar,streaming service,2834.08,Entertainment,0
+TXN00229,2024-11-04,Box8,online food delivery,593.43,Dining,0
+TXN00952,2024-11-04,Airtel,electricity bill payment,4662.44,Bills,0
+TXN01871,2024-11-04,Spotify,OTT subscription,1622.49,Entertainment,0
+TXN01395,2024-11-04,Meesho,home decor,10930.19,Shopping,0
+TXN00008,2024-11-04,Zomato,breakfast order,1073.85,Dining,0
+TXN00564,2024-11-04,Reliance Fresh,supermarket shopping,2282.11,Groceries,0
+TXN00135,2024-11-05,Domino's Pizza,takeaway order,546.9,Dining,0
+TXN00690,2024-11-05,Reliance Fresh,online grocery order,3105.63,Groceries,0
+TXN01655,2024-11-05,Apollo Hospital,lab test,8644.65,Health,0
+TXN01837,2024-11-05,Netflix,app subscription,1598.0,Entertainment,0
+TXN00017,2024-11-05,Cafe Coffee Day,food order,526.84,Dining,0
+TXN02000,2024-11-05,UPI Payment,self transfer,18743.84,Transfer,0
+TXN01481,2024-11-05,GoIbibo,train ticket,20058.8,Travel,0
+TXN01867,2024-11-06,Amazon Prime Video,streaming service,3816.22,Entertainment,0
+TXN00429,2024-11-06,Zepto,online grocery order,3970.46,Groceries,0
+TXN01768,2024-11-06,MedPlus,lab test,46017.87,Health,1
+TXN00743,2024-11-06,Reliance Fresh,household items,2025.03,Groceries,0
+TXN00875,2024-11-06,Tata Power,water bill,3996.69,Bills,0
+TXN00779,2024-11-06,Water Tax Office,DTH recharge,3931.2,Bills,0
+TXN01857,2024-11-06,BookMyShow,digital content,4407.15,Entertainment,0
+TXN00315,2024-11-06,Barbeque Nation,online food delivery,1331.72,Dining,0
+TXN00029,2024-11-07,Haldiram's,delivery charge,621.28,Dining,0
+TXN00492,2024-11-07,Reliance Fresh,supermarket shopping,4699.65,Groceries,0
+TXN01683,2024-11-07,Thyrocare,doctor consultation,5259.66,Health,0
+TXN00057,2024-11-07,Domino's Pizza,delivery charge,564.73,Dining,0
+TXN01905,2024-11-07,Netflix,concert booking,2418.92,Entertainment,0
+TXN00197,2024-11-08,Faasos,restaurant bill,554.73,Dining,0
+TXN01221,2024-11-08,Zara,electronics order,7866.54,Shopping,0
+TXN00811,2024-11-08,Mahanagar Gas,gas bill,3758.31,Bills,0
+TXN01669,2024-11-08,1mg,doctor consultation,10567.63,Health,0
+TXN00415,2024-11-08,More Supermarket,vegetables and fruits,2969.63,Groceries,0
+TXN00586,2024-11-08,Reliance Fresh,household items,2871.4,Groceries,0
+TXN00319,2024-11-08,Starbucks,restaurant bill,7646.77,Dining,1
+TXN00209,2024-11-09,Faasos,breakfast order,970.73,Dining,0
+TXN01967,2024-11-09,RTGS Transfer,rent payment,23333.52,Transfer,0
+TXN00712,2024-11-09,DMart,supermarket shopping,20844.85,Groceries,1
+TXN01639,2024-11-09,MakeMyTrip,cab ride,30000.0,Travel,0
+TXN01889,2024-11-09,Zee5,concert booking,2089.04,Entertainment,0
+TXN01993,2024-11-10,IMPS Payment,credit card payment,40625.32,Transfer,0
+TXN01135,2024-11-10,H&M,apparel purchase,11472.98,Shopping,0
+TXN00576,2024-11-10,Nilgiris,fresh produce,1073.64,Groceries,0
+TXN00486,2024-11-10,BigBasket,fresh produce,1471.98,Groceries,0
+TXN00728,2024-11-10,Star Bazaar,supermarket shopping,2987.82,Groceries,0
+TXN00782,2024-11-11,Netflix Bill,insurance premium,2374.01,Bills,0
+TXN00634,2024-11-11,BigBasket,supermarket shopping,21615.58,Groceries,1
+TXN00751,2024-11-11,More Supermarket,vegetables and fruits,1797.18,Groceries,0
+TXN00990,2024-11-11,Water Tax Office,broadband payment,4093.79,Bills,0
+TXN00184,2024-11-11,Barbeque Nation,dine-in payment,958.17,Dining,0
+TXN01134,2024-11-12,Myntra,fashion purchase,15166.23,Shopping,0
+TXN00989,2024-11-12,Amazon Prime,subscription renewal,3707.4,Bills,0
+TXN00530,2024-11-12,BigBasket,supermarket shopping,1810.83,Groceries,0
+TXN01737,2024-11-12,Fortis Hospital,fitness subscription,4953.4,Health,0
+TXN00607,2024-11-12,Reliance Fresh,monthly grocery,1907.89,Groceries,0
+TXN00735,2024-11-12,Hypercity,grocery purchase,3924.24,Groceries,0
+TXN00553,2024-11-12,Spencers,household items,4147.99,Groceries,0
+TXN00116,2024-11-13,Swiggy,dinner bill,891.27,Dining,0
+TXN01147,2024-11-13,Amazon,gadget buy,8159.21,Shopping,0
+TXN00152,2024-11-13,Starbucks,delivery charge,907.43,Dining,0
+TXN00432,2024-11-13,Blinkit,weekly groceries,9465.02,Groceries,1
+TXN00361,2024-11-14,Chai Point,lunch payment,972.4,Dining,0
+TXN01293,2024-11-14,Ajio,accessories,87648.94,Shopping,1
+TXN01591,2024-11-14,Yatra,flight booking,9785.09,Travel,0
+TXN01616,2024-11-14,RedBus,train ticket,30000.0,Travel,0
+TXN00177,2024-11-15,Subway,restaurant bill,794.12,Dining,0
+TXN01860,2024-11-15,Apple Music,app subscription,2802.1,Entertainment,0
+TXN01065,2024-11-16,Lifestyle,home decor,10942.79,Shopping,0
+TXN01727,2024-11-16,Apollo Hospital,lab test,6093.13,Health,0
+TXN00362,2024-11-16,KFC,food order,1458.45,Dining,0
+TXN01806,2024-11-16,Amazon Prime Video,movie ticket,1339.89,Entertainment,0
+TXN00056,2024-11-16,Cafe Coffee Day,breakfast order,1146.59,Dining,0
+TXN01223,2024-11-17,Decathlon,electronics order,16300.05,Shopping,0
+TXN00568,2024-11-17,Grofers,weekly groceries,1737.2,Groceries,0
+TXN00433,2024-11-17,DMart,grocery purchase,2334.39,Groceries,0
+TXN01183,2024-11-17,Snapdeal,clothing,18264.95,Shopping,0
+TXN01248,2024-11-17,Decathlon,sports equipment,9296.78,Shopping,0
+TXN01120,2024-11-18,Myntra,electronics order,19257.85,Shopping,0
+TXN01983,2024-11-18,Google Pay,credit card payment,19651.22,Transfer,0
+TXN01994,2024-11-19,Paytm,bank transfer,33520.18,Transfer,0
+TXN00589,2024-11-19,Hypercity,household items,3624.24,Groceries,0
+TXN00643,2024-11-19,Star Bazaar,vegetables and fruits,2343.57,Groceries,0
+TXN01808,2024-11-19,Netflix,concert booking,3094.82,Entertainment,0
+TXN00660,2024-11-19,Reliance Fresh,weekly groceries,2454.12,Groceries,0
+TXN01996,2024-11-19,CRED Payment,family transfer,38740.53,Transfer,0
+TXN01553,2024-11-19,Uber,airport transfer,10575.31,Travel,0
+TXN01689,2024-11-19,1mg,doctor consultation,8455.89,Health,0
+TXN01559,2024-11-20,IndiGo Airlines,intercity travel,27297.38,Travel,0
+TXN01554,2024-11-20,MakeMyTrip,cab ride,10793.71,Travel,0
+TXN01664,2024-11-20,Dr. Lal PathLabs,lab test,5920.49,Health,0
+TXN00726,2024-11-21,Star Bazaar,dairy products,2415.53,Groceries,0
+TXN00348,2024-11-21,Faasos,lunch payment,449.91,Dining,0
+TXN00652,2024-11-21,More Supermarket,household items,4080.17,Groceries,0
+TXN01238,2024-11-22,H&M,apparel purchase,10137.3,Shopping,0
+TXN00141,2024-11-22,Cafe Coffee Day,delivery charge,865.25,Dining,0
+TXN01121,2024-11-23,Zara,clothing,19685.21,Shopping,0
+TXN00001,2024-11-23,Swiggy,food order,963.64,Dining,0
+TXN01995,2024-11-23,RTGS Transfer,family transfer,29061.24,Transfer,0
+TXN01396,2024-11-23,H&M,apparel purchase,13619.86,Shopping,0
+TXN00857,2024-11-23,Water Tax Office,water bill,2903.09,Bills,0
+TXN00640,2024-11-23,Nilgiris,online grocery order,1548.8,Groceries,0
+TXN00422,2024-11-23,More Supermarket,dairy products,5000.0,Groceries,0
+TXN00719,2024-11-23,Nilgiris,weekly groceries,2248.06,Groceries,0
+TXN01387,2024-11-23,Lifestyle,gadget buy,21292.48,Shopping,0
+TXN00902,2024-11-24,Netflix Bill,subscription renewal,3460.39,Bills,0
+TXN00848,2024-11-24,LIC Premium,DTH recharge,61403.96,Bills,1
+TXN01640,2024-11-25,BlaBlacar,flight booking,9803.14,Travel,0
+TXN01840,2024-11-25,Zee5,music subscription,2323.31,Entertainment,0
+TXN00810,2024-11-25,Vodafone,insurance premium,2831.69,Bills,0
+TXN00597,2024-11-25,Grofers,weekly groceries,2333.95,Groceries,0
+TXN00839,2024-11-26,Airtel,electricity bill payment,6004.12,Bills,0
+TXN00583,2024-11-26,Reliance Fresh,grocery purchase,3348.87,Groceries,0
+TXN01013,2024-11-26,Vodafone,society maintenance,8000.0,Bills,0
+TXN00466,2024-11-26,Grofers,grocery purchase,2380.06,Groceries,0
+TXN01230,2024-11-26,Flipkart,home decor,25000.0,Shopping,0
+TXN00284,2024-11-26,Starbucks,lunch payment,481.5,Dining,0
+TXN01847,2024-11-27,Xbox Live,concert booking,4189.26,Entertainment,0
+TXN00853,2024-11-27,MSEDCL,internet bill,3138.55,Bills,0
+TXN01508,2024-11-27,Uber,cab ride,22017.5,Travel,0
+TXN00371,2024-11-27,Faasos,delivery charge,797.78,Dining,0
+TXN01754,2024-11-27,Practo,health checkup,3630.22,Health,0
+TXN01349,2024-11-27,Nykaa,accessories,7322.16,Shopping,0
+TXN00452,2024-11-27,DMart,online grocery order,3809.77,Groceries,0
+TXN01827,2024-11-28,PVR Cinemas,movie ticket,1632.45,Entertainment,0
+TXN01201,2024-11-28,Nykaa,electronics order,13299.77,Shopping,0
+TXN00246,2024-11-28,Swiggy,food order,691.06,Dining,0
+TXN00401,2024-11-28,DMart,household items,1374.02,Groceries,0
+TXN01505,2024-11-29,IndiGo Airlines,outstation trip,14036.23,Travel,0
+TXN00734,2024-11-29,Nature's Basket,monthly grocery,1315.84,Groceries,0
+TXN00840,2024-11-29,HDFC Insurance,gas bill,3717.76,Bills,0
+TXN00269,2024-11-29,Cafe Coffee Day,breakfast order,4704.56,Dining,1
+TXN01419,2024-11-30,Uber,intercity travel,27690.87,Travel,0
+TXN01007,2024-11-30,Society Maintenance,subscription renewal,5793.83,Bills,0
+TXN01831,2024-11-30,INOX,event ticket,3351.9,Entertainment,0
+TXN00866,2024-11-30,Tata Power,gas bill,3468.2,Bills,0
+TXN01583,2024-11-30,Meru Cabs,cab ride,10008.02,Travel,0
+TXN00668,2024-12-01,Grofers,dairy products,4745.08,Groceries,0
+TXN00201,2024-12-01,Starbucks,food order,911.55,Dining,0
+TXN01526,2024-12-01,Air India,hotel booking,23224.67,Travel,0
+TXN01539,2024-12-01,IRCTC,bus ticket,9409.77,Travel,0
+TXN00498,2024-12-01,Hypercity,fresh produce,2409.4,Groceries,0
+TXN01657,2024-12-01,Max Hospital,fitness subscription,8076.28,Health,0
+TXN01884,2024-12-01,Sony LIV,event ticket,1992.23,Entertainment,0
+TXN00824,2024-12-01,MSEDCL,broadband payment,3502.87,Bills,0
+TXN01094,2024-12-02,Zara,gadget buy,83874.75,Shopping,1
+TXN01534,2024-12-02,BlaBlacar,outstation trip,138889.15,Travel,1
+TXN00358,2024-12-02,Faasos,breakfast order,703.85,Dining,0
+TXN01661,2024-12-02,Healthians,fitness subscription,12786.55,Health,0
+TXN01364,2024-12-02,Ajio,fashion purchase,8571.39,Shopping,0
+TXN00117,2024-12-02,Barbeque Nation,breakfast order,779.11,Dining,0
+TXN01681,2024-12-02,Apollo Hospital,pharmacy,8873.24,Health,0
+TXN01910,2024-12-02,PlayStation Store,app subscription,2673.58,Entertainment,0
+TXN00191,2024-12-03,Swiggy,dine-in payment,660.78,Dining,0
+TXN00991,2024-12-03,Mahanagar Gas,mobile recharge,4402.05,Bills,0
+TXN00162,2024-12-03,Domino's Pizza,dinner bill,1082.33,Dining,0
+TXN00678,2024-12-04,Blinkit,dairy products,5000.0,Groceries,0
+TXN01855,2024-12-04,Xbox Live,gaming purchase,3767.73,Entertainment,0
+TXN00104,2024-12-04,Starbucks,lunch payment,573.14,Dining,0
+TXN01843,2024-12-04,Sony LIV,concert booking,2027.39,Entertainment,0
+TXN00262,2024-12-04,Subway,restaurant bill,771.41,Dining,0
+TXN01770,2024-12-04,Apollo Pharmacy,fitness subscription,72633.96,Health,1
+TXN00931,2024-12-04,LIC Premium,gas bill,3243.45,Bills,0
+TXN00906,2024-12-04,Society Maintenance,DTH recharge,4125.93,Bills,0
+TXN00469,2024-12-05,Nature's Basket,grocery purchase,2102.89,Groceries,0
+TXN01590,2024-12-05,SpiceJet,hotel booking,15551.75,Travel,0
+TXN01735,2024-12-05,Healthians,pharmacy,10397.07,Health,0
+TXN01614,2024-12-05,GoIbibo,flight booking,14564.41,Travel,0
+TXN00805,2024-12-05,Mahanagar Gas,DTH recharge,3403.89,Bills,0
+TXN01817,2024-12-05,Sony LIV,streaming service,1067.71,Entertainment,0
+TXN00176,2024-12-06,Box8,takeaway order,1099.82,Dining,0
+TXN01204,2024-12-06,Apple Store,electronics order,15720.67,Shopping,0
+TXN00179,2024-12-07,Pizza Hut,takeaway order,710.64,Dining,0
+TXN00150,2024-12-07,Swiggy,takeaway order,889.65,Dining,0
+TXN00207,2024-12-07,Burger King,breakfast order,970.73,Dining,0
+TXN00704,2024-12-07,Grofers,supermarket shopping,1480.13,Groceries,0
+TXN00984,2024-12-08,Airtel,mobile recharge,3973.44,Bills,0
+TXN00250,2024-12-08,Swiggy,online food delivery,928.92,Dining,0
+TXN01824,2024-12-08,Sony LIV,app subscription,1946.9,Entertainment,0
+TXN01634,2024-12-08,Meru Cabs,airport transfer,22684.91,Travel,0
+TXN00830,2024-12-08,Water Tax Office,DTH recharge,3618.3,Bills,0
+TXN00598,2024-12-09,Zepto,fresh produce,1757.7,Groceries,0
+TXN01532,2024-12-09,Rapido,outstation trip,37422.7,Travel,1
+TXN00954,2024-12-09,LIC Premium,gas bill,7215.44,Bills,0
+TXN00351,2024-12-09,Swiggy,delivery charge,894.62,Dining,0
+TXN01784,2024-12-09,Dr. Lal PathLabs,medicine purchase,70685.02,Health,1
+TXN00937,2024-12-09,Indane Gas,DTH recharge,2691.84,Bills,0
+TXN00089,2024-12-10,Haldiram's,restaurant bill,639.14,Dining,0
+TXN00894,2024-12-10,Vodafone,insurance premium,6465.21,Bills,0
+TXN01136,2024-12-10,Myntra,gadget buy,18602.43,Shopping,0
+TXN00344,2024-12-10,Faasos,dine-in payment,645.0,Dining,0
+TXN00194,2024-12-10,Cafe Coffee Day,online food delivery,479.98,Dining,0
+TXN00912,2024-12-10,Netflix Bill,DTH recharge,27125.98,Bills,1
+TXN00929,2024-12-10,Society Maintenance,society maintenance,7575.55,Bills,0
+TXN00189,2024-12-11,Domino's Pizza,breakfast order,563.02,Dining,0
+TXN00343,2024-12-11,Faasos,food order,7353.02,Dining,1
+TXN01696,2024-12-11,Thyrocare,health insurance claim,15000.0,Health,0
+TXN00113,2024-12-11,Faasos,online food delivery,809.26,Dining,0
+TXN01914,2024-12-11,Netflix,event ticket,3085.08,Entertainment,0
+TXN00402,2024-12-11,Star Bazaar,monthly grocery,2045.74,Groceries,0
+TXN00183,2024-12-12,Starbucks,delivery charge,514.75,Dining,0
+TXN00004,2024-12-12,Starbucks,breakfast order,1452.8,Dining,0
+TXN01504,2024-12-12,Ola,hotel booking,15004.73,Travel,0
+TXN00809,2024-12-12,Vodafone,subscription renewal,6692.71,Bills,0
+TXN01115,2024-12-12,Croma,electronics order,13434.48,Shopping,0
+TXN01936,2024-12-12,Steam,music subscription,1384.1,Entertainment,0
+TXN00819,2024-12-12,LIC Premium,water bill,4185.52,Bills,0
+TXN01565,2024-12-12,MakeMyTrip,bus ticket,20175.18,Travel,0
+TXN01514,2024-12-12,SpiceJet,intercity travel,7121.38,Travel,0
+TXN01872,2024-12-13,Apple Music,concert booking,2317.0,Entertainment,0
+TXN01988,2024-12-13,CRED Payment,wallet top-up,31040.64,Transfer,0
+TXN00536,2024-12-13,Hypercity,online grocery order,2649.76,Groceries,0
+TXN01525,2024-12-14,Uber,cab ride,12946.59,Travel,0
+TXN01495,2024-12-14,MakeMyTrip,bus ticket,27842.38,Travel,0
+TXN00879,2024-12-14,Vodafone,utility payment,4023.48,Bills,0
+TXN00770,2024-12-14,HDFC Insurance,electricity bill payment,8000.0,Bills,0
+TXN01933,2024-12-14,BookMyShow,OTT subscription,2096.18,Entertainment,0
+TXN00046,2024-12-14,Pizza Hut,restaurant bill,592.35,Dining,0
+TXN01538,2024-12-14,BlaBlacar,airport transfer,12141.57,Travel,0
+TXN00567,2024-12-14,Nilgiris,household items,1150.57,Groceries,0
+TXN01945,2024-12-15,NEFT Transfer,credit card payment,32377.21,Transfer,0
+TXN00050,2024-12-15,Box8,breakfast order,390.26,Dining,0
+TXN00659,2024-12-16,Spencers,online grocery order,2814.39,Groceries,0
+TXN01627,2024-12-16,BlaBlacar,flight booking,12563.39,Travel,0
+TXN01058,2024-12-16,Indane Gas,internet bill,6474.09,Bills,0
+TXN01752,2024-12-16,Lybrate,health checkup,9901.61,Health,0
+TXN01006,2024-12-16,Society Maintenance,electricity bill payment,4740.35,Bills,0
+TXN01712,2024-12-16,Healthians,health insurance claim,7195.06,Health,0
+TXN00259,2024-12-16,Barbeque Nation,restaurant bill,5741.9,Dining,1
+TXN01866,2024-12-16,INOX,streaming service,1298.54,Entertainment,0
+TXN00977,2024-12-16,Tata Power,insurance premium,3379.73,Bills,0
+TXN00174,2024-12-17,Starbucks,online food delivery,905.51,Dining,0
+TXN00465,2024-12-17,Grofers,fresh produce,2485.76,Groceries,0
+TXN01755,2024-12-17,Netmeds,medicine purchase,9263.01,Health,0
+TXN01446,2024-12-17,Meru Cabs,auto rickshaw,11578.76,Travel,0
+TXN01691,2024-12-17,Healthians,gym membership,9546.98,Health,0
+TXN01531,2024-12-17,SpiceJet,auto rickshaw,15896.04,Travel,0
+TXN00740,2024-12-18,BigBasket,weekly groceries,3901.1,Groceries,0
+TXN00325,2024-12-18,Barbeque Nation,lunch payment,528.28,Dining,0
+TXN01500,2024-12-18,IRCTC,hotel booking,19043.51,Travel,0
+TXN01027,2024-12-18,Netflix Bill,electricity bill payment,4112.04,Bills,0
+TXN00337,2024-12-18,Cafe Coffee Day,dinner bill,567.84,Dining,0
+TXN01600,2024-12-18,BlaBlacar,auto rickshaw,61173.88,Travel,1
+TXN01473,2024-12-19,Ola,cab ride,14240.76,Travel,0
+TXN00815,2024-12-19,Netflix Bill,broadband payment,6119.34,Bills,0
+TXN00871,2024-12-19,Jio,subscription renewal,3773.25,Bills,0
+TXN01704,2024-12-19,Dr. Lal PathLabs,lab test,11768.51,Health,0
+TXN01232,2024-12-19,Amazon,fashion purchase,7313.6,Shopping,0
+TXN00800,2024-12-19,BESCOM,water bill,4098.49,Bills,0
+TXN00295,2024-12-19,McDonald's,online food delivery,911.27,Dining,0
+TXN00071,2024-12-19,Domino's Pizza,dine-in payment,912.87,Dining,0
+TXN01679,2024-12-20,Apollo Hospital,gym membership,11255.67,Health,0
+TXN00609,2024-12-20,Nilgiris,weekly groceries,1276.37,Groceries,0
+TXN01793,2024-12-21,Apollo Hospital,gym membership,7081.56,Health,0
+TXN01139,2024-12-21,Myntra,sports equipment,16064.59,Shopping,0
+TXN00700,2024-12-21,Spencers,vegetables and fruits,2414.64,Groceries,0
+TXN01214,2024-12-21,Myntra,accessories,18094.84,Shopping,0
+TXN01186,2024-12-21,Apple Store,gadget buy,18429.74,Shopping,0
+TXN01389,2024-12-21,Apple Store,gadget buy,12812.98,Shopping,0
+TXN01074,2024-12-21,Zara,accessories,44977.82,Shopping,1
+TXN01143,2024-12-21,Apple Store,electronics order,11913.06,Shopping,0
+TXN01930,2024-12-21,BookMyShow,concert booking,5000.0,Entertainment,0
+TXN00220,2024-12-21,McDonald's,online food delivery,816.3,Dining,0
+TXN01005,2024-12-22,BESCOM,insurance premium,5354.87,Bills,0
+TXN01441,2024-12-22,GoIbibo,train ticket,19587.04,Travel,0
+TXN00827,2024-12-22,MSEDCL,internet bill,7618.24,Bills,0
+TXN01710,2024-12-22,Cult.fit,medicine purchase,5112.74,Health,0
+TXN00103,2024-12-22,Starbucks,breakfast order,688.8,Dining,0
+TXN00199,2024-12-22,Pizza Hut,lunch payment,808.61,Dining,0
+TXN01111,2024-12-22,Lifestyle,gadget buy,11721.03,Shopping,0
+TXN00304,2024-12-23,McDonald's,lunch payment,1008.46,Dining,0
+TXN01369,2024-12-23,Meesho,online shopping,10594.6,Shopping,0
+TXN01913,2024-12-23,Sony LIV,streaming service,3259.13,Entertainment,0
+TXN01206,2024-12-24,Croma,home decor,12857.07,Shopping,0
+TXN00797,2024-12-24,Jio,gas bill,3986.42,Bills,0
+TXN01462,2024-12-24,Yatra,outstation trip,9207.3,Travel,0
+TXN01313,2024-12-24,Reliance Digital,gadget buy,22059.43,Shopping,0
+TXN01939,2024-12-24,Xbox Live,gaming purchase,3898.36,Entertainment,0
+TXN00453,2024-12-24,Blinkit,monthly grocery,1752.81,Groceries,0
+TXN01262,2024-12-25,Amazon,electronics order,13040.49,Shopping,0
+TXN01393,2024-12-25,H&M,clothing,25000.0,Shopping,0
+TXN00520,2024-12-25,Blinkit,household items,3511.58,Groceries,0
+TXN01091,2024-12-25,Apple Store,sports equipment,12292.84,Shopping,0
+TXN00028,2024-12-25,Box8,restaurant bill,918.11,Dining,0
+TXN01666,2024-12-25,MedPlus,medicine purchase,7481.25,Health,0
+TXN00876,2024-12-25,LIC Premium,broadband payment,8000.0,Bills,0
+TXN01179,2024-12-25,Reliance Digital,electronics order,8518.33,Shopping,0
+TXN00328,2024-12-25,Faasos,lunch payment,1084.31,Dining,0
+TXN00960,2024-12-26,BESCOM,water bill,4844.29,Bills,0
+TXN01418,2024-12-26,MakeMyTrip,intercity travel,16729.14,Travel,0
+TXN00870,2024-12-26,Vodafone,insurance premium,8000.0,Bills,0
+TXN01492,2024-12-26,Ola,hotel booking,30000.0,Travel,0
+TXN01370,2024-12-26,Decathlon,gadget buy,8879.42,Shopping,0
+TXN01208,2024-12-26,Flipkart,online shopping,9703.6,Shopping,0
+TXN00922,2024-12-26,Society Maintenance,mobile recharge,2686.15,Bills,0
+TXN01828,2024-12-26,Spotify,gaming purchase,4439.82,Entertainment,0
+TXN01324,2024-12-26,Decathlon,online shopping,15367.55,Shopping,0
+TXN01383,2024-12-26,Zara,clothing,25000.0,Shopping,0
+TXN00129,2024-12-26,Cafe Coffee Day,breakfast order,822.13,Dining,0
+TXN00633,2024-12-27,Spencers,online grocery order,2440.76,Groceries,0
+TXN00803,2024-12-27,BSNL,DTH recharge,4208.75,Bills,0
+TXN00785,2024-12-28,HDFC Insurance,insurance premium,5066.41,Bills,0
+TXN01400,2024-12-28,Zara,gadget buy,9726.94,Shopping,0
+TXN00267,2024-12-28,McDonald's,dinner bill,1500.0,Dining,0
+TXN01081,2024-12-28,Ajio,accessories,11003.31,Shopping,0
+TXN01113,2024-12-29,Flipkart,online shopping,17915.82,Shopping,0
+TXN01169,2024-12-29,H&M,clothing,16047.59,Shopping,0
+TXN00367,2024-12-29,McDonald's,dine-in payment,864.08,Dining,0
+TXN01694,2024-12-29,MedPlus,pharmacy,4406.83,Health,0
+TXN01725,2024-12-29,Netmeds,medicine purchase,5193.31,Health,0
+TXN01692,2024-12-29,Max Hospital,gym membership,6243.78,Health,0
+TXN00621,2024-12-30,Star Bazaar,supermarket shopping,1895.19,Groceries,0
+TXN01303,2024-12-30,Nykaa,apparel purchase,114188.0,Shopping,1
+TXN01042,2024-12-30,Vodafone,subscription renewal,3370.84,Bills,0
+TXN01510,2024-12-30,OYO Rooms,hotel booking,27132.37,Travel,0
+TXN00494,2024-12-30,Grofers,monthly grocery,1842.27,Groceries,0
+TXN00216,2024-12-31,Cafe Coffee Day,online food delivery,1070.22,Dining,0
+TXN00777,2024-12-31,Tata Power,broadband payment,3027.88,Bills,0
+TXN00582,2024-12-31,DMart,fresh produce,11100.68,Groceries,1
+TXN01040,2024-12-31,Jio,electricity bill payment,6156.79,Bills,0

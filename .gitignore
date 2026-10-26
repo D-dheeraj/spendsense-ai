@@ -1,0 +1,28 @@
+# Python virtual environment
+venv/
+env/
+ENV/
+
+# Secrets & Environment variables (NEVER COMMIT API KEYS)
+.env
+.env.local
+
+# Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Agent / IDE scratch
+.gemini/
+scratch/
+*.log
+
+# User uploaded statements (keep folder, ignore uploaded files)
+uploads/*
+!uploads/.gitkeep

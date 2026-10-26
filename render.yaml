@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: spendsense-ai
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --workers 2 --threads 4 --timeout 120 app:app
+    envVars:
+      - key: FLASK_DEBUG
+        value: "False"
+      - key: PYTHON_VERSION
+        value: 3.10.12

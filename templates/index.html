@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width="device-width, initial-scale=1.0">
+  <title>SpendSense AI — Personal Finance Advisor</title>
+  <meta name="description" content="SpendSense AI: Multi-agent personal finance advisor with self-trained ML for expense categorization, anomaly detection and financial guidance.">
+  <link rel="icon" type="image/svg+xml" href="/static/img/logo-mark.svg">
+
+  <!-- Pre-paint Theme Detection to Prevent Flash -->
+  <script>
+    (function() {
+      try {
+        const savedTheme = localStorage.getItem('spendsense_theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="/static/js/lucide.min.js"></script>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<!-- Loading Overlay -->
+<div id="loading-overlay" style="display:none" class="loading-overlay">
+  <div class="spinner"></div>
+  <p id="loading-text" class="loading-text">Processing...</p>
+</div>
+
+<!-- Toast Container -->
+<div id="toast-container" class="toast-container"></div>
+
+<!-- Forgot Password Overlay -->
+<div id="forgot-overlay" class="modal-overlay">
+  <div class="modal-box forgot-card" style="position:relative">
+    <button class="close-btn modal-close-btn" onclick="closeForgotPassword()" aria-label="Close dialog">
+      <i data-lucide="x"></i>
+    </button>
+
+    <!-- Step 1: Enter username + new password -->
+    <div class="forgot-step active" id="forgot-step-1">
+      <h2 style="display:flex;align-items:center;gap:8px;font-size:1.3rem;margin-bottom:6px">
+        <i data-lucide="lock"></i> Reset Password
+      </h2>
+      <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:20px">Enter your username and choose a new password.</p>
+      <form id="forgot-form">
+        <div class="form-group">
+          <label class="form-label">Username</label>
+          <input class="form-input" type="text" id="forgot-username" placeholder="Your username" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">New Password</label>
+          <input class="form-input" type="password" id="forgot-new-pass" placeholder="Min. 6 characters" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Confirm New Password</label>
+          <input class="form-input" type="password" id="forgot-confirm-pass" placeholder="Repeat new password" required>
+        </div>
+        <button class="btn btn-primary" type="submit" id="forgot-submit-btn" style="width:100%">
+          <i data-lucide="refresh-cw"></i> Reset Password
+        </button>
+      </form>
+    </div>
+
+    <!-- Step 2: Success -->
+    <div class="forgot-step" id="forgot-step-2">
+      <div class="success-box" style="text-align:center;padding:20px 0">
+        <span class="big-icon" style="color:var(--color-positive);margin-bottom:12px;display:inline-block">
+          <i data-lucide="check-circle-2" class="lucide-xl"></i>
+        </span>
+        <h3 style="margin-bottom:8px">Password Reset!</h3>
+        <p style="color:var(--text-muted);margin-bottom:20px;font-size:0.88rem">
+          Your password has been updated successfully.
+        </p>
+        <button class="btn btn-primary" onclick="closeForgotPassword()" style="margin:0 auto;display:inline-flex">
+          Go to Login
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 1 — ROLE SELECTOR
+═══════════════════════════════════════════════════════════════════ -->
+<div id="role-screen">
+  <!-- Floating Theme Toggle for public/role screen -->
+  <div style="position:absolute;top:20px;right:24px;z-index:20">
+    <button class="btn-icon theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme">
+      <i data-lucide="sun" class="theme-icon-sun"></i>
+      <i data-lucide="moon" class="theme-icon-moon" style="display:none"></i>
+    </button>
+  </div>
+
+  <div class="role-card">
+    <div class="brand-hero-header">
+      <div class="brand-badge-large">
+        <img src="/static/img/logo-mark.svg" alt="SpendSense AI" class="brand-mark-lg">
+        <div class="brand-text-block">
+          <h1 class="brand-title-lg">SpendSense <span class="brand-gradient-text">AI</span></h1>
+          <span class="brand-badge-tag">FINANCIAL INTELLIGENCE</span>
+        </div>
+      </div>
+      <p class="brand-hero-desc">
+        Multi-agent personal finance advisor powered by self-trained ML for real-time categorization, anomaly detection, and predictive cash flow diagnostics.
+      </p>
+    </div>
+    <div class="role-grid role-grid-container">
+      <!-- User Login -->
+      <div class="role-btn user-role" onclick="selectRole('user')">
+        <div class="role-icon-box">
+          <i data-lucide="user" class="lucide-xl"></i>
+        </div>
+        <div>
+          <h3 style="margin-bottom:6px">User Portal</h3>
+          <p>Upload statements, track burn pace, view ML insights &amp; chat with data</p>
+        </div>
+        <span class="role-pill-tag user">Personal Account</span>
+      </div>
+      <!-- Admin Login -->
+      <div class="role-btn admin-role" onclick="selectRole('admin')">
+        <div class="role-icon-box" style="color:var(--color-danger)">
+          <i data-lucide="shield-check" class="lucide-xl"></i>
+        </div>
+        <div>
+          <h3 style="margin-bottom:6px">Admin Console</h3>
+          <p>Platform telemetry, user access control, audit logs &amp; retrain ML models</p>
+        </div>
+        <span class="role-pill-tag admin">Administrator</span>
+      </div>
+    </div>
+    <p style="margin-top:32px;font-size:0.85rem;color:var(--text-muted)">
+      First time here? <span style="color:var(--accent-amber);cursor:pointer;font-weight:600"
+        onclick="selectRole('user');switchAuthTab('register')">Create an account &rarr;</span>
+    </p>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 2 — USER AUTH
+═══════════════════════════════════════════════════════════════════ -->
+<div id="auth-screen" style="display:none">
+  <!-- Floating Theme Toggle -->
+  <div style="position:absolute;top:20px;right:24px;z-index:20">
+    <button class="btn-icon theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme">
+      <i data-lucide="sun" class="theme-icon-sun"></i>
+      <i data-lucide="moon" class="theme-icon-moon" style="display:none"></i>
+    </button>
+  </div>
+
+  <div class="auth-card">
+    <button class="auth-back-btn" onclick="goBackToRoleSelect()">
+      <i data-lucide="arrow-left"></i> Back to selection
+    </button>
+
+    <div class="auth-header-block">
+      <div class="brand-badge-auth">
+        <img src="/static/img/logo-mark.svg" alt="SpendSense AI" class="brand-mark-md">
+        <div class="brand-text-block">
+          <h2 class="brand-title-md">SpendSense <span class="brand-gradient-text">AI</span></h2>
+          <span class="brand-subtext">Personal Finance Portal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-tabs">
+      <button class="auth-tab active" data-tab="login" id="tab-login">Login</button>
+      <button class="auth-tab" data-tab="register" id="tab-register">Register</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="login-form">
+      <div class="form-group">
+        <label class="form-label">Username</label>
+        <input class="form-input" type="text" id="login-username" placeholder="Enter username" autocomplete="username" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input class="form-input" type="password" id="login-password" placeholder="Enter password" autocomplete="current-password" required>
+      </div>
+      <button class="btn btn-primary" type="submit" id="login-btn" style="width:100%">
+        <i data-lucide="lock"></i> Sign In
+      </button>
+
+      <p style="text-align:center;margin-top:16px;font-size:0.84rem">
+        <span style="color:var(--accent-amber);cursor:pointer;font-weight:500"
+              onclick="openForgotPassword()">Forgot password?</span>
+      </p>
+    </form>
+
+    <!-- Register Form -->
+    <form id="register-form" style="display:none">
+      <div class="form-group">
+        <label class="form-label">Username</label>
+        <input class="form-input" type="text" id="reg-username" placeholder="Min. 3 characters" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email</label>
+        <input class="form-input" type="email" id="reg-email" placeholder="name@domain.com" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input class="form-input" type="password" id="reg-password" placeholder="Min. 6 characters" required>
+      </div>
+      <button class="btn btn-primary" type="submit" id="register-btn" style="width:100%">
+        <i data-lucide="user-plus"></i> Create Account
+      </button>
+    </form>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 3 — ADMIN AUTH
+═══════════════════════════════════════════════════════════════════ -->
+<div id="admin-auth-screen" style="display:none">
+  <!-- Floating Theme Toggle -->
+  <div style="position:absolute;top:20px;right:24px;z-index:20">
+    <button class="btn-icon theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme">
+      <i data-lucide="sun" class="theme-icon-sun"></i>
+      <i data-lucide="moon" class="theme-icon-moon" style="display:none"></i>
+    </button>
+  </div>
+
+  <div class="auth-card admin-mode">
+    <button class="auth-back-btn" onclick="goBackToRoleSelect()">
+      <i data-lucide="arrow-left"></i> Back to selection
+    </button>
+
+    <div class="auth-header-block">
+      <div class="brand-badge-auth">
+        <div class="brand-admin-icon-shield">
+          <i data-lucide="shield-check" class="lucide-lg"></i>
+        </div>
+        <div class="brand-text-block">
+          <h2 class="brand-title-md">SpendSense <span class="brand-gradient-text" style="background:var(--grad-red);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Admin</span></h2>
+          <span class="brand-subtext" style="color:var(--color-danger)">Restricted Management Console</span>
+        </div>
+      </div>
+    </div>
+
+    <form id="admin-login-form">
+      <div class="form-group">
+        <label class="form-label">Admin Username</label>
+        <input class="form-input" type="text" id="admin-login-username"
+               placeholder="Admin username" autocomplete="username" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Admin Password</label>
+        <input class="form-input" type="password" id="admin-login-password"
+               placeholder="Admin password" autocomplete="current-password" required>
+      </div>
+      <button class="btn btn-danger" type="submit" id="admin-login-btn" style="width:100%">
+        <i data-lucide="shield-check"></i> Admin Sign In
+      </button>
+
+      <p style="text-align:center;margin-top:14px;font-size:0.82rem">
+        <span style="color:var(--color-danger);cursor:pointer;font-weight:500"
+              onclick="openForgotPassword()">Forgot admin password?</span>
+      </p>
+    </form>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     USER DASHBOARD
+═══════════════════════════════════════════════════════════════════ -->
+<div id="user-dashboard" class="app-wrapper" style="display:none">
+
+  <!-- Off-Canvas Mobile Drawer Overlay -->
+  <div class="mobile-overlay" id="user-mobile-overlay" onclick="closeMobileSidebar()"></div>
+
+  <!-- Sidebar (Fixed 260px) -->
+  <aside class="sidebar" id="user-sidebar">
+    <div class="sidebar-header">
+      <a href="#" class="sidebar-brand-link" onclick="showPanel('panel-overview');return false;">
+        <img src="/static/img/logo-mark.svg" alt="SpendSense AI" class="sidebar-brand-mark">
+        <div class="sidebar-brand-text">
+          <span class="sidebar-brand-title">SpendSense <span class="brand-gradient-text">AI</span></span>
+          <span class="sidebar-brand-version">Smart Finance Pro</span>
+        </div>
+      </a>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-section-label">Dashboard</div>
+      <button class="nav-item active" data-panel="panel-overview" onclick="showPanel('panel-overview')">
+        <i data-lucide="layout-dashboard"></i> <span>Overview</span>
+      </button>
+      <button class="nav-item" data-panel="panel-upload" onclick="showPanel('panel-upload')">
+        <i data-lucide="upload-cloud"></i> <span>Upload CSV</span>
+      </button>
+      <button class="nav-item" data-panel="panel-transactions" onclick="showPanel('panel-transactions')">
+        <i data-lucide="receipt"></i> <span>Transactions</span>
+      </button>
+      <button class="nav-item" data-panel="panel-charts" onclick="showPanel('panel-charts')">
+        <i data-lucide="trending-up"></i> <span>Charts</span>
+      </button>
+
+      <div class="nav-section-label">AI Insights</div>
+      <button class="nav-item" data-panel="panel-chat" onclick="showPanel('panel-chat')">
+        <i data-lucide="message-square"></i> <span>Chat with AI</span>
+        <span class="chat-nav-badge">LIVE AI</span>
+      </button>
+      <button class="nav-item" data-panel="panel-insight" onclick="showPanel('panel-insight')">
+        <i data-lucide="lightbulb"></i> <span>Spending Insight</span>
+      </button>
+      <button class="nav-item" data-panel="panel-budget" onclick="showPanel('panel-budget')">
+        <i data-lucide="target"></i> <span>Budget Tips</span>
+      </button>
+      <button class="nav-item" data-panel="panel-alerts" onclick="showPanel('panel-alerts')">
+        <i data-lucide="alert-triangle"></i> <span>Alerts</span>
+        <span class="nav-badge" id="alert-badge" style="display:none">0</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-profile-widget">
+        <div class="user-avatar-badge" id="user-avatar">U</div>
+        <div class="user-meta">
+          <div class="user-meta-name" id="user-name">User</div>
+          <div class="user-meta-role" id="user-role-badge">user</div>
+        </div>
+      </div>
+      <button class="btn btn-ghost btn-sm" onclick="handleLogout()" style="width:100%;justify-content:center">
+        <i data-lucide="log-out"></i> Logout
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Content Wrapper with Sticky Header -->
+  <div class="main-wrapper main-content">
+
+    <!-- Sticky Header (64px) -->
+    <header class="app-header">
+      <div class="header-left">
+        <button class="mobile-sidebar-toggle" onclick="toggleMobileSidebar()" aria-label="Toggle navigation">
+          <i data-lucide="menu"></i>
+        </button>
+        <div class="header-title-crumb">
+          <span id="user-crumb-title">Overview</span>
+          <span class="crumb-sub" id="user-crumb-sub">Financial snapshot</span>
+        </div>
+      </div>
+      <div class="header-right">
+        <button class="btn-icon theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme">
+          <i data-lucide="sun" class="theme-icon-sun"></i>
+          <i data-lucide="moon" class="theme-icon-moon" style="display:none"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Content Area Container (Max-width 1440px with 24px Gutters) -->
+    <div class="content-area-container content-area">
+
+      <!-- Overview Panel -->
+      <div class="panel active" id="panel-overview">
+        <div class="page-header-row">
+          <div>
+            <h2>Financial Overview</h2>
+            <p>Your real-time expense telemetry, predictive score and budget tracking</p>
+          </div>
+        </div>
+
+        <!-- Quick Actions Bar -->
+        <div class="quick-actions-bar">
+          <button class="quick-action-pill primary-pill" onclick="showPanel('panel-upload')">
+            <i data-lucide="upload-cloud"></i> Upload Statement
+          </button>
+          <button class="quick-action-pill" onclick="loadDemoCsv()">
+            <i data-lucide="sparkles"></i> Try Demo Statement
+          </button>
+          <button class="quick-action-pill" onclick="toggleBudgetEdit()">
+            <i data-lucide="target"></i> Set Budget Target
+          </button>
+          <button class="quick-action-pill" onclick="showPanel('panel-chat')">
+            <i data-lucide="message-square"></i> Ask AI Advisor
+          </button>
+        </div>
+
+        <!-- 4 Equal Column KPI Row -->
+        <div class="kpi-grid stats-grid">
+          <div class="kpi-card stat-card">
+            <div class="kpi-card-top">
+              <span class="kpi-label">Total Spend</span>
+              <div class="kpi-icon-pill"><i data-lucide="indian-rupee"></i></div>
+            </div>
+            <div class="kpi-card-value stat-value" id="stat-total-spend">&mdash;</div>
+            <div class="kpi-card-sub">
+              <span id="stat-mom-badge" class="stat-badge" style="display:none"></span>
+            </div>
+          </div>
+
+          <div class="kpi-card stat-card">
+            <div class="kpi-card-top">
+              <span class="kpi-label">Transactions</span>
+              <div class="kpi-icon-pill" style="color:var(--color-positive)"><i data-lucide="receipt"></i></div>
+            </div>
+            <div class="kpi-card-value stat-value" id="stat-total-txns">&mdash;</div>
+            <div class="kpi-card-sub">Categorized records</div>
+          </div>
+
+          <div class="kpi-card stat-card">
+            <div class="kpi-card-top">
+              <span class="kpi-label">Anomalies</span>
+              <div class="kpi-icon-pill" style="color:var(--color-danger)"><i data-lucide="alert-triangle"></i></div>
+            </div>
+            <div class="kpi-card-value stat-value" id="stat-anomalies">&mdash;</div>
+            <div class="kpi-card-sub">Flagged by Isolation Forest</div>
+          </div>
+
+          <div class="kpi-card stat-card">
+            <div class="kpi-card-top">
+              <span class="kpi-label">Top Category</span>
+              <div class="kpi-icon-pill" style="color:var(--accent-coral)"><i data-lucide="award"></i></div>
+            </div>
+            <div class="kpi-card-value stat-value" style="font-size:1.25rem" id="stat-top-category">&mdash;</div>
+            <div class="kpi-card-sub">Highest outflow share</div>
+            <span id="stat-categories" style="display:none"></span>
+          </div>
+        </div>
+
+        <!-- Financial Health Score Gauge (12-col card) -->
+        <div class="card" style="margin-bottom:24px">
+          <div class="card-header">
+            <div style="display:flex;align-items:center;gap:12px">
+              <h3><i data-lucide="activity"></i> Financial Health Score</h3>
+              <span id="health-score-badge" class="category-badge cat-health" style="font-weight:700">Calculating...</span>
+            </div>
+            <span style="font-size:0.75rem;color:var(--text-muted)">0&ndash;100 Rule-Based ML Engine</span>
+          </div>
+          <div class="card-body">
+            <div class="health-gauge-grid">
+              <div class="health-gauge-wrapper">
+                <canvas id="health-gauge-chart"></canvas>
+              </div>
+              <div class="health-breakdown">
+                <p id="health-explanation" style="font-size:0.92rem;color:var(--text-primary);margin-bottom:14px;font-weight:500">
+                  Upload a statement to generate your comprehensive multi-pillar health score.
+                </p>
+                <div class="pillars-grid">
+                  <div class="pillar-item">
+                    <span class="pillar-label">Discretionary Spend (30 max)</span>
+                    <span class="pillar-val" id="pillar-disc">&mdash; / 30</span>
+                  </div>
+                  <div class="pillar-item">
+                    <span class="pillar-label">Spending Stability (25 max)</span>
+                    <span class="pillar-val" id="pillar-stability">&mdash; / 25</span>
+                  </div>
+                  <div class="pillar-item">
+                    <span class="pillar-label">Anomaly Ratio (25 max)</span>
+                    <span class="pillar-val" id="pillar-anomaly">&mdash; / 25</span>
+                  </div>
+                  <div class="pillar-item">
+                    <span class="pillar-label">Trend &amp; MoM (20 max)</span>
+                    <span class="pillar-val" id="pillar-trend">&mdash; / 20</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Insight & Alerts Cards (6/6 Grid) -->
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-header">
+              <h3><i data-lucide="lightbulb"></i> AI Spending Insight</h3>
+              <button class="btn btn-sm btn-ghost" onclick="showPanel('panel-insight')">
+                View Full <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+            <div class="card-body" id="overview-insight-content">
+              <div class="empty-state" style="padding:32px">
+                <span class="empty-icon"><i data-lucide="bar-chart-3"></i></span>
+                <h3>No data yet</h3>
+                <p>Upload a CSV to see AI-powered insights.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3><i data-lucide="alert-triangle"></i> Recent Alerts</h3>
+              <button class="btn btn-sm btn-ghost" onclick="showPanel('panel-alerts')">
+                View All <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+            <div class="card-body" id="overview-alerts-content">
+              <div class="no-alerts">
+                <span class="big-icon" style="color:var(--color-positive)"><i data-lucide="check-circle-2"></i></span>
+                <p>No anomalies detected yet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Financial Workspace: Smart Goal Planner & Cheat Notes Studio -->
+        <div class="card workspace-card" style="margin-top:24px">
+          <div class="card-header">
+            <div style="display:flex;align-items:center;gap:12px">
+              <h3><i data-lucide="target"></i> My Financial Workspace</h3>
+              <span id="workspace-pace-badge" class="category-badge cat-groceries" style="font-weight:700">Tracking Active</span>
+            </div>
+          </div>
+          <div class="card-body" style="padding:20px">
+            <div class="workspace-grid">
+              
+              <!-- Column 1: Monthly Budget Goal & Burn Pace -->
+              <div class="workspace-box">
+                <div class="ws-box-header">
+                  <div style="display:flex;align-items:center;gap:8px">
+                    <i data-lucide="bar-chart-2"></i>
+                    <div>
+                      <h4 style="margin:0;font-size:0.95rem">Monthly Budget Target</h4>
+                      <span style="font-size:0.75rem;color:var(--text-muted)">Real-time Burn Pace &amp; Daily Allowance</span>
+                    </div>
+                  </div>
+                  <button class="btn btn-sm ws-btn-ghost" onclick="toggleBudgetEdit()">
+                    <i data-lucide="edit-3"></i> Edit Target
+                  </button>
+                </div>
+
+                <!-- Inline Budget Editor (Hidden by default) -->
+                <div id="ws-budget-edit-row" style="display:none;margin-top:12px;gap:8px;align-items:center">
+                  <input type="number" id="ws-budget-input" class="chat-input" style="padding:8px 12px;font-size:0.85rem" placeholder="e.g. 50000">
+                  <button class="btn btn-primary btn-sm" onclick="saveWorkspaceBudget()">Save</button>
+                  <button class="btn btn-sm ws-btn-ghost" onclick="toggleBudgetEdit()">Cancel</button>
+                </div>
+
+                <div style="margin:16px 0 10px 0">
+                  <div style="display:flex;justify-content:space-between;align-items:baseline">
+                    <span style="font-size:0.8rem;color:var(--text-muted)">Current Outflow:</span>
+                    <span style="font-size:1.2rem;font-weight:800;color:var(--text-primary)" id="ws-spend-display">₹0</span>
+                  </div>
+                  <div class="ws-progress-track">
+                    <div id="ws-progress-bar" class="ws-progress-fill" style="width:0%"></div>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:4px">
+                    <span id="ws-pct-label">0% used</span>
+                    <span id="ws-goal-display">Target: ₹50,000</span>
+                  </div>
+                </div>
+
+                <div class="ws-metric-pill-row">
+                  <div class="ws-mini-pill">
+                    <span class="ws-mini-lbl">Remaining Balance</span>
+                    <span class="ws-mini-val" id="ws-remaining-amt">&mdash;</span>
+                  </div>
+                  <div class="ws-mini-pill">
+                    <span class="ws-mini-lbl">Safe Daily Allowance</span>
+                    <span class="ws-mini-val" id="ws-daily-allowance">&mdash;</span>
+                  </div>
+                </div>
+
+                <!-- Quick Target Presets -->
+                <div class="ws-presets-row">
+                  <span style="font-size:0.72rem;color:var(--text-muted)">Quick Set:</span>
+                  <button class="ws-preset-chip" onclick="quickSetBudget(25000)">₹25k</button>
+                  <button class="ws-preset-chip" onclick="quickSetBudget(50000)">₹50k</button>
+                  <button class="ws-preset-chip" onclick="quickSetBudget(75000)">₹75k</button>
+                  <button class="ws-preset-chip" onclick="quickSetBudget(100000)">₹1L</button>
+                </div>
+              </div>
+
+              <!-- Column 2: Smart Financial Cheat Notes & Reminders -->
+              <div class="workspace-box">
+                <div class="ws-box-header">
+                  <div style="display:flex;align-items:center;gap:8px">
+                    <i data-lucide="file-text"></i>
+                    <div>
+                      <h4 style="margin:0;font-size:0.95rem">Financial Cheat Notes &amp; Rules</h4>
+                      <span style="font-size:0.75rem;color:var(--text-muted)">Save personal spending limits, reminders &amp; memos</span>
+                    </div>
+                  </div>
+                  <span class="category-badge cat-health" id="ws-notes-count" style="font-size:0.7rem">0 Notes</span>
+                </div>
+
+                <!-- Add Note Input -->
+                <div class="ws-note-input-row">
+                  <input type="text" id="ws-new-note-input" placeholder="e.g. Cancel Netflix on 25th, or Max ₹400 on Zomato..." onkeydown="if(event.key==='Enter') addWorkspaceNote()">
+                  <button class="btn btn-primary ws-add-btn" onclick="addWorkspaceNote()">+ Add</button>
+                </div>
+
+                <!-- Notes List Container -->
+                <div class="ws-notes-list" id="ws-notes-container">
+                  <div class="ws-empty-notes">No notes yet. Add your personal financial rules or reminders above!</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Upload Panel (with Feature 2b: Live Agent Stepper) -->
+      <div class="panel" id="panel-upload">
+        <div class="page-header-row">
+          <div>
+            <h2>Upload Statement</h2>
+            <p>Upload a CSV file to trigger the ML classification and multi-agent pipeline</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <div class="upload-zone" id="upload-zone">
+              <input type="file" id="file-input" accept=".csv">
+              <span class="upload-icon"><i data-lucide="upload-cloud" class="lucide-xl"></i></span>
+              <h4>Drag &amp; drop your CSV file here</h4>
+              <p>or click to browse &mdash; supports statements up to 10MB</p>
+              <div style="margin-top:16px">
+                <span class="category-badge cat-dining">date</span>&nbsp;
+                <span class="category-badge cat-groceries">merchant</span>&nbsp;
+                <span class="category-badge cat-bills">amount</span>&nbsp;
+                <span class="category-badge cat-shopping">description (optional)</span>
+              </div>
+            </div>
+
+            <!-- Upload Progress + Stepper -->
+            <div class="upload-progress" id="upload-progress" style="display:none">
+              <div class="progress-label" id="progress-label">Reading file...</div>
+              <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+              </div>
+
+              <!-- Live Agent Stepper -->
+              <div class="upload-stepper" id="upload-stepper">
+                <div class="stepper-item pending" id="step-cat">
+                  <div class="step-circle">1</div>
+                  <div class="step-content">
+                    <div class="step-title"><i data-lucide="tag"></i> Categorization</div>
+                    <div class="step-desc">Random Forest Classifier</div>
+                  </div>
+                </div>
+                <div class="stepper-line"></div>
+                <div class="stepper-item pending" id="step-anom">
+                  <div class="step-circle">2</div>
+                  <div class="step-content">
+                    <div class="step-title"><i data-lucide="search"></i> Anomaly Detector</div>
+                    <div class="step-desc">Isolation Forest</div>
+                  </div>
+                </div>
+                <div class="stepper-line"></div>
+                <div class="stepper-item pending" id="step-insight">
+                  <div class="step-circle">3</div>
+                  <div class="step-content">
+                    <div class="step-title"><i data-lucide="lightbulb"></i> Insight Narrative</div>
+                    <div class="step-desc">Gemini Insight Agent</div>
+                  </div>
+                </div>
+                <div class="stepper-line"></div>
+                <div class="stepper-item pending" id="step-tips">
+                  <div class="step-circle">4</div>
+                  <div class="step-content">
+                    <div class="step-title"><i data-lucide="bell"></i> Tips &amp; Alerts</div>
+                    <div class="step-desc">Advisor &amp; Alert Agents</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:28px">
+              <h4 style="margin-bottom:16px;color:var(--text-secondary)">Pipeline Execution Stages</h4>
+              <div class="grid-12">
+                <div class="col-3 tip-card">
+                  <div class="tip-icon-badge cat-dining"><i data-lucide="tag"></i></div>
+                  <div class="tip-text"><strong>ML Categorizer</strong> &mdash; Random Forest classifies merchant transactions</div>
+                </div>
+                <div class="col-3 tip-card">
+                  <div class="tip-icon-badge cat-coral"><i data-lucide="shield-alert"></i></div>
+                  <div class="tip-text"><strong>Anomaly Detector</strong> &mdash; Isolation Forest flags statistical surges</div>
+                </div>
+                <div class="col-3 tip-card">
+                  <div class="tip-icon-badge cat-amber"><i data-lucide="sparkles"></i></div>
+                  <div class="tip-text"><strong>AI Multi-Agent</strong> &mdash; Gemini generates actionable financial advice</div>
+                </div>
+                <div class="col-3 tip-card">
+                  <div class="tip-icon-badge cat-positive"><i data-lucide="refresh-cw"></i></div>
+                  <div class="tip-text"><strong>Dashboard Sync</strong> &mdash; Charts, health score &amp; telemetry refresh</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:20px;padding:14px;background:var(--bg-surface-raised);border:1px solid var(--border-color);border-radius:10px">
+              <p style="font-size:0.85rem;color:var(--text-secondary)">
+                <strong>Sample File:</strong> Use <code style="background:var(--bg-card);padding:2px 6px;border-radius:4px">data/sample_upload.csv</code> from the root workspace for an immediate live demo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transactions Panel -->
+      <div class="panel" id="panel-transactions">
+        <div class="page-header-row">
+          <div>
+            <h2>Transaction Ledger</h2>
+            <p>Categorized records with machine learning predictions and anomaly scores</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="filter-bar">
+            <select class="filter-select" id="category-filter" onchange="handleCategoryFilter(this.value)">
+              <option value="">All Categories</option>
+              <option>Dining</option><option>Groceries</option><option>Bills</option>
+              <option>Shopping</option><option>Travel</option><option>Health</option>
+              <option>Entertainment</option><option>Transfer</option>
+            </select>
+            <button class="filter-toggle" id="anomaly-filter-btn" onclick="handleAnomalyFilter()">
+              Show Anomalies Only
+            </button>
+            <span class="filter-count" id="txn-count"></span>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th><th>Merchant</th><th>Description</th>
+                  <th class="col-num">Amount</th><th>Category</th><th>Confidence</th>
+                  <th>Status</th><th class="col-num">Score</th>
+                </tr>
+              </thead>
+              <tbody id="txn-tbody">
+                <tr><td colspan="8" style="text-align:center;padding:32px;color:var(--text-muted)">
+                  Load transactions from the sidebar menu.
+                </td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="txn-pagination" class="pagination"></div>
+        </div>
+      </div>
+
+      <!-- Charts Panel (with Feature 3: Forecast Line) -->
+      <div class="panel" id="panel-charts">
+        <div class="page-header-row">
+          <div>
+            <h2>Spending Charts &amp; Forecast</h2>
+            <p>Visual category distribution and scikit-learn Linear Regression spend projection</p>
+          </div>
+        </div>
+
+        <div class="grid-12">
+          <div class="col-6 card">
+            <div class="card-header">
+              <h3><i data-lucide="pie-chart"></i> Category Breakdown</h3>
+            </div>
+            <div class="card-body">
+              <div class="chart-container" style="height:300px"><canvas id="category-chart"></canvas></div>
+            </div>
+          </div>
+          <div class="col-6 card">
+            <div class="card-header">
+              <h3><i data-lucide="trending-up"></i> Monthly Trend &amp; ML Forecast</h3>
+            </div>
+            <div class="card-body">
+              <div class="chart-container" style="height:300px"><canvas id="trend-chart"></canvas></div>
+              <div id="forecast-info-badge" style="display:none;margin-top:14px;padding:10px 14px;background:var(--bg-surface-raised);border:1px solid var(--border-color);border-radius:10px;font-size:0.85rem;color:var(--text-secondary)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Panel (Feature 1: Chat with Data) -->
+      <div class="panel" id="panel-chat">
+        <div class="page-header-row">
+          <div>
+            <h2>Chat with Your Spending Data</h2>
+            <p>Ask anything about your expenses in English or Hindi (e.g. "Zomato pe kitna gaya?")</p>
+          </div>
+        </div>
+
+        <div class="chat-card">
+          <div class="chat-header">
+            <div class="chat-header-info">
+              <div class="chat-ai-avatar"><i data-lucide="bot"></i></div>
+              <div>
+                <h4 style="margin:0;font-size:1rem">SpendSense AI Financial Assistant</h4>
+                <span class="online-indicator">&bull; Online &amp; Analyzing your transactions</span>
+              </div>
+            </div>
+            <button class="btn btn-sm btn-ghost" onclick="clearUserChat()">
+              <i data-lucide="trash-2"></i> Clear History
+            </button>
+          </div>
+          <div class="chat-quick-prompts">
+            <button class="quick-prompt-btn" onclick="sendQuickPrompt('Zomato pe kitna kharch hua?')">
+              <i data-lucide="utensils"></i> Zomato pe kitna gaya?
+            </button>
+            <button class="quick-prompt-btn" onclick="sendQuickPrompt('Mera sabse bada kharcha kis category me hai?')">
+              <i data-lucide="award"></i> Highest category konsi hai?
+            </button>
+            <button class="quick-prompt-btn" onclick="sendQuickPrompt('Kitne unusual ya anomaly transactions detect hue?')">
+              <i data-lucide="alert-triangle"></i> Anomalies kitni hain?
+            </button>
+            <button class="quick-prompt-btn" onclick="sendQuickPrompt('Mera monthly spending summary batao')">
+              <i data-lucide="bar-chart-2"></i> Spending summary batao
+            </button>
+          </div>
+          <div class="chat-messages" id="chat-messages">
+            <div class="chat-bubble chat-bubble-ai">
+              <div class="chat-avatar"><i data-lucide="bot"></i></div>
+              <div class="chat-bubble-content">
+                <div class="chat-author">SpendSense AI</div>
+                <div class="chat-text">Namaste! Main aapka SpendSense AI assistant hu. Aap mujhse kisi bhi merchant (jaise Zomato, Amazon, MakeMyTrip), category breakdown, total expenses ya ML anomaly transactions ke baare me poochh sakte hain.</div>
+              </div>
+            </div>
+          </div>
+          <div class="chat-input-bar">
+            <input type="text" id="chat-input" class="chat-input" placeholder="Type your question or click mic..." onkeydown="if(event.key==='Enter') sendChatMessage()">
+            <button id="chat-mic-btn" class="chat-mic-btn" title="Voice Input (Speech-to-text)"><i data-lucide="mic"></i></button>
+            <button class="chat-send-btn" onclick="sendChatMessage()" title="Send"><i data-lucide="send"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Insight Panel -->
+      <div class="panel" id="panel-insight">
+        <div class="page-header-row">
+          <div>
+            <h2>Spending Narrative</h2>
+            <p>Generated by the Insight Agent &mdash; plain-English summary of your spending patterns</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3><i data-lucide="lightbulb"></i> Monthly Spending Narrative</h3>
+            <span style="font-size:0.75rem;color:var(--text-muted);padding:4px 10px;background:var(--bg-surface-raised);border-radius:999px">
+              Gemini 1.5 Flash
+            </span>
+          </div>
+          <div class="card-body" id="insight-content">
+            <p class="text-muted">Upload a CSV to generate your spending insight.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Budget Panel -->
+      <div class="panel" id="panel-budget">
+        <div class="page-header-row">
+          <div>
+            <h2>Budget Advisor Tips</h2>
+            <p>Personalized money-saving advice synthesized by your Budget Advisor Agent</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3><i data-lucide="target"></i> Personalized Recommendations</h3>
+            <span style="font-size:0.75rem;color:var(--text-muted);padding:4px 10px;background:var(--bg-surface-raised);border-radius:999px">
+              Actionable Guidance
+            </span>
+          </div>
+          <div class="card-body" id="tips-content">
+            <p class="text-muted">Upload a CSV to get personalized budget tips.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alerts Panel -->
+      <div class="panel" id="panel-alerts">
+        <div class="page-header-row">
+          <div>
+            <h2>Anomaly Alerts</h2>
+            <p>Unusual spending patterns detected by ML Isolation Forest + Alert Agent</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3><i data-lucide="alert-triangle"></i> Flagged Outliers</h3>
+            <span style="font-size:0.75rem;color:var(--text-muted);padding:4px 10px;background:var(--bg-surface-raised);border-radius:999px">
+              Alert Agent
+            </span>
+          </div>
+          <div class="card-body" id="alerts-content">
+            <div class="no-alerts">
+              <span class="big-icon" style="color:var(--color-positive)"><i data-lucide="check-circle-2"></i></span>
+              <p>No anomalies detected yet. Upload a CSV to run the anomaly detector.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end .content-area-container -->
+
+  </div><!-- end .main-wrapper -->
+</div><!-- end #user-dashboard -->
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     ADMIN DASHBOARD
+═══════════════════════════════════════════════════════════════════ -->
+<div id="admin-dashboard" class="app-wrapper" style="display:none">
+
+  <!-- Off-Canvas Mobile Drawer Overlay -->
+  <div class="mobile-overlay" id="admin-mobile-overlay" onclick="closeMobileSidebar()"></div>
+
+  <!-- Admin Sidebar -->
+  <aside class="sidebar" id="admin-sidebar">
+    <div class="sidebar-header">
+      <a href="#" class="sidebar-brand-link" onclick="showAdminPanel('admin-panel-stats');return false;">
+        <img src="/static/img/logo-mark.svg" alt="SpendSense AI" class="sidebar-brand-mark">
+        <div class="sidebar-brand-text">
+          <span class="sidebar-brand-title">SpendSense</span>
+          <span class="admin-badge-pill">Admin Console</span>
+        </div>
+      </a>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-section-label">Administration</div>
+      <button class="nav-item active" data-admin-panel="admin-panel-stats"
+              onclick="showAdminPanel('admin-panel-stats')">
+        <i data-lucide="bar-chart-3"></i> <span>Platform Stats</span>
+      </button>
+      <button class="nav-item" data-admin-panel="admin-panel-workspace"
+              onclick="showAdminPanel('admin-panel-workspace')">
+        <i data-lucide="briefcase"></i> <span>Admin Workspace</span>
+      </button>
+      <button class="nav-item" data-admin-panel="admin-panel-users"
+              onclick="showAdminPanel('admin-panel-users')">
+        <i data-lucide="users"></i> <span>Manage Users</span>
+      </button>
+      <button class="nav-item" data-admin-panel="admin-panel-uploads"
+              onclick="showAdminPanel('admin-panel-uploads')">
+        <i data-lucide="folder-archive"></i> <span>All Uploads</span>
+        <span class="nav-badge" id="admin-upload-count">&mdash;</span>
+      </button>
+
+      <div class="nav-section-label">ML Tools</div>
+      <button class="nav-item" data-admin-panel="admin-panel-upload-csv"
+              onclick="showAdminPanel('admin-panel-upload-csv')">
+        <i data-lucide="upload-cloud"></i> <span>Upload &amp; Analyze</span>
+      </button>
+      <button class="nav-item" data-admin-panel="admin-panel-retrain"
+              onclick="showAdminPanel('admin-panel-retrain')">
+        <i data-lucide="cpu"></i> <span>Retrain Models</span>
+      </button>
+      <button class="nav-item" data-admin-panel="admin-panel-logs"
+              onclick="showAdminPanel('admin-panel-logs')">
+        <i data-lucide="scroll"></i> <span>Audit Logs</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-profile-widget">
+        <div class="user-avatar-badge" style="background:var(--color-danger)" id="admin-user-avatar">A</div>
+        <div class="user-meta">
+          <div class="user-meta-name" id="admin-user-name">Admin</div>
+          <div class="user-meta-role" style="color:var(--color-danger)">administrator</div>
+        </div>
+      </div>
+      <button class="btn btn-ghost btn-sm" onclick="handleLogout()" style="width:100%;justify-content:center">
+        <i data-lucide="log-out"></i> Logout
+      </button>
+    </div>
+  </aside>
+
+  <!-- Admin Main Wrapper with Sticky Header -->
+  <div class="main-wrapper main-content">
+
+    <!-- Sticky Header (64px) -->
+    <header class="app-header">
+      <div class="header-left">
+        <button class="mobile-sidebar-toggle" onclick="toggleMobileSidebar()" aria-label="Toggle navigation">
+          <i data-lucide="menu"></i>
+        </button>
+        <div class="header-title-crumb">
+          <span id="admin-crumb-title">Platform Statistics</span>
+          <span class="crumb-sub" id="admin-crumb-sub">Site-wide metrics across all users</span>
+        </div>
+      </div>
+      <div class="header-right">
+        <button class="btn-icon theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme">
+          <i data-lucide="sun" class="theme-icon-sun"></i>
+          <i data-lucide="moon" class="theme-icon-moon" style="display:none"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Admin Content Area -->
+    <div class="content-area-container content-area">
+
+      <!-- Stats Panel -->
+      <div class="panel active" id="admin-panel-stats">
+        <div class="page-header-row">
+          <div>
+            <h2>Platform Statistics</h2>
+            <p>Site-wide metrics across all registered accounts</p>
+          </div>
+        </div>
+
+        <!-- Live Platform Telemetry & Health Bar -->
+        <div class="platform-health-bar">
+          <div class="health-status-item">
+            <span class="status-dot-active"></span>
+            <span><strong>ML Categorizer:</strong> 100% Ready (8 Categories)</span>
+          </div>
+          <div class="health-status-item">
+            <span class="status-dot-active"></span>
+            <span><strong>Anomaly Detector:</strong> Isolation Forest Guard Active</span>
+          </div>
+          <div class="health-status-item">
+            <span class="status-dot-active"></span>
+            <span><strong>Multi-Agent Core:</strong> Concurrent Engine Online</span>
+          </div>
+          <div class="health-status-item">
+            <span class="status-dot-active"></span>
+            <span><strong>Database:</strong> SQLite WAL Active</span>
+          </div>
+        </div>
+
+        <!-- Master Upload Toggle Banner -->
+        <div class="card" style="margin-bottom:20px;background:var(--bg-surface-raised);border:1px solid var(--border-color)">
+          <div class="card-body" style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px;flex-wrap:wrap;gap:12px">
+            <div>
+              <h4 style="margin:0 0 4px 0;display:flex;align-items:center;gap:8px">
+                <i data-lucide="shield-check"></i> Platform User Uploads Control
+                <span id="global-upload-badge" class="category-badge cat-groceries">Active</span>
+              </h4>
+              <p style="margin:0;font-size:0.83rem;color:var(--text-muted)">
+                Master switch for statement uploads. When paused, users are prevented from uploading new files.
+              </p>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px">
+              <span id="global-toggle-label" style="font-size:0.85rem;font-weight:600;color:var(--color-positive)">ENABLED</span>
+              <div class="toggle-switch on" id="global-upload-toggle" onclick="toggleGlobalUpload()">
+                <div class="toggle-knob"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="kpi-grid stats-grid">
+          <div class="kpi-card stat-card">
+            <div class="kpi-card-top">
+              <span class="kpi-label">Total Users</span>
+              <div class="kpi-icon-pill"><i data-lucide="users"></i></div>
+            </div>
+            <div class="kpi-card-value stat-value" id="admin-stat-users">&mdash;</div>
+            <div class="kpi-card-sub">Registered accounts</div>
+          </div>
+
+          <div class="kpi-card stat-card">
+            <div class="kpi-card-top">
+              <span class="kpi-label">Total Uploads</span>
+              <div class="kpi-icon-pill" style="color:var(--color-positive)"><i data-lucide="upload-cloud"></i></div>
+            </div>
+            <div class="kpi-card-value stat-value" id="admin-stat-uploads">&mdash;</div>
+            <div class="kpi-card-sub">CSV statements processed</div>
+          </div>
+
+          <div class="kpi-card stat-card">
+            <div class="kpi-card-top">
+              <span class="kpi-label">Transactions</span>
+              <div class="kpi-icon-pill" style="color:var(--accent-amber)"><i data-lucide="receipt"></i></div>
+            </div>
+            <div class="kpi-card-value stat-value" id="admin-stat-txns">&mdash;</div>
+            <div class="kpi-card-sub">Total records classified</div>
+          </div>
+
+          <div class="kpi-card stat-card">
+            <div class="kpi-card-top">
+              <span class="kpi-label">Anomalies</span>
+              <div class="kpi-icon-pill" style="color:var(--color-danger)"><i data-lucide="alert-triangle"></i></div>
+            </div>
+            <div class="kpi-card-value stat-value" id="admin-stat-anomalies">&mdash;</div>
+            <div class="kpi-card-sub">Flagged statistical spikes</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:24px">
+          <div class="card-body" style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px">
+            <div style="display:flex;align-items:center;gap:12px">
+              <div class="kpi-icon-pill" style="color:var(--accent-coral)"><i data-lucide="wallet"></i></div>
+              <div>
+                <span class="kpi-label" style="font-size:0.85rem">Total Platform Spend Processed</span>
+                <div class="kpi-card-value stat-value" style="font-size:1.6rem;margin:0" id="admin-stat-amount">&mdash;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Analytical Charts & ML System Status (12-col grid) -->
+        <div class="grid-12">
+          <div class="col-6 card">
+            <div class="card-header">
+              <h3><i data-lucide="pie-chart"></i> Platform Category Distribution</h3>
+            </div>
+            <div class="card-body">
+              <div class="chart-container" style="height:260px">
+                <canvas id="admin-category-chart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 card">
+            <div class="card-header">
+              <h3><i data-lucide="cpu"></i> ML Layer &amp; Model Architecture</h3>
+            </div>
+            <div class="card-body">
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <div class="tip-card">
+                  <div class="tip-icon-badge cat-dining"><i data-lucide="layers"></i></div>
+                  <div class="tip-text">
+                    <strong>Random Forest Categorizer</strong> &mdash; 100% test accuracy across 8 spending categories.
+                  </div>
+                </div>
+                <div class="tip-card">
+                  <div class="tip-icon-badge cat-coral"><i data-lucide="radar"></i></div>
+                  <div class="tip-text">
+                    <strong>Isolation Forest Anomaly Detector</strong> &mdash; Outlier detection with contamination rate 0.05.
+                  </div>
+                </div>
+                <div class="tip-card">
+                  <div class="tip-icon-badge cat-amber"><i data-lucide="cpu"></i></div>
+                  <div class="tip-text">
+                    <strong>Multi-Agent Orchestration</strong> &mdash; 4 role-based agents translating data into insights.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Admin Workspace Panel -->
+      <div class="panel" id="admin-panel-workspace">
+        <div class="page-header-row">
+          <div>
+            <h2>Admin Infrastructure Workspace</h2>
+            <p>Platform governance, global spend cap monitoring, and operations runbooks</p>
+          </div>
+          <div style="display:flex;gap:10px">
+            <button class="btn btn-secondary btn-sm" onclick="refreshAdminWorkspace()">
+              <i data-lucide="refresh-cw"></i> Refresh Workspace
+            </button>
+          </div>
+        </div>
+
+        <div class="grid-12">
+          <!-- Col 1: Platform Ingestion & Spend Cap Guard -->
+          <div class="col-6 card">
+            <div class="card-header">
+              <div style="display:flex;align-items:center;gap:10px">
+                <i data-lucide="shield-check" class="lucide-lg" style="color:var(--accent-amber)"></i>
+                <div>
+                  <h3 style="margin:0">Platform Spend Cap &amp; Ingestion Guard</h3>
+                  <span style="font-size:0.75rem;color:var(--text-muted)">Aggregate volume ceiling across all users</span>
+                </div>
+              </div>
+              <button class="btn btn-sm ws-btn-ghost" onclick="toggleAdminCapEdit()">
+                <i data-lucide="edit-3"></i> Edit Cap
+              </button>
+            </div>
+            <div class="card-body" style="padding:20px">
+              
+              <!-- Inline Cap Editor -->
+              <div id="admin-ws-cap-edit-row" style="display:none;margin-bottom:16px;gap:8px;align-items:center">
+                <input type="number" id="admin-ws-cap-input" class="chat-input" style="padding:8px 12px;font-size:0.85rem" placeholder="e.g. 5000000">
+                <button class="btn btn-primary btn-sm" onclick="saveAdminPlatformCap()">Save Cap</button>
+                <button class="btn btn-sm ws-btn-ghost" onclick="toggleAdminCapEdit()">Cancel</button>
+              </div>
+
+              <div style="margin:8px 0 16px 0">
+                <div style="display:flex;justify-content:space-between;align-items:baseline">
+                  <span style="font-size:0.82rem;color:var(--text-muted)">Current Platform Volume:</span>
+                  <span style="font-size:1.3rem;font-weight:800;color:var(--text-primary)" id="admin-ws-spend-display">₹0</span>
+                </div>
+                <div class="ws-progress-track" style="margin:8px 0 6px 0">
+                  <div id="admin-ws-progress-bar" class="ws-progress-fill" style="width:0%"></div>
+                </div>
+                <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted)">
+                  <span id="admin-ws-pct-label">0% of Cap</span>
+                  <span id="admin-ws-cap-display">Cap: ₹50,00,000</span>
+                </div>
+              </div>
+
+              <!-- Quick Cap Presets -->
+              <div class="ws-presets-row" style="margin-bottom:20px">
+                <span style="font-size:0.72rem;color:var(--text-muted)">Quick Cap:</span>
+                <button class="ws-preset-chip" onclick="quickSetAdminCap(2500000)">₹25L</button>
+                <button class="ws-preset-chip" onclick="quickSetAdminCap(5000000)">₹50L</button>
+                <button class="ws-preset-chip" onclick="quickSetAdminCap(10000000)">₹1Cr</button>
+                <button class="ws-preset-chip" onclick="quickSetAdminCap(50000000)">₹5Cr</button>
+              </div>
+
+              <!-- Ingestion Switch Card inside Workspace -->
+              <div style="padding:14px;background:var(--bg-surface-raised);border:1px solid var(--border-color);border-radius:12px">
+                <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
+                  <div>
+                    <strong style="font-size:0.9rem;display:block">Master User Ingestion Gateway</strong>
+                    <span style="font-size:0.78rem;color:var(--text-muted)">Pause or resume statement uploads system-wide</span>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:10px">
+                    <span id="admin-ws-ingest-label" style="font-size:0.8rem;font-weight:700;color:var(--color-positive)">ACTIVE</span>
+                    <button class="btn btn-sm btn-danger" id="admin-ws-ingest-btn" onclick="toggleGlobalUpload()" style="padding:6px 12px">
+                      Toggle Pause
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Col 2: System Operations & Incident Runbook Studio -->
+          <div class="col-6 card">
+            <div class="card-header">
+              <div style="display:flex;align-items:center;gap:10px">
+                <i data-lucide="scroll" class="lucide-lg" style="color:var(--color-danger)"></i>
+                <div>
+                  <h3 style="margin:0">Admin Operations &amp; Incident Runbooks</h3>
+                  <span style="font-size:0.75rem;color:var(--text-muted)">Checklists, security protocols &amp; audits</span>
+                </div>
+              </div>
+              <span class="category-badge cat-health" id="admin-ws-notes-count" style="font-size:0.7rem">0 Tasks</span>
+            </div>
+            <div class="card-body" style="padding:20px">
+              
+              <!-- Add Task Input Row -->
+              <div class="ws-note-input-row" style="margin-bottom:14px">
+                <select id="admin-ws-note-cat" class="form-input" style="width:130px;padding:8px;font-size:0.8rem">
+                  <option value="maintenance">Maintenance</option>
+                  <option value="security">Security</option>
+                  <option value="audit">Audit</option>
+                  <option value="model">ML Model</option>
+                </select>
+                <input type="text" id="admin-ws-new-note-input" class="form-input" placeholder="e.g. Verify Gemini quota, Backup DB..." onkeydown="if(event.key==='Enter') addAdminWorkspaceNote()">
+                <button class="btn btn-primary ws-add-btn" onclick="addAdminWorkspaceNote()">+ Add Task</button>
+              </div>
+
+              <!-- Notes List Container -->
+              <div class="ws-notes-list" id="admin-ws-notes-container" style="max-height:280px;overflow-y:auto">
+                <div class="ws-empty-notes">No runbook tasks yet. Add a maintenance or incident task above!</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: Admin Quick Operations Launchpad -->
+        <div class="card" style="margin-top:24px">
+          <div class="card-header">
+            <h3><i data-lucide="zap"></i> Quick Operations Launchpad</h3>
+          </div>
+          <div class="card-body" style="padding:20px">
+            <div class="grid-12">
+              <div class="col-3 tip-card" style="cursor:pointer" onclick="showAdminPanel('admin-panel-upload-csv')">
+                <div class="tip-icon-badge cat-dining"><i data-lucide="upload-cloud"></i></div>
+                <div class="tip-text"><strong>Upload Statement</strong><br><span style="font-size:0.75rem;color:var(--text-muted)">Ingest &amp; run ML pipeline</span></div>
+              </div>
+              <div class="col-3 tip-card" style="cursor:pointer" onclick="showAdminPanel('admin-panel-retrain')">
+                <div class="tip-icon-badge cat-coral"><i data-lucide="cpu"></i></div>
+                <div class="tip-text"><strong>Retrain Models</strong><br><span style="font-size:0.75rem;color:var(--text-muted)">Rebuild RF + IsolationForest</span></div>
+              </div>
+              <div class="col-3 tip-card" style="cursor:pointer" onclick="showAdminPanel('admin-panel-users')">
+                <div class="tip-icon-badge cat-amber"><i data-lucide="users"></i></div>
+                <div class="tip-text"><strong>Manage Accounts</strong><br><span style="font-size:0.75rem;color:var(--text-muted)">User roles &amp; permissions</span></div>
+              </div>
+              <div class="col-3 tip-card" style="cursor:pointer" onclick="showAdminPanel('admin-panel-logs')">
+                <div class="tip-icon-badge cat-positive"><i data-lucide="scroll"></i></div>
+                <div class="tip-text"><strong>Audit Trail</strong><br><span style="font-size:0.75rem;color:var(--text-muted)">Review security logs</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Users Panel -->
+      <div class="panel" id="admin-panel-users">
+        <div class="page-header-row">
+          <div>
+            <h2>Manage Users</h2>
+            <p>View and manage registered user accounts</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3><i data-lucide="users"></i> Registered Users (<span id="admin-user-count">&mdash;</span>)</h3>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th>ID</th><th>Username</th><th>Email</th>
+                    <th>Role</th><th>Joined</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="admin-users-body">
+                <tr><td colspan="6" style="text-align:center;padding:32px">
+                  <div class="spinner"></div></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- All Uploads Panel -->
+      <div class="panel" id="admin-panel-uploads">
+        <div class="page-header-row">
+          <div>
+            <h2>All Uploads</h2>
+            <p>Every CSV statement upload across all user accounts</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3><i data-lucide="folder-archive"></i> Upload History</h3>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th>ID</th><th>User</th><th>File</th>
+                    <th>Date</th><th class="col-num">Transactions</th><th class="col-num">Anomalies</th><th class="col-num">Amount</th></tr>
+              </thead>
+              <tbody id="admin-uploads-body">
+                <tr><td colspan="7" style="text-align:center;padding:32px">
+                  <div class="spinner"></div></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admin Upload & Analyze Panel -->
+      <div class="panel" id="admin-panel-upload-csv">
+        <div class="page-header-row">
+          <div>
+            <h2>Upload &amp; Analyze</h2>
+            <p>Run the ML + AI pipeline on any CSV file &mdash; stored under the admin account</p>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <button class="btn btn-primary" onclick="document.getElementById('admin-file-input').click()">
+              <i data-lucide="upload-cloud"></i> Select CSV Statement
+            </button>
+            <button class="btn btn-secondary" onclick="loadAdminDemoCsv()">
+              <i data-lucide="play-circle"></i> Quick Test Sample
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+
+            <div style="margin-bottom:20px">
+              <h4>CSV Statement Ingestion &amp; Diagnostic Tester</h4>
+              <p style="font-size:0.85rem;color:var(--text-muted);margin:0">
+                Upload any transaction statement to test ML categorizer accuracy, Isolation Forest anomalies &amp; Gemini multi-agent synthesis
+              </p>
+            </div>
+
+            <div id="admin-upload-section" style="display:block">
+              <div class="upload-zone" id="admin-upload-zone">
+                <input type="file" id="admin-file-input" accept=".csv" style="display:none">
+                <span class="upload-icon"><i data-lucide="upload-cloud" class="lucide-xl"></i></span>
+                <h4>Drop CSV statement here or click to browse</h4>
+                <p style="margin-bottom:14px">Columns: date &middot; merchant &middot; amount &middot; description (optional)</p>
+                <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+                  <button class="btn btn-primary btn-sm" onclick="event.stopPropagation();document.getElementById('admin-file-input').click()">
+                    <i data-lucide="folder"></i> Browse Local CSV
+                  </button>
+                  <button class="btn btn-secondary btn-sm" onclick="event.stopPropagation();loadAdminDemoCsv()">
+                    <i data-lucide="play-circle"></i> Load Sample Statement
+                  </button>
+                </div>
+              </div>
+              <div class="upload-progress" id="admin-upload-progress" style="display:none">
+                <div class="progress-label" id="admin-progress-label">Processing...</div>
+                <div class="progress-bar-container">
+                  <div class="progress-bar" id="admin-progress-bar"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Result display -->
+            <div class="admin-upload-result" id="admin-upload-result" style="display:none">
+              <h4 style="margin-bottom:16px;color:var(--text-secondary)"><i data-lucide="bar-chart-3"></i> Analysis Results</h4>
+              <div class="result-grid" id="admin-result-grid"></div>
+              <div class="card" style="margin-top:16px">
+                <div class="card-header"><h3><i data-lucide="lightbulb"></i> AI Insight</h3></div>
+                <div class="card-body" id="admin-result-insight"></div>
+              </div>
+              <div class="card" style="margin-top:16px">
+                <div class="card-header"><h3><i data-lucide="target"></i> Budget Tips</h3></div>
+                <div class="card-body" id="admin-result-tips"></div>
+              </div>
+              <div class="card" style="margin-top:16px">
+                <div class="card-header"><h3><i data-lucide="alert-triangle"></i> Alerts</h3></div>
+                <div class="card-body" id="admin-result-alerts"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Retrain Panel -->
+      <div class="panel" id="admin-panel-retrain">
+        <div class="page-header-row">
+          <div>
+            <h2>Retrain ML Models</h2>
+            <p>Re-fit Random Forest categorizer and Isolation Forest outlier detector</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div style="max-width:600px">
+              <h3 style="margin-bottom:12px"><i data-lucide="cpu"></i> Model Management</h3>
+              <p style="margin-bottom:24px;color:var(--text-secondary);line-height:1.6">
+                Retraining reads <code style="background:var(--bg-surface-raised);padding:2px 8px;border-radius:4px">data/transactions.csv</code>
+                and rebuilds both models from scratch. Takes 30&ndash;90 seconds.
+              </p>
+              <div class="tip-card" style="margin-bottom:20px">
+                <div class="tip-icon-badge cat-amber"><i data-lucide="info"></i></div>
+                <div class="tip-text">
+                  <strong>Categorizer</strong>: Random Forest + TF-IDF (8 spending categories)<br>
+                  <strong>Anomaly Detector</strong>: Isolation Forest (unsupervised outlier detection)
+                </div>
+              </div>
+              <button class="btn btn-primary" id="retrain-btn"
+                      onclick="retrainModels()" style="max-width:260px">
+                <i data-lucide="refresh-cw"></i> Retrain ML Models
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logs Panel -->
+      <div class="panel" id="admin-panel-logs">
+        <div class="page-header-row">
+          <div>
+            <h2>Audit Logs</h2>
+            <p>Immutable record of all administrator events and security actions</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th>ID</th><th>Admin</th><th>Action</th><th>Timestamp</th></tr>
+              </thead>
+              <tbody id="admin-logs-body">
+                <tr><td colspan="4" style="text-align:center;padding:32px">
+                  <div class="spinner"></div></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end .content-area-container -->
+
+  </div><!-- end .main-wrapper -->
+</div><!-- end #admin-dashboard -->
+
+<!-- Floating Global AI Chat Widget (Hidden on login/auth, visible only on authenticated user dashboard) -->
+<div id="floating-chat-container" style="display:none">
+  <button id="floating-chat-trigger" class="floating-chat-btn" onclick="toggleFloatingChat()" title="Chat with SpendSense AI">
+    <span class="floating-icon"><i data-lucide="message-square"></i></span>
+    <span class="floating-label">Ask AI</span>
+    <span class="floating-ping"></span>
+  </button>
+  
+  <div id="floating-chat-box" class="floating-chat-box" style="display:none">
+    <div class="floating-chat-header">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="chat-ai-avatar" style="width:34px;height:34px;font-size:1.1rem;background:var(--grad-primary);color:#fff"><i data-lucide="bot"></i></div>
+        <div>
+          <div style="font-weight:700;font-size:0.92rem;color:var(--text-primary)">SpendSense AI</div>
+          <div style="font-size:0.72rem;color:var(--color-positive)">&bull; Ready to answer</div>
+        </div>
+      </div>
+      <button class="floating-close-btn" onclick="toggleFloatingChat()" title="Close chat"><i data-lucide="x"></i></button>
+    </div>
+    <div class="floating-chat-body" id="floating-chat-messages">
+      <div class="chat-bubble chat-bubble-ai">
+        <div class="chat-avatar"><i data-lucide="bot"></i></div>
+        <div class="chat-bubble-content">
+          <div class="chat-author">SpendSense AI</div>
+          <div class="chat-text" style="font-size:0.86rem">Poochhiye apne kharcho ke baare me (jaise "Zomato pe kitna gaya?", "Highest spend kya h?").</div>
+        </div>
+      </div>
+    </div>
+    <div class="floating-quick-chips">
+      <button onclick="sendFloatingQuickPrompt('Zomato pe kitna kharch hua?')"><i data-lucide="utensils"></i> Zomato</button>
+      <button onclick="sendFloatingQuickPrompt('Mera total kharcha kitna hai?')"><i data-lucide="wallet"></i> Total spend</button>
+      <button onclick="sendFloatingQuickPrompt('Anomalies kitni hain?')"><i data-lucide="alert-triangle"></i> Anomalies</button>
+    </div>
+    <div class="floating-chat-input-bar">
+      <input type="text" id="floating-chat-input" placeholder="Ask AI anything..." onkeydown="if(event.key==='Enter') sendFloatingChatMessage()">
+      <button class="chat-send-btn" onclick="sendFloatingChatMessage()" title="Send"><i data-lucide="send"></i></button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/js/app.js"></script>
+<script src="/static/js/charts.js"></script>
+<script src="/static/js/dashboard.js"></script>
+</body>
+</html>
