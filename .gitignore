@@ -23,6 +23,11 @@ Thumbs.db
 scratch/
 *.log
 
+# Local SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
 # User uploaded statements (keep folder, ignore uploaded files)
 uploads/*
 !uploads/.gitkeep
