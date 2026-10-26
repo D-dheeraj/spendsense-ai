@@ -2,23 +2,23 @@
 # Install with: pip install -r requirements.txt
 
 # Web Framework & Server
-Flask==3.0.0
-Flask-CORS==4.0.0
+Flask>=3.0.0
+Flask-CORS>=4.0.0
 gunicorn>=21.2.0
 
-# ML & Data Science
-scikit-learn==1.4.0
-pandas==2.1.4
-numpy==1.26.2
-joblib==1.3.2
+# ML & Data Science (NumPy 1.x with pre-built binary wheels)
+numpy>=1.26.0,<2.0.0
+pandas>=2.1.0
+scikit-learn>=1.4.0
+joblib>=1.3.2
 
 # Authentication
-PyJWT==2.8.0
-bcrypt==4.1.2
+PyJWT>=2.8.0
+bcrypt>=4.1.2
 
 # LLM / Gemini Agent Layer
-google-generativeai==0.3.2
+google-generativeai>=0.3.2
 
 # Utilities
-python-dotenv==1.0.0
-Werkzeug==3.0.1
+python-dotenv>=1.0.0
+Werkzeug>=3.0.1
